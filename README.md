@@ -12,3 +12,6 @@ Các chức năng :
   Gửi email nhắc nhở về các đối tượng khi sắp đến hạn của sự kiện, thông báo mới gif đó//
   Trao đổi trực tuyến giữa chủ và khách (Nghe mùi có vẻ khó)//
   Có 1 dashboard dùng đăng bài//
+  
+  
+Aloo, để tiện thì từ giờ mình sẽ làm việc trên nhánh dev, khi nào được thì t sẽ đẩy vào nhánh master, nên từ giờ nếu ko nói cụ thể thì là làm trên nhánh dev nhé 
