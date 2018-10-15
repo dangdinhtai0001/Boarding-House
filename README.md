@@ -1,17 +1,17 @@
 # Boarding-House
-Các chức năng :
-  Đăng nhập (Chỉ chủ trọ và khách - cảm giác làm đc bằng facebook hay gmail thì làm bằng ko sẽ bỏ)//
-  Hiển thị tình trạng khu trọ ( số phòng đã thuê, số phòng còn trống)//
-  Hiển thị thông tin cho từng căn phòng//
-  Lưu trữ thông tin của người thuê//
-  Các thể loại dịch vụ (có thể thêm vào )//
-  Quản lí các luật khu trọ//
-  Có khả năng nhận đặt phòng//
-  Quản lí hơp đồng cho thuê//
-  Báo cáo tình hình (...)//
-  Gửi email nhắc nhở về các đối tượng khi sắp đến hạn của sự kiện, thông báo mới gif đó//
-  Trao đổi trực tuyến giữa chủ và khách (Nghe mùi có vẻ khó)//
-  Có 1 dashboard dùng đăng bài//
+1. Đối tượng tham gia
+Khách hàng : Người có nhu cầu thuê nhà, đang thuê nhà, có nhu cầu sử dụng dịch vụ
+Chủ trọ : Người điều hành, thống kê, báo cáo hàng tháng
+2.Use case
+	Quản lí thuê nhà: Đặt phòng, hủy đặt phòng, trả phòng, kiểm tra phòng trống, lập hợp đồng thuê phòng.
+	Quản lí khách hàng: CRUD
+	Lập hóa đơn
+	Lập báo cáo: Doanh thu, tình trạng phòng/các phòng(chính là quản lí trang thiết bị), danh sách khách thuê
+	Quản lí phòng : CRUD
+	Quản lí dịch vụ: CRUD
+	Quản lí thuê dịch vụ: đăng kí/ hủy đăng kí dịch vụ
+	Quản lí tài khoản: Đăng nhập, kiểm tra tài khoản, CRUD
+
   
   
 Aloo, để tiện thì từ giờ mình sẽ làm việc trên nhánh dev, khi nào được thì t sẽ đẩy vào nhánh master, nên từ giờ nếu ko nói cụ thể thì là làm trên nhánh dev nhé 
