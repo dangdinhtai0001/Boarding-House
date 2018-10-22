@@ -1,16 +1,6 @@
 # Boarding-House
-1. Đối tượng tham gia
-Khách hàng : Người có nhu cầu thuê nhà, đang thuê nhà, có nhu cầu sử dụng dịch vụ
-Chủ trọ : Người điều hành, thống kê, báo cáo hàng tháng
-2.Use case
-	Quản lí thuê nhà: Đặt phòng, hủy đặt phòng, trả phòng, kiểm tra phòng trống, lập hợp đồng thuê phòng.
-	Quản lí khách hàng: CRUD
-	Lập hóa đơn
-	Lập báo cáo: Doanh thu, tình trạng phòng/các phòng(chính là quản lí trang thiết bị), danh sách khách thuê
-	Quản lí phòng : CRUD
-	Quản lí dịch vụ: CRUD
-	Quản lí thuê dịch vụ: đăng kí/ hủy đăng kí dịch vụ
-	Quản lí tài khoản: Đăng nhập, kiểm tra tài khoản, CRUD
+L
+https://docs.google.com/document/d/1JSTSy3ggz3_L26qpexz9_7-9wqrcr5jRj3kUYohWKVY/edit
 
   
   
