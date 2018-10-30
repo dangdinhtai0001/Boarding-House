@@ -1518,35 +1518,27 @@ roomID</ColNames>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="345" parent="244" name="user_id">
-      <Position>3</Position>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="346" parent="244" name="role_id">
-      <Position>4</Position>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <index id="347" parent="244" name="roleId">
+    <index id="345" parent="244" name="roleId">
       <ColNames>roleId</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="348" parent="244" name="PRIMARY">
+    <index id="346" parent="244" name="roleId_2">
+      <ColNames>roleId</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="347" parent="244" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>userId
 roleId</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="349" parent="244" name="user_role_ibfk_2">
+    <foreign-key id="348" parent="244" name="user_role_ibfk_2">
       <ColNames>userId</ColNames>
       <RefSchemaName>BoardingHouse</RefSchemaName>
       <RefTableName>app_user</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="350" parent="244" name="user_role_ibfk_1">
+    <foreign-key id="349" parent="244" name="user_role_ibfk_1">
       <ColNames>roleId</ColNames>
       <RefSchemaName>BoardingHouse</RefSchemaName>
       <RefTableName>app_role</RefTableName>

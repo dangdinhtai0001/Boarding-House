@@ -1,8 +1,7 @@
-package repositories;
+package hus.k61a3.demo.repositories;
 
-import domains.AppRole;
+import hus.k61a3.demo.domains.AppRole;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
 
 public interface RoleRepository extends JpaRepository<AppRole, Integer> {
     AppRole findByName(String name);

@@ -1,4 +1,4 @@
-package domains;
+package hus.k61a3.demo.domains;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -22,11 +22,15 @@ public class AppRole implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
-    private int id ;
+    private int id;
 
     @Column(name = "name")
     private String name;
 
-    @ManyToMany(mappedBy = "roles")
+    @ManyToMany(mappedBy = "roles", fetch = FetchType.LAZY,
+            cascade = {
+                    CascadeType.PERSIST,
+                    CascadeType.MERGE
+            })
     private Set<AppUser> users;
 }
