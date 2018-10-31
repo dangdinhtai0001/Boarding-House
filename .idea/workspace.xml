@@ -56,7 +56,8 @@
     <session id="841193479">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="19" />
+          <entry key="project.closed" value="21" />
+          <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
@@ -70,7 +71,7 @@
           <entry key="project.open.time.23" value="3" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="20" />
+          <entry key="project.opened" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -81,7 +82,7 @@
           <entry key="properties" value="91" />
           <entry key="sql" value="11" />
           <entry key="txt" value="161" />
-          <entry key="xml" value="29" />
+          <entry key="xml" value="37" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -91,7 +92,7 @@
           <entry key="PLAIN_TEXT" value="166" />
           <entry key="Properties" value="91" />
           <entry key="Scratch" value="11" />
-          <entry key="XML" value="29" />
+          <entry key="XML" value="37" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -101,18 +102,18 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="Procfile" value="4" />
+          <entry key="Procfile" value="5" />
           <entry key="class" value="3" />
           <entry key="cmd" value="1" />
           <entry key="css" value="4" />
           <entry key="html" value="19" />
           <entry key="java" value="66" />
-          <entry key="md" value="2" />
+          <entry key="md" value="3" />
           <entry key="png" value="1" />
-          <entry key="properties" value="8" />
+          <entry key="properties" value="9" />
           <entry key="sql" value="1" />
           <entry key="user_role" value="1" />
-          <entry key="xml" value="7" />
+          <entry key="xml" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -123,11 +124,11 @@
           <entry key="HTML" value="19" />
           <entry key="Image" value="1" />
           <entry key="JAVA" value="66" />
-          <entry key="Markdown" value="2" />
-          <entry key="PLAIN_TEXT" value="5" />
-          <entry key="Properties" value="8" />
+          <entry key="Markdown" value="3" />
+          <entry key="PLAIN_TEXT" value="6" />
+          <entry key="Properties" value="9" />
           <entry key="Scratch" value="1" />
-          <entry key="XML" value="7" />
+          <entry key="XML" value="8" />
         </counts>
       </usages-collector>
     </session>
@@ -140,8 +141,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="34" column="61" lean-forward="true" selection-start-line="34" selection-start-column="61" selection-end-line="34" selection-end-column="61" />
+            <state relative-caret-position="329">
+              <caret line="50" column="21" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -309,12 +310,12 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541005827544" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541007004989" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -351,7 +352,7 @@
     </option>
     <option name="contentProportion" value="0.15658915" />
   </component>
-  <component name="RunManager" selected="Spring Boot.BoardingHouseApplication">
+  <component name="RunManager" selected="Heroku Deployment.Heroku">
     <configuration name="BoardingHouseApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="Boardinghouse" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="hus.k61a3.demo.BoardingHouseApplication" />
@@ -412,7 +413,9 @@
       <workItem from="1540997274602" duration="2157000" />
       <workItem from="1540999470961" duration="6000" />
       <workItem from="1540999826615" duration="982000" />
-      <workItem from="1541000961221" duration="4069000" />
+      <workItem from="1541000961221" duration="4407000" />
+      <workItem from="1541006233633" duration="37000" />
+      <workItem from="1541006436092" duration="569000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1540554190618</created>
@@ -505,17 +508,24 @@
       <option name="project" value="LOCAL" />
       <updated>1541005534409</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="test heroku pom.xml">
+      <created>1541005846991</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1541005846991</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67019000" />
+    <option name="totallyTimeSpent" value="67963000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1366" height="740" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49918434" visible="true" weight="0.2936267" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49918434" visible="true" weight="0.30424887" />
       <window_info id="Structure" order="1" sideWeight="0.50121653" side_tool="true" weight="0.27389985" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -535,12 +545,12 @@
       <window_info anchor="bottom" id="Database Changes" order="8" weight="0.32952693" />
       <window_info anchor="bottom" id="Spring" order="9" weight="0.32952693" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007587" side_tool="true" weight="0.32626426" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007587" side_tool="true" visible="true" weight="0.32952693" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32952693" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
-      <window_info anchor="bottom" id="Run Dashboard" order="14" sideWeight="0.49924126" visible="true" weight="0.3442088" />
+      <window_info anchor="bottom" id="Run Dashboard" order="14" sideWeight="0.49924126" weight="0.34308943" />
       <window_info anchor="bottom" id="Database Console" order="15" weight="0.32952693" />
-      <window_info anchor="bottom" id="Application Servers" order="16" weight="0.32952693" />
+      <window_info anchor="bottom" id="Application Servers" order="16" sideWeight="0.49924126" visible="true" weight="0.32952693" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -709,16 +719,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Boardinghouse/META-INF/application.xml" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="15">
-            <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Boardinghouse/system.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -751,13 +751,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Procfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="90" selection-start-column="90" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Boardinghouse/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="185">
@@ -769,9 +762,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="98">
           <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -779,17 +769,33 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#253#254#0" expanded="true" />
-            <element signature="e#328#329#0" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="15">
+            <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="90" selection-start-column="90" selection-end-column="90" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="34" column="61" lean-forward="true" selection-start-line="34" selection-start-column="61" selection-end-line="34" selection-end-column="61" />
+        <state relative-caret-position="329">
+          <caret line="50" column="21" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -799,7 +805,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>Boardinghouse:ear exploded</last-edited>
+          <last-edited>Boardinghouse:war</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -812,7 +818,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>JavaEE Application</last-edited>
+          <last-edited>javaEEApplication (Boardinghouse)|JavaEE Application</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -847,7 +853,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Spring|Boardinghouse</last-edited>
+          <last-edited>Web|Boardinghouse</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
