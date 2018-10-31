@@ -48,6 +48,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
         //  Cấu hình remember me, thời gian là 1296000 giây
         http.rememberMe().key("uniqueAndSecret").tokenValiditySeconds(1296000);
+//        http.rememberMe().authenticationSuccessHandler();
 
         // Cấu hình cho Login Form.
         http.authorizeRequests().and().formLogin()//

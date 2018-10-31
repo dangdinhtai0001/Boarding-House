@@ -3,6 +3,7 @@ package hus.k61a3.demo.controllers;
 import hus.k61a3.demo.services.UserDetailsServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.web.bind.annotation.CookieValue;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @org.springframework.stereotype.Controller
@@ -14,8 +15,9 @@ public class Controller {
 
 
     @RequestMapping(value = {"/", "/login"})
-    public String login() {
-        return "login2";
+    public String login(@CookieValue("remember-me") String rememberMe) {
+        System.out.println(rememberMe.toString());
+        return "login";
     }
 
     @RequestMapping("/user")
