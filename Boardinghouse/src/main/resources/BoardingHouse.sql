@@ -1,15 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.2
+-- version 4.6.6deb5
 -- https://www.phpmyadmin.net/
 --
--- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th10 06, 2018 lúc 11:11 AM
--- Phiên bản máy phục vụ: 10.1.34-MariaDB
--- Phiên bản PHP: 7.2.8
+-- Máy chủ: localhost
+-- Thời gian đã tạo: Th10 06, 2018 lúc 08:40 PM
+-- Phiên bản máy phục vụ: 5.7.24-0ubuntu0.18.04.1
+-- Phiên bản PHP: 7.2.10-0ubuntu0.18.04.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -38,10 +36,6 @@ CREATE TABLE IF NOT EXISTS `app_role` (
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- RELATIONSHIPS FOR TABLE `app_role`:
---
-
---
 -- Đang đổ dữ liệu cho bảng `app_role`
 --
 
@@ -64,10 +58,6 @@ CREATE TABLE IF NOT EXISTS `app_user` (
   `enabled` tinyint(1) NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- RELATIONSHIPS FOR TABLE `app_user`:
---
 
 --
 -- Đang đổ dữ liệu cho bảng `app_user`
@@ -105,14 +95,6 @@ CREATE TABLE IF NOT EXISTS `contract` (
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- RELATIONSHIPS FOR TABLE `contract`:
---   `roomID`
---       `room` -> `id`
---   `serviceID`
---       `service` -> `id`
---
-
---
 -- Đang đổ dữ liệu cho bảng `contract`
 --
 
@@ -144,10 +126,6 @@ CREATE TABLE IF NOT EXISTS `customer` (
   `image` varchar(256) COLLATE utf8mb4_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- RELATIONSHIPS FOR TABLE `customer`:
---
 
 --
 -- Đang đổ dữ liệu cho bảng `customer`
@@ -182,14 +160,6 @@ CREATE TABLE IF NOT EXISTS `device` (
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- RELATIONSHIPS FOR TABLE `device`:
---   `roomID`
---       `room` -> `id`
---   `unitID`
---       `unit` -> `id`
---
-
---
 -- Đang đổ dữ liệu cho bảng `device`
 --
 
@@ -212,10 +182,6 @@ CREATE TABLE IF NOT EXISTS `error` (
   `description` text COLLATE utf8mb4_vietnamese_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_vietnamese_ci;
 
---
--- RELATIONSHIPS FOR TABLE `error`:
---
-
 -- --------------------------------------------------------
 
 --
@@ -231,10 +197,6 @@ CREATE TABLE IF NOT EXISTS `home` (
   `address` varchar(256) COLLATE utf8mb4_unicode_ci NOT NULL,
   `email` varchar(256) COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- RELATIONSHIPS FOR TABLE `home`:
---
 
 --
 -- Đang đổ dữ liệu cho bảng `home`
@@ -261,24 +223,25 @@ CREATE TABLE IF NOT EXISTS `room` (
   `recommend` int(11) NOT NULL,
   `floor` int(11) NOT NULL,
   `price` double NOT NULL,
+  `square` int(11) NOT NULL,
+  `closed` tinyint(1) NOT NULL,
+  `bathroom` int(11) NOT NULL,
+  `window` int(11) NOT NULL,
+  `image` text COLLATE utf8mb4_unicode_ci NOT NULL,
   `description` text COLLATE utf8mb4_unicode_ci,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- RELATIONSHIPS FOR TABLE `room`:
---
-
---
 -- Đang đổ dữ liệu cho bảng `room`
 --
 
-INSERT INTO `room` (`id`, `name`, `status`, `recommend`, `floor`, `price`, `description`) VALUES
-(1, 'R101', 'Trống', 3, 3, 1500000, '15m2, vệ sinh khép kín'),
-(2, 'R102', 'Đã thuê', 2, 2, 1400000, '15m2, vệ sinh khép kín'),
-(3, 'R103', 'Đã thuê', 3, 3, 2000000, '17m2, vệ sinh khép kín, có điều hòa nóng lạnh'),
-(4, 'R104', 'Trống', 1, 5, 1200000, '12m2, vệ sinh khép kín, có nóng lạnh'),
-(5, 'R105', 'Trống', 4, 2, 2500000, '30m2, vệ sinh khép kín, có nóng lạnh, điều hòa');
+INSERT INTO `room` (`id`, `name`, `status`, `recommend`, `floor`, `price`, `square`, `closed`, `bathroom`, `window`, `image`, `description`) VALUES
+(1, 'R101', 'Trống', 3, 3, 1500000, 15, 1, 1, 1, '', '15m2, vệ sinh khép kín'),
+(2, 'R102', 'Đã thuê', 2, 2, 1400000, 0, 0, 0, 0, '', '15m2, vệ sinh khép kín'),
+(3, 'R103', 'Đã thuê', 3, 3, 2000000, 0, 0, 0, 0, '', '17m2, vệ sinh khép kín, có điều hòa nóng lạnh'),
+(4, 'R104', 'Trống', 1, 5, 1200000, 0, 0, 0, 0, '', '12m2, vệ sinh khép kín, có nóng lạnh'),
+(5, 'R105', 'Trống', 4, 2, 2500000, 0, 0, 0, 0, '', '30m2, vệ sinh khép kín, có nóng lạnh, điều hòa');
 
 -- --------------------------------------------------------
 
@@ -294,14 +257,6 @@ CREATE TABLE IF NOT EXISTS `room_rental` (
   PRIMARY KEY (`customerID`,`roomID`),
   KEY `roomID` (`roomID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- RELATIONSHIPS FOR TABLE `room_rental`:
---   `roomID`
---       `room` -> `id`
---   `customerID`
---       `customer` -> `id`
---
 
 --
 -- Đang đổ dữ liệu cho bảng `room_rental`
@@ -333,12 +288,6 @@ CREATE TABLE IF NOT EXISTS `service` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- RELATIONSHIPS FOR TABLE `service`:
---   `unitID`
---       `unit` -> `id`
---
-
---
 -- Đang đổ dữ liệu cho bảng `service`
 --
 
@@ -366,22 +315,14 @@ CREATE TABLE IF NOT EXISTS `service_rental` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- RELATIONSHIPS FOR TABLE `service_rental`:
---   `roomID`
---       `room` -> `id`
---   `serviceID`
---       `service` -> `id`
---
-
---
 -- Đang đổ dữ liệu cho bảng `service_rental`
 --
 
 INSERT INTO `service_rental` (`serviceID`, `roomID`) VALUES
-(1, 3),
 (3, 2),
-(3, 3),
 (4, 2),
+(1, 3),
+(3, 3),
 (4, 3),
 (5, 3);
 
@@ -398,10 +339,6 @@ CREATE TABLE IF NOT EXISTS `unit` (
   `description` text COLLATE utf8mb4_unicode_ci,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- RELATIONSHIPS FOR TABLE `unit`:
---
 
 --
 -- Đang đổ dữ liệu cho bảng `unit`
@@ -428,21 +365,13 @@ CREATE TABLE IF NOT EXISTS `user_role` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- RELATIONSHIPS FOR TABLE `user_role`:
---   `role_id`
---       `app_role` -> `id`
---   `user_id`
---       `app_user` -> `id`
---
-
---
 -- Đang đổ dữ liệu cho bảng `user_role`
 --
 
 INSERT INTO `user_role` (`user_id`, `role_id`) VALUES
-(2, 3),
 (3, 2),
 (4, 2),
+(2, 3),
 (5, 3);
 
 --
@@ -489,7 +418,6 @@ ALTER TABLE `service_rental`
 ALTER TABLE `user_role`
   ADD CONSTRAINT `user_role_ibfk_1` FOREIGN KEY (`role_id`) REFERENCES `app_role` (`id`),
   ADD CONSTRAINT `user_role_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `app_user` (`id`);
-COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

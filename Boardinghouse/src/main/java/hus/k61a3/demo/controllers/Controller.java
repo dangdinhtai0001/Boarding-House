@@ -14,9 +14,9 @@ public class Controller {
     private UserDetailsService userDetailsService;
 
 
-    @RequestMapping(value = {"/", "/login","/grim-warlock-11387.herokuapp.com"})
-    public String login(@CookieValue("remember-me") String rememberMe) {
-        System.out.println(rememberMe.toString());
+    @RequestMapping(value = {"/", "/login"})
+    public String login() {
+//        System.out.println(rememberMe.toString());
         return "login";
     }
 
