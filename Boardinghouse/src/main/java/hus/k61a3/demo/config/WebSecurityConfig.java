@@ -41,7 +41,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
         // Chỉ cho phép user có quyền ADMIN hoặc USER truy cập đường dẫn /user/**
 //        http.authorizeRequests().antMatchers("/user/**").access("hasRole('ADMIN') or hasRole('MEMBER')");
-        http.authorizeRequests().antMatchers("/user/**").hasAnyAuthority("ADMIN", "MEMBER");
+        http.authorizeRequests().antMatchers("/user/**","grim-warlock-11387.herokuapp.com").hasAnyAuthority("ADMIN", "MEMBER");
 
         // Khi người dùng đã login, với vai trò USER, Nhưng truy cập vào trang yêu cầu vai trò ADMIN, sẽ chuyển hướng tới trang /403
         http.authorizeRequests().and().exceptionHandling().accessDeniedPage("/403");
