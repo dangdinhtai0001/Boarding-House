@@ -1,8 +1,8 @@
-package hus.k61a3.demo.services;
+package hus.k61a3.demo.login.services;
 
-import hus.k61a3.demo.domains.AppRole;
-import hus.k61a3.demo.domains.AppUser;
-import hus.k61a3.demo.repositories.UserRepository;
+import hus.k61a3.demo.login.domains.AppRole;
+import hus.k61a3.demo.login.domains.AppUser;
+import hus.k61a3.demo.login.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
