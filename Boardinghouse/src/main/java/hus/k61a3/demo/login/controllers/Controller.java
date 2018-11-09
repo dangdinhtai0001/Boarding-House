@@ -1,9 +1,9 @@
-package hus.k61a3.demo.controllers;
+package hus.k61a3.demo.login.controllers;
 
-import hus.k61a3.demo.services.UserDetailsServiceImpl;
+import hus.k61a3.demo.ultis.ErrorServiceImp;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.web.bind.annotation.CookieValue;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @org.springframework.stereotype.Controller
@@ -13,10 +13,13 @@ public class Controller {
 //    UserRepository userRepository;
     private UserDetailsService userDetailsService;
 
+    @Autowired
+    private ErrorServiceImp errorServiceImp;
+
 
     @RequestMapping(value = {"/", "/login"})
-    public String login(@CookieValue("remember-me") String rememberMe) {
-        System.out.println(rememberMe.toString());
+    public String login() {
+//        System.out.println(rememberMe.toString());
         return "login";
     }
 
@@ -32,7 +35,9 @@ public class Controller {
     }
 
     @RequestMapping("/403")
-    public String accessDenied() {
-        return "403";
+    public String accessDenied(Model model) {
+//        System.out.println(errorServiceImp.getOne("403").toString());
+        model.addAttribute("error",errorServiceImp.getOne("403"));
+        return "errors";
     }
 }

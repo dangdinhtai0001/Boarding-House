@@ -1,4 +1,4 @@
-package hus.k61a3.demo.domains;
+package hus.k61a3.demo.login.domains;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
