@@ -1,4 +1,4 @@
-package hus.k61a3.demo.ultis;
+package hus.k61a3.demo.ultis.domains;
 
 import lombok.*;
 

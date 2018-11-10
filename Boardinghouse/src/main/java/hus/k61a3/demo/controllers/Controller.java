@@ -1,6 +1,6 @@
-package hus.k61a3.demo.login.controllers;
+package hus.k61a3.demo.controllers;
 
-import hus.k61a3.demo.ultis.ErrorServiceImp;
+import hus.k61a3.demo.ultis.services.ErrorServiceImp;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.ui.Model;
