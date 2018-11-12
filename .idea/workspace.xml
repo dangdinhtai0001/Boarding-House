@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="662c5528-0214-4e27-ac6b-c600bc6f1014" name="Default Changelist" comment="">
+    <list default="true" id="662c5528-0214-4e27-ac6b-c600bc6f1014" name="Default Changelist" comment="sửa lại cấu trúc project">
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/domains/Comment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/domains/Post.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/entities/Post.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/repositories/CommentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/repositories/PostRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/services/BlogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/login/controllers/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/controllers/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/ultis/Error.java" beforeDir="false" afterPath="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/ultis/domains/Error.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/ultis/ErrorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/ultis/repositories/ErrorRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/ultis/ErrorServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/ultis/services/ErrorServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/errors.html" beforeDir="false" afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/errors.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/controllers/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/controllers/Controller.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/B/target/" />
@@ -60,7 +63,7 @@
     <session id="841193479">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="34" />
+          <entry key="project.closed" value="36" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="3" />
@@ -76,28 +79,29 @@
           <entry key="project.open.time.21" value="3" />
           <entry key="project.open.time.22" value="4" />
           <entry key="project.open.time.23" value="5" />
-          <entry key="project.open.time.24" value="1" />
+          <entry key="project.open.time.24" value="2" />
           <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.779" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="36" />
+          <entry key="project.opened" value="38" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="5" />
           <entry key="html" value="288" />
-          <entry key="java" value="5708" />
+          <entry key="java" value="7484" />
           <entry key="properties" value="134" />
           <entry key="sql" value="11" />
-          <entry key="txt" value="243" />
+          <entry key="txt" value="270" />
           <entry key="xml" value="37" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="288" />
-          <entry key="JAVA" value="5708" />
-          <entry key="PLAIN_TEXT" value="248" />
+          <entry key="JAVA" value="7484" />
+          <entry key="PLAIN_TEXT" value="275" />
           <entry key="Properties" value="134" />
           <entry key="Scratch" value="11" />
           <entry key="XML" value="37" />
@@ -107,6 +111,8 @@
         <counts>
           <entry key="git.branch.checkout.remote" value="1" />
           <entry key="git.branch.create.new" value="1" />
+          <entry key="git.branch.merge" value="1" />
+          <entry key="git.checkout.as.new.branch" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -116,8 +122,8 @@
           <entry key="cmd" value="1" />
           <entry key="css" value="6" />
           <entry key="gitignore" value="1" />
-          <entry key="html" value="23" />
-          <entry key="java" value="86" />
+          <entry key="html" value="24" />
+          <entry key="java" value="105" />
           <entry key="md" value="3" />
           <entry key="png" value="1" />
           <entry key="properties" value="12" />
@@ -131,9 +137,9 @@
           <entry key="CLASS" value="4" />
           <entry key="CSS" value="6" />
           <entry key="Database Element" value="1" />
-          <entry key="HTML" value="23" />
+          <entry key="HTML" value="24" />
           <entry key="Image" value="1" />
-          <entry key="JAVA" value="86" />
+          <entry key="JAVA" value="105" />
           <entry key="Markdown" value="3" />
           <entry key="PLAIN_TEXT" value="7" />
           <entry key="Properties" value="12" />
@@ -150,10 +156,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/controllers/Controller.java">
+        <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/domains/Post.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="39" column="66" selection-start-line="39" selection-start-column="66" selection-end-line="39" selection-end-column="66" />
+            <state relative-caret-position="375">
+              <caret line="32" column="32" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -162,40 +168,49 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/ultis/domains/Error.java">
+        <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/repositories/CommentRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+            <state relative-caret-position="75">
+              <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/ultis/repositories/ErrorRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/errors.html">
+        <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/controllers/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+            <state relative-caret-position="233">
+              <caret line="57" column="60" lean-forward="true" selection-start-line="57" selection-start-column="60" selection-end-line="57" selection-end-column="60" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/ultis/services/ErrorServiceImp.java">
+        <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/services/BlogService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="315">
+              <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/domains/Comment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -208,6 +223,7 @@
         <option value="package-info" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -237,10 +253,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/BoardingHouse/src/main/java/hus/k61a3/se/SApplication.java" />
-        <option value="$PROJECT_DIR$/BoardingHouse/src/main/java/hus/k61a3/se/SEApplication.java" />
-        <option value="$PROJECT_DIR$/BoardingHouse/src/main/java/domain/AppRole.java" />
-        <option value="$PROJECT_DIR$/BoardingHouse/src/main/java/repositories/UserRepository.java" />
         <option value="$PROJECT_DIR$/BoardingHouse/src/main/java/services/UserDetailsServiceImp.java" />
         <option value="$PROJECT_DIR$/BoardingHouse/src/main/java/controllers/MainController.java" />
         <option value="$PROJECT_DIR$/BoardingHouse/src/main/java/config/WebSecurityConfig.java" />
@@ -279,8 +291,19 @@
         <option value="$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/login.html" />
         <option value="$PROJECT_DIR$/Boardinghouse/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/login/controllers/Controller.java" />
-        <option value="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/controllers/Controller.java" />
         <option value="$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/errors.html" />
+        <option value="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/Blog.java" />
+        <option value="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/comment.java" />
+        <option value="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/Comment.java" />
+        <option value="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/repositories/PostRepository.java" />
+        <option value="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/Post.java" />
+        <option value="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/entities/Post.java" />
+        <option value="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/domains/Post.java" />
+        <option value="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/repositories/CommentRepository.java" />
+        <option value="$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/test.html" />
+        <option value="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/domains/Comment.java" />
+        <option value="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/services/BlogService.java" />
+        <option value="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/controllers/Controller.java" />
       </list>
     </option>
   </component>
@@ -298,10 +321,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="10" />
-    <option name="y" value="48" />
-    <option name="width" value="1326" />
-    <option name="height" value="692" />
+    <option name="x" value="683" />
+    <option name="y" value="28" />
+    <option name="width" value="683" />
+    <option name="height" value="740" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -354,6 +377,34 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Boarding-House" type="58d84e3e:PackageViewProjectNode" />
+              <item name="Boardinghouse" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="Boarding-House" type="58d84e3e:PackageViewProjectNode" />
+              <item name="Boardinghouse" type="616d4139:PackageViewModuleNode" />
+              <item name="hus.k61a3.demo" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="Boarding-House" type="58d84e3e:PackageViewProjectNode" />
+              <item name="Boardinghouse" type="616d4139:PackageViewModuleNode" />
+              <item name="hus.k61a3.demo" type="1f31426a:PackageElementNode" />
+              <item name="config" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="Boarding-House" type="58d84e3e:PackageViewProjectNode" />
+              <item name="Boardinghouse" type="616d4139:PackageViewModuleNode" />
+              <item name="hus.k61a3.demo" type="1f31426a:PackageElementNode" />
+              <item name="controllers" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -392,35 +443,82 @@
               <item name="Boardinghouse" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Boarding-House" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Boardinghouse" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="domains" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Boarding-House" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Boardinghouse" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="repositories" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Boarding-House" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Boardinghouse" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Boarding-House" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Boardinghouse" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Boarding-House" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Boardinghouse" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Boarding-House" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Boardinghouse" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+              <item name="repositories" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Boarding-House" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Boardinghouse" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
             <path>
-              <item name="Boarding-House" type="58d84e3e:PackageViewProjectNode" />
-              <item name="Boardinghouse" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="Boarding-House" type="58d84e3e:PackageViewProjectNode" />
-              <item name="Boardinghouse" type="616d4139:PackageViewModuleNode" />
-              <item name="hus.k61a3.demo" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="Boarding-House" type="58d84e3e:PackageViewProjectNode" />
-              <item name="Boardinghouse" type="616d4139:PackageViewModuleNode" />
-              <item name="hus.k61a3.demo" type="1f31426a:PackageElementNode" />
-              <item name="config" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="Boarding-House" type="58d84e3e:PackageViewProjectNode" />
-              <item name="Boardinghouse" type="616d4139:PackageViewModuleNode" />
-              <item name="hus.k61a3.demo" type="1f31426a:PackageElementNode" />
-              <item name="controllers" type="1f31426a:PackageElementNode" />
+              <item name="Boarding-House" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Boardinghouse" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -430,13 +528,14 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541822409415" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541858641773" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../spring-boot-thymeleaf" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -556,7 +655,9 @@
       <workItem from="1541604851881" duration="638000" />
       <workItem from="1541605570865" duration="59000" />
       <workItem from="1541764565738" duration="6009000" />
-      <workItem from="1541821986292" duration="367000" />
+      <workItem from="1541821986292" duration="7326000" />
+      <workItem from="1541844670215" duration="7492000" />
+      <workItem from="1542025296957" duration="1891000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1540554190618</created>
@@ -684,17 +785,24 @@
       <option name="project" value="LOCAL" />
       <updated>1541597194105</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="sửa lại cấu trúc project">
+      <created>1541822570761</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1541822570761</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83505000" />
+    <option name="totallyTimeSpent" value="99847000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1366" height="740" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49755302" visible="true" weight="0.38543248" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49755302" visible="true" weight="0.3110774" />
       <window_info id="Structure" order="1" sideWeight="0.502447" side_tool="true" weight="0.34218514" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -717,7 +825,7 @@
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007587" side_tool="true" weight="0.32952693" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32952693" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.32952693" />
-      <window_info anchor="bottom" id="Run Dashboard" order="14" sideWeight="0.49924126" visible="true" weight="0.33931485" />
+      <window_info active="true" anchor="bottom" id="Run Dashboard" order="14" sideWeight="0.49924126" visible="true" weight="0.33931485" />
       <window_info anchor="bottom" id="Database Console" order="15" weight="0.32952693" />
       <window_info anchor="bottom" id="Application Servers" order="16" sideWeight="0.49924126" weight="0.32952693" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -754,7 +862,8 @@
     <MESSAGE value="Database version 3" />
     <MESSAGE value="Database version 4" />
     <MESSAGE value="Tải database thành công lên database server" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tải database thành công lên database server" />
+    <MESSAGE value="sửa lại cấu trúc project" />
+    <option name="LAST_COMMIT_MESSAGE" value="sửa lại cấu trúc project" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -769,14 +878,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/BoardingHouse/src/main/java/hus/k61a3/BoardingHouse/BoardingHouseApplication.java" />
-    <entry file="file://$PROJECT_DIR$/BoardingHouse/src/main/resources/templates/login.html" />
-    <entry file="file://$PROJECT_DIR$/BoardingHouse/src/main/java/repositories/RoleRepository.java" />
-    <entry file="file://$PROJECT_DIR$/BoardingHouse/src/main/java/repositories/UserRepository.java" />
-    <entry file="file://$PROJECT_DIR$/BoardingHouse/src/main/resources/application.properties" />
-    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/entities/UserForm.java" />
-    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/static/css/animate.css" />
-    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/config/package-info.java" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/671ee70a-ccaf-412f-82a1-0d3090c6750d/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -825,13 +926,6 @@
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/login/domains/AppUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="39" column="31" lean-forward="true" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -922,24 +1016,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/login/repositories/RoleRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/login/services/UserDetailsServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/login/domains/AppRole.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="29" column="59" selection-start-line="29" selection-start-column="59" selection-end-line="29" selection-end-column="59" />
         </state>
       </provider>
     </entry>
@@ -958,13 +1038,6 @@
     <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/static/css/error_style.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/BoardingHouseApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -979,23 +1052,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/controllers/Controller.java">
+    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/errors.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="39" column="66" selection-start-line="39" selection-start-column="66" selection-end-line="39" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/ultis/domains/Error.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
@@ -1006,17 +1066,126 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/ultis/services/ErrorServiceImp.java">
+    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/ultis/domains/Error.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="240">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/errors.html">
+    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/Blog.java" />
+    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/login/domains/AppUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+        <state relative-caret-position="480">
+          <caret line="39" column="31" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/BoardingHouseApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#328#329#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/ultis/services/ErrorServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/login/domains/AppRole.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="13" selection-start-line="13" selection-end-line="16" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/entities/Post.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/login/repositories/RoleRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/repositories/PostRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/domains/Post.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="32" column="32" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/repositories/CommentRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/services/BlogService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/domains/Comment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/controllers/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="57" column="60" lean-forward="true" selection-start-line="57" selection-start-column="60" selection-end-line="57" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
