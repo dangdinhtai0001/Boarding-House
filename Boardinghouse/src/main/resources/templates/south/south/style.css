@@ -412,14 +412,17 @@ img {
 .dark.breakpoint-on .classynav > ul > li > a,
 .dark.breakpoint-on .classy-navbar .classy-menu {
   background-color: #000000; }
-
+.classynav a :hover{
+    background:white;
+}
 .header-area {
-  position: absolute;
-  z-index: 10000;
-  width: 100%;
-  height: auto;
-  -webkit-transition-duration: 500ms;
-  transition-duration: 500ms; }
+    position: absolute;
+    z-index: 10000;
+    width: 100%;
+    height: auto;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
 
 .top-header-area {
   position: relative;
