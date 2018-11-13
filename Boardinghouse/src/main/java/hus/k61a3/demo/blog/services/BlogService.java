@@ -29,6 +29,4 @@ public class BlogService {
         }
         return posts;
     }
-
-
 }
