@@ -2,28 +2,92 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="662c5528-0214-4e27-ac6b-c600bc6f1014" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/blog-img/blog1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/blog-img/blog2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/blog-img/blog3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/blog-img/c-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/blog-img/c-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/blog-img/c-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/css/animate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/css/blog_style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/css/classy-nav.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/css/jquery-ui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/css/magnific-popup.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/css/nice-select.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/css/owl.carousel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/css/themify-icons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/fonts/classy.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/fonts/classy.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/fonts/classy.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/fonts/classy.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/fonts/themify.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/fonts/themify.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/fonts/themify.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/fonts/themify.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/images/bg-img/about.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/images/bg-img/cta.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/images/bg-img/editor.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/images/bg-img/fea-product.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/images/bg-img/feature1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/images/bg-img/feature2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/images/bg-img/feature3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/images/bg-img/feature4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/images/bg-img/feature5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/images/bg-img/feature6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/images/bg-img/feature7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/images/bg-img/feature8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/images/bg-img/feature9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/images/bg-img/footer.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/images/bg-img/hero1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/images/bg-img/hero2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/images/bg-img/hero3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/images/bg-img/hero4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/images/bg-img/hero5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/images/bg-img/listing.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/images/bg-img/team1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/images/bg-img/team2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/images/bg-img/team3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/images/core-img/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/images/core-img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/images/core-img/signature.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/images/icons/bathtub.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/images/icons/envelope.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/images/icons/flat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/images/icons/garage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/images/icons/home3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/images/icons/house1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/images/icons/house2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/images/icons/location.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/images/icons/new.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/images/icons/new2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/images/icons/phone-call.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/images/icons/prize.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/images/icons/prize2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/images/icons/rent.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/images/icons/signature.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/images/icons/space.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/js/active.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/js/classy-nav.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/js/jquery-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/js/jquery/jquery-2.2.4.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/js/map-active.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/js/plugins.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/js/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/obj/x86/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/obj/x86/Debug/cnpm.vbproj.CoreCompileInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/obj/x86/Debug/cnpm.vbprojAssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/obj/x86/Debug/giaodienBH.vbproj.CoreCompileInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/obj/x86/Debug/giaodienBH.vbprojAssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/scss/_mixin.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/scss/_responsive.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/scss/_theme_color.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/scss/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/scss/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/services/BlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/services/BlogService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/css/login_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/css/login_style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/images/bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/images/login_bg.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/js/active.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/js/classy-nav.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/js/jquery-ui.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/js/jquery/jquery-2.2.4.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/js/map-active.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/js/plugins.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/js/popper.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/temp/403.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/temp/login.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/blog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/layout.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/B/target/" />
@@ -102,20 +166,22 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="css" value="9" />
           <entry key="dummy" value="5" />
-          <entry key="html" value="625" />
+          <entry key="html" value="657" />
           <entry key="java" value="9103" />
           <entry key="properties" value="134" />
           <entry key="sql" value="11" />
-          <entry key="txt" value="346" />
+          <entry key="txt" value="368" />
           <entry key="xml" value="40" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="625" />
+          <entry key="CSS" value="9" />
+          <entry key="HTML" value="657" />
           <entry key="JAVA" value="9103" />
-          <entry key="PLAIN_TEXT" value="351" />
+          <entry key="PLAIN_TEXT" value="373" />
           <entry key="Properties" value="134" />
           <entry key="Scratch" value="11" />
           <entry key="XML" value="40" />
@@ -125,7 +191,7 @@
         <counts>
           <entry key="git.branch.checkout.remote" value="1" />
           <entry key="git.branch.create.new" value="1" />
-          <entry key="git.branch.merge" value="1" />
+          <entry key="git.branch.merge" value="2" />
           <entry key="git.checkout.as.new.branch" value="1" />
         </counts>
       </usages-collector>
@@ -134,15 +200,16 @@
           <entry key="Procfile" value="5" />
           <entry key="class" value="5" />
           <entry key="cmd" value="1" />
-          <entry key="css" value="10" />
+          <entry key="css" value="12" />
           <entry key="gitignore" value="1" />
-          <entry key="html" value="36" />
+          <entry key="html" value="37" />
           <entry key="java" value="114" />
           <entry key="jpg" value="4" />
-          <entry key="js" value="7" />
+          <entry key="js" value="8" />
           <entry key="md" value="3" />
           <entry key="png" value="1" />
           <entry key="properties" value="12" />
+          <entry key="scss" value="1" />
           <entry key="sql" value="5" />
           <entry key="user_role" value="1" />
           <entry key="xml" value="10" />
@@ -151,15 +218,16 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="5" />
-          <entry key="CSS" value="10" />
+          <entry key="CSS" value="12" />
           <entry key="Database Element" value="1" />
-          <entry key="HTML" value="36" />
+          <entry key="HTML" value="37" />
           <entry key="Image" value="5" />
           <entry key="JAVA" value="114" />
-          <entry key="JavaScript" value="7" />
+          <entry key="JavaScript" value="8" />
           <entry key="Markdown" value="3" />
           <entry key="PLAIN_TEXT" value="7" />
           <entry key="Properties" value="12" />
+          <entry key="SCSS" value="1" />
           <entry key="SQL" value="4" />
           <entry key="Scratch" value="1" />
           <entry key="XML" value="10" />
@@ -173,41 +241,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/domains/Post.java">
+        <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/static/css/blog_style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="36" column="24" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/controllers/Controller.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-157">
-              <caret line="28" column="35" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1065#1066#0" expanded="true" />
-                <element signature="e#1095#1096#0" expanded="true" />
-                <element signature="e#1293#1294#0" expanded="true" />
-                <element signature="e#1323#1324#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/services/BlogService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="135">
+              <caret line="45" column="37" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -215,10 +252,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/blog.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="45" column="67" selection-start-line="45" selection-start-column="67" selection-end-line="45" selection-end-column="67" />
+            <state relative-caret-position="-518">
+              <caret line="310" column="35" selection-start-line="310" selection-start-column="35" selection-end-line="310" selection-end-column="35" />
               <folding>
                 <element signature="n#style#0;n#h3#0;n#a#0;n#nav#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#12604#12610#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -251,6 +291,7 @@
       <find>js/</find>
       <find>img/</find>
       <find>/bg-/images/</find>
+      <find>img/bg-img/</find>
     </findStrings>
     <replaceStrings>
       <replace>css/login_style.css</replace>
@@ -260,6 +301,7 @@
       <replace>/js/</replace>
       <replace>/images/</replace>
       <replace>/bg-img/</replace>
+      <replace>/images/bg-img/</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -273,7 +315,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/BoardingHouse/src/main/java/repositories/RoleRepository.java" />
         <option value="$PROJECT_DIR$/BoardingHouse/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/Boardinghouse/src/main/java/entities/UserForm.java" />
         <option value="$PROJECT_DIR$/Boardinghouse/src/main/java/domains/AppRole.java" />
@@ -323,6 +364,7 @@
         <option value="$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/layout.html" />
         <option value="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/css/login_style.css" />
         <option value="$PROJECT_DIR$/Boardinghouse/src/main/resources/blog_style.css" />
+        <option value="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/css/blog_style.css" />
         <option value="$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/blog.html" />
       </list>
     </option>
@@ -435,32 +477,6 @@
               <item name="Boardinghouse" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Boarding-House" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Boardinghouse" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Boarding-House" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Boardinghouse" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Boarding-House" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Boardinghouse" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -506,7 +522,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542100099714" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542102636673" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../spring-boot-thymeleaf" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -519,10 +535,10 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Boardinghouse/src/main/resources/static" />
+      <recent name="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/css" />
       <recent name="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/images" />
       <recent name="$PROJECT_DIR$/Boardinghouse/src/main/resources" />
       <recent name="$PROJECT_DIR$/Boardinghouse/src/main/resources/templates" />
-      <recent name="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/css" />
@@ -630,7 +646,7 @@
       <workItem from="1541821986292" duration="7326000" />
       <workItem from="1541844670215" duration="7492000" />
       <workItem from="1542025296957" duration="2659000" />
-      <workItem from="1542073277407" duration="24656000" />
+      <workItem from="1542073277407" duration="27328000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1540554190618</created>
@@ -779,17 +795,24 @@
       <option name="project" value="LOCAL" />
       <updated>1542093961708</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Tổ chức thư mục tạm th">
+      <created>1542100168746</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1542100168746</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125271000" />
+    <option name="totallyTimeSpent" value="127943000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1366" height="740" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49755302" visible="true" weight="0.31638846" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49755302" visible="true" weight="0.31638846" />
       <window_info id="Structure" order="1" sideWeight="0.502447" side_tool="true" weight="0.34218514" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -809,10 +832,10 @@
       <window_info anchor="bottom" id="Database Changes" order="8" weight="0.32952693" />
       <window_info anchor="bottom" id="Spring" order="9" weight="0.32952693" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32952693" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007587" side_tool="true" weight="0.32952693" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5015175" side_tool="true" weight="0.33931485" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32952693" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.32952693" />
-      <window_info active="true" anchor="bottom" id="Run Dashboard" order="14" sideWeight="0.49924126" visible="true" weight="0.33931485" />
+      <window_info anchor="bottom" id="Run Dashboard" order="14" sideWeight="0.49848256" visible="true" weight="0.33931485" />
       <window_info anchor="bottom" id="Database Console" order="15" weight="0.32952693" />
       <window_info anchor="bottom" id="Application Servers" order="16" sideWeight="0.49924126" weight="0.32952693" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -852,7 +875,8 @@
     <MESSAGE value="sửa lại cấu trúc project" />
     <MESSAGE value="test api cho blog" />
     <MESSAGE value="Hoàn thành phân trang và binding data cho màn blog" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hoàn thành phân trang và binding data cho màn blog" />
+    <MESSAGE value="Tổ chức thư mục tạm thời" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tổ chức thư mục tạm thời" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -867,13 +891,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="50" column="21" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.0.6.RELEASE/spring-boot-autoconfigure-2.0.6.RELEASE.jar!/org/springframework/boot/autoconfigure/security/servlet/UserDetailsServiceAutoConfiguration.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
@@ -1149,20 +1166,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/static/css/blog_style.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="157">
           <caret line="41" column="116" selection-start-line="41" selection-start-column="116" selection-end-line="41" selection-end-column="116" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/static/js/jquery/jquery-2.2.4.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-end-line="4" />
         </state>
       </provider>
     </entry>
@@ -1179,12 +1186,34 @@
     <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/static/css/animate.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/static/css/blog_style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="45" column="37" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/static/js/jquery/jquery-2.2.4.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/static/scss/_mixin.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-577" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/blog.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="67" selection-start-line="45" selection-start-column="67" selection-end-line="45" selection-end-column="67" />
+        <state relative-caret-position="-518">
+          <caret line="310" column="35" selection-start-line="310" selection-start-column="35" selection-end-line="310" selection-end-column="35" />
           <folding>
             <element signature="n#style#0;n#h3#0;n#a#0;n#nav#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#12604#12610#0" expanded="true" />
           </folding>
         </state>
       </provider>
