@@ -36,6 +36,9 @@ public class Post {
     @Column(name = "image",nullable = true)
     private String image;
 
+    @Column(name ="created_by")
+    private String createdBy;
+
     @OneToMany(mappedBy = "post", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Comment> comments;
 

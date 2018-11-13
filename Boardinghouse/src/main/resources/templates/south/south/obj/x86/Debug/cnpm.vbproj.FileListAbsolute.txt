@@ -1,2 +1,0 @@
-C:\Users\User\Documents\south\obj\x86\Debug\cnpm.vbprojAssemblyReference.cache
-C:\Users\User\Documents\south\obj\x86\Debug\cnpm.vbproj.CoreCompileInputs.cache

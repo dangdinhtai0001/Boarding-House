@@ -81,7 +81,6 @@
         <element id="file-copy" path="$PROJECT_DIR$/Boardinghouse/target/demo-0.0.1-SNAPSHOT/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="Boardinghouse/web/Web" />
-      <element id="gwt-compiler-output" facet="Boardinghouse/gwt/GWT" />
     </root>
   </artifact>
 </component>

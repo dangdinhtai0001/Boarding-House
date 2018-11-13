@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+</head>
+<body>
+<th:block th:unless="${#lists.isEmpty(posts.pageList)}">
+    <th:block th:each="post : ${posts.pageList}">
+        <div class="blog-post-thumbnail">
+            <img src="img/blog-img/blog1.jpg" alt="">
+        </div>
+        <div class="post-content">
+            <!-- Date -->
+            <div class="post-date">
+                <a href="#" th:text="${post.post.dateCreated}"></a>
+            </div>
+            <!-- Headline -->
+            <a href="#" class="headline" th:text="${post.post.title}"></a>
+            <!-- Post Meta -->
+            <div class="post-meta">
+                <p>By <a href="#" th:utext="${post.post.createdBy}"></a> | in <a href="#">Uncategorized</a> | <a
+                        href="#" th:text="${post.numberOfComment} + Comments"></a></p>
+            </div>
+            <p th:text="${post.summary}"></p>
+            <!-- Read More btn -->
+            <a href="#" class="btn south-btn">Read More</a>
+        </div>
+        </div>
+    </th:block>
+</th:block>
+<th:block th:if="${#lists.isEmpty(posts.pageList)}">
+    <h3>Không có bài đăng nào</h3>
+</th:block>
+
+
+<ul class="pagination">
+    <li
+            th:class="${currentIndex == 1}? 'page-item disabled' : 'page-item'">
+        <a class="page-link" th:href="@{/blog}">First</a>
+    </li>
+    <li
+            th:class="${currentIndex == 1}? 'page-item disabled': 'page-item' ">
+        <a class="page-link" aria-label="Previous"
+           th:href="@{|${baseUrl}${currentIndex - 1}|}"
+           title='Go to previous page'><span aria-hidden="true">«</span>
+            <span class="sr-only">Previous</span></a>
+    </li>
+    <li th:each="item : ${#numbers.sequence(beginIndex,endIndex)}"
+        th:class="${item == currentIndex ? 'page-item active' :'page-item' }">
+        <a class="page-link" th:href="@{|${baseUrl}${item}|}"> <span
+                th:text='${item}'>1</span>
+        </a>
+    </li>
+    <li
+            th:class="${currentIndex == totalPageCount}? 'page-item disabled': 'page-item'">
+        <a class="page-link" aria-label="Next"
+           th:href="@{|${baseUrl}${currentIndex + 1}|}" title='Go to next page'><span
+                aria-hidden="true">»</span> <span class="sr-only">Next</span></a>
+    </li>
+    <li
+            th:class="${currentIndex == totalPageCount}? 'page-item disabled':'page-item'">
+        <a class="page-link" th:href="@{|${baseUrl}${totalPageCount}|}">Last</a>
+    </li>
+</ul>
+
+</body>
+</html>
