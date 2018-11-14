@@ -106,6 +106,7 @@ public class Controller {
 
     @RequestMapping(value = "/blog/post/{id}", method = RequestMethod.GET)
     public String singleBlog(@PathVariable String id,Model model){
+        model.addAttribute("post", blogService.getOne(id));
         return "singleBlog";
     }
 

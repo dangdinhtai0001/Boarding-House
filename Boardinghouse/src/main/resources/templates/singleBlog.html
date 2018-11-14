@@ -15,6 +15,198 @@
 <section th:replace="layout :: Breadcumb"></section>
 <!-- ##### Breadcumb Area End ##### -->
 
+<!-- ##### Blog Area Start ##### -->
+<section class="blog-area section-padding-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-8">
+
+                <div class="single-blog-area">
+                    <!-- Post Thumbnail -->
+                    <div class="blog-post-thumbnail">
+                        <img th:src=${post.post.image} alt="">
+                    </div>
+                    <!-- Post Content -->
+                    <div class="post-content">
+                        <!-- Date -->
+                        <div class="post-date">
+                            <a href="#" th:text="${post.post.dateCreated}"></a>
+                        </div>
+                        <!-- Headline -->
+                        <a href="#" th:text="${post.post.title}" class="headline"></a>
+                        <!-- Post Meta -->
+                        <div class="post-meta">
+                            <p>By <a href="#" th:text="${post.post.createdBy}"></a> | in <a href="#">Uncategorized</a>
+                                | <a href="#" th:text="${post.numberOfComment} + Comments"></a>
+                            </p>
+                        </div>
+                        <p th:text="${post.post.content}"></p>
+                        <!--<img class="mb-50" src="img/bg-img/hero3.jpg" alt="">-->
+                    </div>
+                </div>
+
+                <div class="comments-area">
+                    <h5 th:utext="${post.numberOfComment} + comment"></h5>
+                    <ol>
+                        <!-- Single Comment Area -->
+                        <li class="single_comment_area"  th:each="comment : ${post.comments}">
+                            <div class="comment-wrapper d-flex">
+                                <!-- Comment Meta -->
+                                <div class="comment-author">
+                                    <img src="/blog-img/c-1.jpg" alt="">
+                                </div>
+                                <!-- Comment Content -->
+                                <div class="comment-content">
+                                    <div class="comment-meta">
+                                        <a href="#" class="comment-author-name" th:text="${comment.name}"></a> |
+                                        <a href="#" class="comment-date" th:text="${comment.dateCreated}"></a> |
+                                    </div>
+                                    <p th:utext="${comment.content}"></p>
+                                </div>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+
+                <!-- Leave A Comment -->
+                <div class="leave-comment-area mt-70 clearfix">
+                    <div class="comment-form">
+                        <h5>Leave a reply</h5>
+
+                        <!-- Comment Form -->
+                        <form action="#" method="post">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="contact-name" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="contact-email" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" name="message" id="message" cols="30" rows="10"
+                                          placeholder="Message"></textarea>
+                            </div>
+                            <button type="submit" class="btn south-btn">Submit Reply</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4">
+                <div class="blog-sidebar-area">
+
+                    <!-- Search Widget -->
+                    <div class="search-widget-area mb-70">
+                        <form action="#" method="get">
+                            <input type="search" name="search" id="search" placeholder="Search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+
+                    <!-- Catagories Widget -->
+                    <div class="south-catagories-card mb-70">
+                        <h5>Chủ đề</h5>
+                        <ul class="catagories-menu">
+                            <li><a href="#">Chủ đề 1</a></li>
+                            <li><a href="#">Chủ đề 2</a></li>
+                            <li><a href="#">Chủ đề 3</a></li>
+                            <li><a href="#">Chủ đề 4</a></li>
+                            <li><a href="#">Chủ đề 5</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Catagories Widget -->
+
+                    <!-- Catagories Widget -->
+                    <div class="featured-properties-slides owl-carousel">
+
+                        <!-- Single Slide -->
+                        <div class="single-featured-property">
+                            <!-- Property Thumbnail -->
+                            <div class="property-thumb">
+                                <img src="/images/bg-img/feature1.jpg" alt="">
+
+                                <div class="tag">
+                                    <span>For Sale</span>
+                                </div>
+                                <div class="list-price">
+                                    <p>$945 679</p>
+                                </div>
+                            </div>
+                            <!-- Property Content -->
+                            <div class="property-content">
+                                <h5>Villa in Los Angeles</h5>
+                                <p class="location"><img src="/images/icons/location.png" alt="">Upper Road 3411, no.34
+                                    CA</p>
+                                <p>Integer nec bibendum lacus. Suspendisse dictum enim sit amet libero
+                                    malesuada.</p>
+                                <div class="property-meta-data d-flex align-items-end justify-content-between">
+                                    <div class="new-tag">
+                                        <img src="/images/icons/new.png" alt="">
+                                    </div>
+                                    <div class="bathroom">
+                                        <img src="/images/icons/bathtub.png" alt="">
+                                        <span>2</span>
+                                    </div>
+                                    <div class="garage">
+                                        <img src="/images/icons/garage.png" alt="">
+                                        <span>2</span>
+                                    </div>
+                                    <div class="space">
+                                        <img src="/images/icons/space.png" alt="">
+                                        <span>120 sq ft</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Single Slide -->
+                        <div class="single-featured-property">
+                            <!-- Property Thumbnail -->
+                            <div class="property-thumb">
+                                <img src="/images/bg-img/feature2.jpg" alt="">
+
+                                <div class="tag">
+                                    <span>For Sale</span>
+                                </div>
+                                <div class="list-price">
+                                    <p>$945 679</p>
+                                </div>
+                            </div>
+                            <!-- Property Content -->
+                            <div class="property-content">
+                                <h5>Town House in Los Angeles</h5>
+                                <p class="location"><img src="/images/icons/location.png" alt="">Upper Road 3411, no.34
+                                    CA</p>
+                                <p>Integer nec bibendum lacus. Suspendisse dictum enim sit amet libero
+                                    malesuada.</p>
+                                <div class="property-meta-data d-flex align-items-end justify-content-between">
+                                    <div class="new-tag">
+                                        <img src="/images/icons/new.png" alt="">
+                                    </div>
+                                    <div class="bathroom">
+                                        <img src="/images/icons/bathtub.png" alt="">
+                                        <span>2</span>
+                                    </div>
+                                    <div class="garage">
+                                        <img src="/images/icons/garage.png" alt="">
+                                        <span>2</span>
+                                    </div>
+                                    <div class="space">
+                                        <img src="/images/icons/space.png" alt="">
+                                        <span>120 sq ft</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ##### Blog Area End ##### -->
+
 <!-- ##### Footer Area Start ##### -->
 <footer th:replace="layout :: footer"></footer>
 <!-- ##### Footer Area End ##### -->
