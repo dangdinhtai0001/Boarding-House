@@ -105,10 +105,8 @@ public class Controller {
     }
 
     @RequestMapping(value = "/blog/post/{id}", method = RequestMethod.GET)
-    public String singleBlog(@PathVariable String id){
-        System.out.println(blogService.getOne(id));
-//        System.out.println(id);
-        return "layout";
+    public String singleBlog(@PathVariable String id,Model model){
+        return "singleBlog";
     }
 
 }
