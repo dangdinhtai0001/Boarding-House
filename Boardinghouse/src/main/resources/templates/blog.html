@@ -1,96 +1,18 @@
 ﻿<!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <!-- Title  -->
-    <title>Home | Blog</title>
-
-    <!-- Favicon  -->
-
-    <link rel="icon" href="/images/core-img/images/favicon.ico">
-
-
-    <!-- Style CSS -->
-    <link rel="stylesheet" href="/css/blog_style.css">
-</head>
+<head th:replace="layout :: head"></head>
+<head><title> HOME | BLOG </title></head>
 <body>
 <!-- Preloader -->
-
-<!--<div id="preloader">
-<div class="south-load"></div>
-</div>-->
-
-
+<div id="preloader">
+    <div class="south-load"></div>
+</div>
 <!-- ##### Header Area Start ##### -->
-<header class="header-area">
-    <!-- Main Header Area -->
-    <div class="main-header-area" id="stickyHeader">
-        <div class="classy-nav-container breakpoint-off">
-            <!-- Classy Menu -->
-            <nav class="classy-navbar justify-content-between" id="southNav">
-
-                <!-- Logo -->
-                <a class="nav-brand" href="index.html"><h3 style="color: white">Boarding House</h3></a>
-
-                <!-- Navbar Toggler -->
-                <div class="classy-navbar-toggler">
-                    <span class="navbarToggler"><span></span><span></span><span></span></span>
-                </div>
-
-                <!-- Menu -->
-                <div class="classy-menu">
-
-                    <!-- close btn -->
-                    <div class="classycloseIcon">
-                        <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
-                    </div>
-
-                    <!-- Nav Start -->
-                    <div class="classynav">
-                        <ul>
-                            <li><a href="index.html">Trang chủ</a></li>
-                            <li><a href="about-us.html">Giới thiệu</a></li>
-                            <li><a href="listings.html">Thư viện</a></li>
-                            <li><a href="contact.html">Liên hệ</a></li>
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="#">Quản trị</a></li>
-
-                        </ul>
-
-                        <!-- Search Form -->
-                        <div class="south-search-form">
-                            <form action="#" method="post">
-                                <input type="search" name="search" id="search" placeholder="Search Anything ...">
-                                <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-                            </form>
-                        </div>
-
-                        <!-- Search Button -->
-                        <a href="#" class="searchbtn"><i class="fa" aria-hidden="true"></i></a>
-                    </div>
-                    <!-- Nav End -->
-                </div>
-            </nav>
-        </div>
-    </div>
-</header>
+<header th:replace="layout :: header"></header>
 <!-- ##### Header Area End ##### -->
+
 <!-- ##### Breadcumb Area Start ##### -->
-<section class="breadcumb-area bg-img" style="background-image: url(/images/bg-img/hero1.jpg);">
-    <div class="container h-100">
-        <div class="row h-100 align-items-center">
-            <div class="col-12">
-                <div class="breadcumb-content">
-                    <h3 class="breadcumb-title">Blog</h3>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<section th:replace="layout :: Breadcumb"></section>
 <!-- ##### Breadcumb Area End ##### -->
 
 <!-- ##### Blog Area Start ##### -->
@@ -123,15 +45,16 @@
                             <p th:text="${post.summary}"></p>
                             <!-- Read More btn -->
                             <!--<a th:href="@{/blog/post (id=${post.post.id}) }" class="btn south-btn" style="margin-bottom: 40px">Read More</a>-->
-                            <a th:href="@{/blog/post/{id}(id=${post.post.id})}" class="btn south-btn" style="margin-bottom: 40px">Read More</a>
+                            <a th:href="@{/blog/post/{id}(id=${post.post.id})}" class="btn south-btn"
+                               style="margin-bottom: 40px">Read More</a>
                         </div>
                     </th:block>
                 </th:block>
-              
+
                 <th:block th:if="${#lists.isEmpty(posts.pageList)}">
                     <h3>Không có bài đăng nào</h3>
                 </th:block>
-              
+
             </div>
             <div class="col-12 col-lg-4">
                 <div class="blog-sidebar-area">
@@ -295,106 +218,10 @@
 <!-- ##### Blog Area End ##### -->
 
 <!-- ##### Footer Area Start ##### -->
-<footer class="footer-area section-padding-100-0 bg-img gradient-background-overlay"
-        style="background-image: url(/imgaes/bg-img/cta.jpg);">
-    <!-- Main Footer Area -->
-    <div class="main-footer-area">
-        <div class="container">
-            <div class="row">
-                <!-- Single Footer Widget -->
-                <div class="col-12 col-sm-6 col-xl-4">
-                    <div class="footer-widget-area mb-100">
-                        <!-- Widget Title -->
-                        <div class="widget-title">
-                            <h6>Thông tin liên hệ</h6>
-                        </div>
-
-                        <!-- Address -->
-                        <div class="address">
-                            <h6><img src="/images/icons/phone-call.png" alt=""> +45 677 8993000 223</h6>
-                            <h6><img src="/images/icons/envelope.png" alt=""> boardinghouse@gmail.com</h6>
-                            <h6><img src="/images/icons/location.png" alt=""> Trường Đại học Khoa học Tự
-                                Nhiên</h6>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Footer Widget -->
-                <div class="col-12 col-sm-6 col-xl-4">
-                    <div class="footer-widget-area mb-100">
-                        <!-- Widget Title -->
-                        <div class="widget-title">
-                            <h6>Useful Links</h6>
-                        </div>
-                        <!-- Nav -->
-                        <ul class="useful-links-nav d-flex align-items-center">
-                            <li><a href="#">Trang chủ</a></li>
-                            <li><a href="#">Giới thiệu</a></li>
-                            <li><a href="#">Thư viện</a></li>
-                            <li><a href="#">Liên hệ</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Quản trị</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Single Footer Widget -->
-                <div class="col-12 col-sm-6 col-xl-4">
-                    <div class="footer-widget-area mb-100">
-                        <!-- Widget Title -->
-                        <div class="widget-title">
-                            <h6>Featured Properties</h6>
-                        </div>
-                        <!-- Featured Properties Slides -->
-                        <div class="featured-properties-slides owl-carousel">
-                            <!-- Single Slide -->
-                            <div class="single-featured-properties-slide">
-                                <a href="#"><img src="/images/bg-img/fea-product.jpg" alt=""></a>
-                            </div>
-                            <!-- Single Slide -->
-                            <div class="single-featured-properties-slide">
-                                <a href="#"><img src="/images/bg-img/fea-product.jpg" alt=""></a>
-                            </div>
-                            <!-- Single Slide -->
-                            <div class="single-featured-properties-slide">
-                                <a href="#"><img src="/images/bg-img/fea-product.jpg" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <!-- Copywrite Text -->
-    <div class="copywrite-text d-flex align-items-center justify-content-center">
-        <p>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;
-            <script>document.write(new Date().getFullYear());</script>
-            All rights reserved | This template is made with <i class="fa fa-heart-o"
-                                                                aria-hidden="true"></i> by <a
-                href="https://colorlib.com" target="_blank">Colorlib</a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-    </div>
-</footer>
+<footer th:replace="layout :: footer"></footer>
 <!-- ##### Footer Area End ##### -->
 
-
-<!-- jQuery (Necessary for All JavaScript Plugins) -->
-<script src="/js/jquery/jquery-2.2.4.min.js"></script>
-<!-- Popper js -->
-<script src="/js/popper.min.js"></script>
-<!-- Bootstrap js -->
-<script src="/js/bootstrap.min.js"></script>
-<!-- Plugins js -->
-<script src="/js/plugins.js"></script>
-<script src="/js/classy-nav.min.js"></script>
-<script src="/js/jquery-ui.min.js"></script>
-<!-- Active js -->
-<script src="/js/active.js"></script>
-
+<div th:replace="layout :: js"></div>
 </body>
 
 </html>

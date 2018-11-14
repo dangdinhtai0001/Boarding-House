@@ -59,6 +59,7 @@ public class Controller {
     @RequestMapping("/blog")
     public String blog(Model model, HttpServletRequest request, RedirectAttributes redirect) {
         request.getSession().setAttribute("postList", null);
+        model.addAttribute("title","HOME | BLOG");
         return "redirect:/blog/page/1";
     }
 
@@ -70,7 +71,7 @@ public class Controller {
         //Chưa rõ nguyên nhân lỗi
         int pageNumberInt = 1;
         if (String.valueOf(pageNumber).contains("null")) {
-            pageNumber = pageNumber.substring(4, pageNumber.length());
+            pageNumber = pageNumber.substring(4);
 //            System.out.println(pageNumber.substring(4,pageNumber.length()));
         }
         pageNumberInt = Integer.parseInt(pageNumber);
