@@ -122,7 +122,8 @@
                             </div>
                             <p th:text="${post.summary}"></p>
                             <!-- Read More btn -->
-                            <a href="#" class="btn south-btn" style="margin-bottom: 40px">Read More</a>
+                            <!--<a th:href="@{/blog/post (id=${post.post.id}) }" class="btn south-btn" style="margin-bottom: 40px">Read More</a>-->
+                            <a th:href="@{/blog/post/{id}(id=${post.post.id})}" class="btn south-btn" style="margin-bottom: 40px">Read More</a>
                         </div>
                     </th:block>
                 </th:block>

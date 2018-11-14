@@ -9,6 +9,8 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpServletRequest;
@@ -50,19 +52,14 @@ public class Controller {
         return "errors";
     }
 
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+    //Blog
     //https://shareeverythings.com/lap-trinh/java/huong-dan-phan-trang-trong-thymeleaf-va-spring-boot/
     @RequestMapping("/blog")
-    public String blog(Model model, HttpServletRequest request
-            , RedirectAttributes redirect) {
+    public String blog(Model model, HttpServletRequest request, RedirectAttributes redirect) {
         request.getSession().setAttribute("postList", null);
-
         return "redirect:/blog/page/1";
-//        List<Post> posts = blogService.getAllPost();
-//        model.addAttribute("posts", posts);
-//
-//
-//        return "blog";
     }
 
     @RequestMapping("/blog/page/{pageNumber}")
@@ -105,4 +102,12 @@ public class Controller {
 
         return "blog";
     }
+
+    @RequestMapping(value = "/blog/post/{id}", method = RequestMethod.GET)
+    public String singleBlog(@PathVariable String id){
+        System.out.println(blogService.getOne(id));
+//        System.out.println(id);
+        return "layout";
+    }
+
 }
