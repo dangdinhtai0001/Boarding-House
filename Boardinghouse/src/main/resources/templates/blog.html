@@ -10,16 +10,20 @@
     <title>Home | Blog</title>
 
     <!-- Favicon  -->
+
     <link rel="icon" href="/images/core-img/images/favicon.ico">
+
 
     <!-- Style CSS -->
     <link rel="stylesheet" href="/css/blog_style.css">
 </head>
 <body>
 <!-- Preloader -->
-<!--<div id="preloader">-->
-<!--<div class="south-load"></div>-->
-<!--</div>-->
+
+<!--<div id="preloader">
+<div class="south-load"></div>
+</div>-->
+
 
 <!-- ##### Header Area Start ##### -->
 <header class="header-area">
@@ -53,6 +57,8 @@
                             <li><a href="listings.html">Thư viện</a></li>
                             <li><a href="contact.html">Liên hệ</a></li>
                             <li><a href="blog.html">Blog</a></li>
+                            <li><a href="#">Quản trị</a></li>
+
                         </ul>
 
                         <!-- Search Form -->
@@ -116,174 +122,174 @@
                             </div>
                             <p th:text="${post.summary}"></p>
                             <!-- Read More btn -->
-                            <a href="#" class="btn south-btn">Read More</a>
+                            <a href="#" class="btn south-btn" style="margin-bottom: 40px">Read More</a>
                         </div>
                     </th:block>
                 </th:block>
-
+              
                 <th:block th:if="${#lists.isEmpty(posts.pageList)}">
                     <h3>Không có bài đăng nào</h3>
                 </th:block>
-
-                <div class="col-12 col-lg-4">
-                    <div class="blog-sidebar-area">
-
-                        <!-- Search Widget -->
-                        <div class="search-widget-area mb-70">
-                            <form action="#" method="get">
-                                <input type="search" name="search" id="search" placeholder="Search">
-                                <button type="submit"><i class="fa fa-search"></i></button>
-                            </form>
-                        </div>
-
-                        <!-- Catagories Widget -->
-                        <div class="south-catagories-card mb-70">
-                            <h5>Chủ đề</h5>
-                            <ul class="catagories-menu">
-                                <li><a href="#">Chủ đề 1</a></li>
-                                <li><a href="#">Chủ đề 2</a></li>
-                                <li><a href="#">Chủ đề 3</a></li>
-                                <li><a href="#">Chủ đề 4</a></li>
-                                <li><a href="#">Chủ đề 5</a></li>
-                            </ul>
-                        </div>
-
-                        <!-- Catagories Widget -->
-
-                        <!-- Catagories Widget -->
-                        <div class="featured-properties-slides owl-carousel">
-
-                            <!-- Single Slide -->
-                            <div class="single-featured-property">
-                                <!-- Property Thumbnail -->
-                                <div class="property-thumb">
-                                    <img src="img/bg-img/feature1.jpg" alt="">
-
-                                    <div class="tag">
-                                        <span>For Sale</span>
-                                    </div>
-                                    <div class="list-price">
-                                        <p>$945 679</p>
-                                    </div>
-                                </div>
-                                <!-- Property Content -->
-                                <div class="property-content">
-                                    <h5>Villa in Los Angeles</h5>
-                                    <p class="location"><img src="/images/icons/location.png" alt="">Upper Road 3411, no.34
-                                        CA</p>
-                                    <p>Integer nec bibendum lacus. Suspendisse dictum enim sit amet libero
-                                        malesuada.</p>
-                                    <div class="property-meta-data d-flex align-items-end justify-content-between">
-                                        <div class="new-tag">
-                                            <img src="/images/icons/new.png" alt="">
-                                        </div>
-                                        <div class="bathroom">
-                                            <img src="/images/icons/bathtub.png" alt="">
-                                            <span>2</span>
-                                        </div>
-                                        <div class="garage">
-                                            <img src="/images/icons/garage.png" alt="">
-                                            <span>2</span>
-                                        </div>
-                                        <div class="space">
-                                            <img src="/images/icons/space.png" alt="">
-                                            <span>120 sq ft</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Single Slide -->
-                            <div class="single-featured-property">
-                                <!-- Property Thumbnail -->
-                                <div class="property-thumb">
-                                    <img src="img/bg-img/feature2.jpg" alt="">
-
-                                    <div class="tag">
-                                        <span>For Sale</span>
-                                    </div>
-                                    <div class="list-price">
-                                        <p>$945 679</p>
-                                    </div>
-                                </div>
-                                <!-- Property Content -->
-                                <div class="property-content">
-                                    <h5>Town House in Los Angeles</h5>
-                                    <p class="location"><img src="/images/icons/location.png" alt="">Upper Road 3411, no.34
-                                        CA</p>
-                                    <p>Integer nec bibendum lacus. Suspendisse dictum enim sit amet libero
-                                        malesuada.</p>
-                                    <div class="property-meta-data d-flex align-items-end justify-content-between">
-                                        <div class="new-tag">
-                                            <img src="/images/icons/new.png" alt="">
-                                        </div>
-                                        <div class="bathroom">
-                                            <img src="/images/icons/bathtub.png" alt="">
-                                            <span>2</span>
-                                        </div>
-                                        <div class="garage">
-                                            <img src="/images/icons/garage.png" alt="">
-                                            <span>2</span>
-                                        </div>
-                                        <div class="space">
-                                            <img src="/images/icons/space.png" alt="">
-                                            <span>120 sq ft</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
+              
             </div>
+            <div class="col-12 col-lg-4">
+                <div class="blog-sidebar-area">
 
-            <div class="row">
-                <div class="col-12">
-                    <!-- Pagination -->
-                    <div class="south-pagination mt-100 d-flex">
-                        <nav aria-label="Page navigation">
-                            <!-- <ul class="pagination">
-                                <li class="page-item"><a class="page-link active" href="#">01</a></li>
-                                <li class="page-item"><a class="page-link" href="#">02</a></li>
-                                <li class="page-item"><a class="page-link" href="#">03</a></li>
-                            </ul> -->
-                            <!-- Pagination -->
-                            <ul class="pagination">
-                                <li
-                                        th:class="${currentIndex == 1}? 'page-item disabled' : 'page-item'">
-                                    <a class="page-link" th:href="@{/blog}">First</a>
-                                </li>
-                                <li
-                                        th:class="${currentIndex == 1}? 'page-item disabled': 'page-item' ">
-                                    <a class="page-link" aria-label="Previous"
-                                       th:href="@{|${baseUrl}${currentIndex - 1}|}"
-                                       title='Go to previous page'><span aria-hidden="true">«</span>
-                                        <span class="sr-only">Previous</span></a>
-                                </li>
-                                <li th:each="item : ${#numbers.sequence(beginIndex,endIndex)}"
-                                    th:class="${item == currentIndex ? 'page-item active' :'page-item' }">
-                                    <a class="page-link" th:href="@{|${baseUrl}${item}|}"> <span
-                                            th:text='${item}'>1</span>
-                                    </a>
-                                </li>
-                                <li
-                                        th:class="${currentIndex == totalPageCount}? 'page-item disabled': 'page-item'">
-                                    <a class="page-link" aria-label="Next"
-                                       th:href="@{|${baseUrl}${currentIndex + 1}|}" title='Go to next page'><span
-                                            aria-hidden="true">»</span> <span class="sr-only">Next</span></a>
-                                </li>
-                                <li
-                                        th:class="${currentIndex == totalPageCount}? 'page-item disabled':'page-item'">
-                                    <a class="page-link" th:href="@{|${baseUrl}${totalPageCount}|}">Last</a>
-                                </li>
-                            </ul>
-                        </nav>
+                    <!-- Search Widget -->
+                    <div class="search-widget-area mb-70">
+                        <form action="#" method="get">
+                            <input type="search" name="search" id="search" placeholder="Search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
                     </div>
-                    >
+
+                    <!-- Catagories Widget -->
+                    <div class="south-catagories-card mb-70">
+                        <h5>Chủ đề</h5>
+                        <ul class="catagories-menu">
+                            <li><a href="#">Chủ đề 1</a></li>
+                            <li><a href="#">Chủ đề 2</a></li>
+                            <li><a href="#">Chủ đề 3</a></li>
+                            <li><a href="#">Chủ đề 4</a></li>
+                            <li><a href="#">Chủ đề 5</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Catagories Widget -->
+
+                    <!-- Catagories Widget -->
+                    <div class="featured-properties-slides owl-carousel">
+
+                        <!-- Single Slide -->
+                        <div class="single-featured-property">
+                            <!-- Property Thumbnail -->
+                            <div class="property-thumb">
+                                <img src="/images/bg-img/feature1.jpg" alt="">
+
+                                <div class="tag">
+                                    <span>For Sale</span>
+                                </div>
+                                <div class="list-price">
+                                    <p>$945 679</p>
+                                </div>
+                            </div>
+                            <!-- Property Content -->
+                            <div class="property-content">
+                                <h5>Villa in Los Angeles</h5>
+                                <p class="location"><img src="/images/icons/location.png" alt="">Upper Road 3411, no.34
+                                    CA</p>
+                                <p>Integer nec bibendum lacus. Suspendisse dictum enim sit amet libero
+                                    malesuada.</p>
+                                <div class="property-meta-data d-flex align-items-end justify-content-between">
+                                    <div class="new-tag">
+                                        <img src="/images/icons/new.png" alt="">
+                                    </div>
+                                    <div class="bathroom">
+                                        <img src="/images/icons/bathtub.png" alt="">
+                                        <span>2</span>
+                                    </div>
+                                    <div class="garage">
+                                        <img src="/images/icons/garage.png" alt="">
+                                        <span>2</span>
+                                    </div>
+                                    <div class="space">
+                                        <img src="/images/icons/space.png" alt="">
+                                        <span>120 sq ft</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Single Slide -->
+                        <div class="single-featured-property">
+                            <!-- Property Thumbnail -->
+                            <div class="property-thumb">
+                                <img src="/images/bg-img/feature2.jpg" alt="">
+
+                                <div class="tag">
+                                    <span>For Sale</span>
+                                </div>
+                                <div class="list-price">
+                                    <p>$945 679</p>
+                                </div>
+                            </div>
+                            <!-- Property Content -->
+                            <div class="property-content">
+                                <h5>Town House in Los Angeles</h5>
+                                <p class="location"><img src="/images/icons/location.png" alt="">Upper Road 3411, no.34
+                                    CA</p>
+                                <p>Integer nec bibendum lacus. Suspendisse dictum enim sit amet libero
+                                    malesuada.</p>
+                                <div class="property-meta-data d-flex align-items-end justify-content-between">
+                                    <div class="new-tag">
+                                        <img src="/images/icons/new.png" alt="">
+                                    </div>
+                                    <div class="bathroom">
+                                        <img src="/images/icons/bathtub.png" alt="">
+                                        <span>2</span>
+                                    </div>
+                                    <div class="garage">
+                                        <img src="/images/icons/garage.png" alt="">
+                                        <span>2</span>
+                                    </div>
+                                    <div class="space">
+                                        <img src="/images/icons/space.png" alt="">
+                                        <span>120 sq ft</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <div class="row">
+            <div class="col-12">
+                <!-- Pagination -->
+                <div class="south-pagination mt-100 d-flex">
+                    <nav aria-label="Page navigation">
+                        <!-- <ul class="pagination">
+                            <li class="page-item"><a class="page-link active" href="#">01</a></li>
+                            <li class="page-item"><a class="page-link" href="#">02</a></li>
+                            <li class="page-item"><a class="page-link" href="#">03</a></li>
+                        </ul> -->
+                        <!-- Pagination -->
+                        <ul class="pagination">
+                            <li
+                                    th:class="${currentIndex == 1}? 'page-item disabled' : 'page-item'">
+                                <a class="page-link" th:href="@{/blog}">First</a>
+                            </li>
+                            <li
+                                    th:class="${currentIndex == 1}? 'page-item disabled': 'page-item' ">
+                                <a class="page-link" aria-label="Previous"
+                                   th:href="@{|${baseUrl}${currentIndex - 1}|}"
+                                   title='Go to previous page'><span aria-hidden="true">«</span>
+                                    <span class="sr-only">Previous</span></a>
+                            </li>
+                            <li th:each="item : ${#numbers.sequence(beginIndex,endIndex)}"
+                                th:class="${item == currentIndex ? 'page-item active' :'page-item' }">
+                                <a class="page-link" th:href="@{|${baseUrl}${item}|}"> <span
+                                        th:text='${item}'>1</span>
+                                </a>
+                            </li>
+                            <li
+                                    th:class="${currentIndex == totalPageCount}? 'page-item disabled': 'page-item'">
+                                <a class="page-link" aria-label="Next"
+                                   th:href="@{|${baseUrl}${currentIndex + 1}|}" title='Go to next page'><span
+                                        aria-hidden="true">»</span> <span class="sr-only">Next</span></a>
+                            </li>
+                            <li
+                                    th:class="${currentIndex == totalPageCount}? 'page-item disabled':'page-item'">
+                                <a class="page-link" th:href="@{|${baseUrl}${totalPageCount}|}">Last</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </section>
 <!-- ##### Blog Area End ##### -->
 
@@ -308,7 +314,7 @@
                             <h6><img src="/images/icons/envelope.png" alt=""> boardinghouse@gmail.com</h6>
                             <h6><img src="/images/icons/location.png" alt=""> Trường Đại học Khoa học Tự
                                 Nhiên</h6>
-                        </div>icons
+                        </div>
                     </div>
                 </div>
 
@@ -321,19 +327,12 @@
                         </div>
                         <!-- Nav -->
                         <ul class="useful-links-nav d-flex align-items-center">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Properties</a></li>
-                            <li><a href="#">Listings</a></li>
-                            <li><a href="#">Testimonials</a></li>
-                            <li><a href="#">Properties</a></li>
+                            <li><a href="#">Trang chủ</a></li>
+                            <li><a href="#">Giới thiệu</a></li>
+                            <li><a href="#">Thư viện</a></li>
+                            <li><a href="#">Liên hệ</a></li>
                             <li><a href="#">Blog</a></li>
-                            <li><a href="#">Testimonials</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Elements</a></li>
-                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Quản trị</a></li>
                         </ul>
                     </div>
                 </div>
@@ -380,6 +379,23 @@
     </div>
 </footer>
 <!-- ##### Footer Area End ##### -->
+
+
+<!-- jQuery (Necessary for All JavaScript Plugins) -->
+<script src="/js/jquery/jquery-2.2.4.min.js"></script>
+<!-- Popper js -->
+<script src="/js/popper.min.js"></script>
+<!-- Bootstrap js -->
+<script src="/js/bootstrap.min.js"></script>
+<!-- Plugins js -->
+<script src="/js/plugins.js"></script>
+<script src="/js/classy-nav.min.js"></script>
+<script src="/js/jquery-ui.min.js"></script>
+<!-- Active js -->
+<script src="/js/active.js"></script>
+
 </body>
 
 </html>
+
+
