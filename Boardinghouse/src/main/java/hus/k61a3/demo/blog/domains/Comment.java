@@ -32,6 +32,9 @@ public class Comment {
     @Column(name = "content" , nullable = false )
     private String content;
 
+    @Column(name = "display")
+    private boolean isDisplay;
+
     @Column(name = "date_created")
     private Date dateCreated;
 }
