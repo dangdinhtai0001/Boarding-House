@@ -1,14 +1,17 @@
 package hus.k61a3.demo.blog.services;
 
 import hus.k61a3.demo.blog.domains.Comment;
+import hus.k61a3.demo.blog.domains.Topic;
 import hus.k61a3.demo.blog.entities.Post;
 import hus.k61a3.demo.blog.entities.SubmitCommentForm;
 import hus.k61a3.demo.blog.repositories.CommentRepository;
 import hus.k61a3.demo.blog.repositories.PostRepository;
+import hus.k61a3.demo.blog.repositories.TopicRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.support.PagedListHolder;
 import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import javax.servlet.http.HttpServletRequest;
 import java.text.SimpleDateFormat;
@@ -21,7 +24,9 @@ public class BlogService {
     @Autowired
     private PostRepository postRepository;
     @Autowired
-    protected CommentRepository commentRepository;
+    private CommentRepository commentRepository;
+    @Autowired
+    private TopicRepository topicRepository;
 
     //Dùng cho phân trang
     private static int pageSize = 3;
@@ -93,6 +98,15 @@ public class BlogService {
         String message = form.getMessage();
         Date date = new Date();
         commentRepository.save(new Comment(0, postRepository.getOne(postId), name, email, message, false, date));
+    }
+
+    private List<Topic> findAllTopic(){
+        return topicRepository.findAll();
+    }
+
+    public void displayBlog(HttpServletRequest request, @PathVariable String pageNumber, Model model){
+        pagination(model, request, pageNumber);
+        model.addAttribute("topics",findAllTopic());
     }
 
 

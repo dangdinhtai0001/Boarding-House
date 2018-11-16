@@ -60,7 +60,7 @@ public class Controller {
 
     @RequestMapping("/blog/page/{pageNumber}")
     public String pagination(HttpServletRequest request, @PathVariable String pageNumber, Model model) {
-        blogService.pagination(model, request, pageNumber);
+        blogService.displayBlog(request, pageNumber, model);
         return "blog";
     }
 

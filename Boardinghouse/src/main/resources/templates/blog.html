@@ -39,7 +39,7 @@
                             <!-- Post Meta -->
                             <div class="post-meta">
                                 <p>By <a href="#" th:utext="${post.post.createdBy}"></a> | in <a
-                                        href="#">Uncategorized</a> | <a
+                                        href="#" th:utext="${post.post.topic.name}"></a> | <a
                                         href="#" th:text="${post.numberOfComment} + Comments"></a></p>
                             </div>
                             <p th:text="${post.summary}"></p>
@@ -70,12 +70,8 @@
                     <!-- Catagories Widget -->
                     <div class="south-catagories-card mb-70">
                         <h5>Chủ đề</h5>
-                        <ul class="catagories-menu">
-                            <li><a href="#">Chủ đề 1</a></li>
-                            <li><a href="#">Chủ đề 2</a></li>
-                            <li><a href="#">Chủ đề 3</a></li>
-                            <li><a href="#">Chủ đề 4</a></li>
-                            <li><a href="#">Chủ đề 5</a></li>
+                        <ul class="catagories-menu" th:each="topic : ${topics}">
+                            <li><a href="#" th:text="${topic.name}"></a></li>
                         </ul>
                     </div>
 
