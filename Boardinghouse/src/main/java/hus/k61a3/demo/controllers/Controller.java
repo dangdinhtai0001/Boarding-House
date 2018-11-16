@@ -1,18 +1,18 @@
 package hus.k61a3.demo.controllers;
 
-import hus.k61a3.demo.blog.entities.Post;
 import hus.k61a3.demo.blog.entities.SubmitCommentForm;
 import hus.k61a3.demo.blog.services.BlogService;
 import hus.k61a3.demo.ultis.services.ErrorServiceImp;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.support.PagedListHolder;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.List;
 
 @org.springframework.stereotype.Controller
 public class Controller {
@@ -25,6 +25,9 @@ public class Controller {
 
     @Autowired
     private BlogService blogService;
+
+//    @Autowired
+//    private RoomService roomService;
 
 
     @RequestMapping(value = {"/", "/login"})
@@ -76,5 +79,9 @@ public class Controller {
         blogService.submitComment(form, Integer.parseInt(id));
         return "redirect:/blog/post/{id}";
     }
-
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//    @RequestMapping(name = "/home", method = RequestMethod.GET)
+//    public String index(){
+//        return "index";
+//    }
 }
