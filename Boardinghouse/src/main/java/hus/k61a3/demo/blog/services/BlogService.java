@@ -1,5 +1,6 @@
 package hus.k61a3.demo.blog.services;
 
+import hus.k61a3.demo.blog.domains.Comment;
 import hus.k61a3.demo.blog.entities.Post;
 import hus.k61a3.demo.blog.entities.SubmitCommentForm;
 import hus.k61a3.demo.blog.repositories.CommentRepository;
@@ -10,7 +11,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
 
 import javax.servlet.http.HttpServletRequest;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 @Service
@@ -39,15 +42,6 @@ public class BlogService {
             return null;
         }
     }
-
-    public void displaySinglePost(Model model, String id) {
-        model.addAttribute("post", getOne(id));
-        SubmitCommentForm form = new SubmitCommentForm();
-        model.addAttribute("submitCommentForm", form);
-        model.addAttribute("error", true);
-        model.addAttribute("errorMessage", "Test lỗi ");
-    }
-
 
     public void pagination(Model model, HttpServletRequest request, String pageNumber) {
         PagedListHolder<?> pagedListHolder = (PagedListHolder<?>) request.getSession().getAttribute("postList");
@@ -87,7 +81,19 @@ public class BlogService {
         model.addAttribute("posts", pagedListHolder);
     }
 
-    
+    public void displaySinglePost(Model model, String id) {
+        model.addAttribute("post", getOne(id));
+        SubmitCommentForm form = new SubmitCommentForm();
+        model.addAttribute("submitCommentForm", form);
+    }
+
+    public void submitComment(SubmitCommentForm form, int postId) {
+        String name = form.getName();
+        String email = form.getEmail();
+        String message = form.getMessage();
+        Date date = new Date();
+        commentRepository.save(new Comment(0, postRepository.getOne(postId), name, email, message, false, date));
+    }
 
 
 }

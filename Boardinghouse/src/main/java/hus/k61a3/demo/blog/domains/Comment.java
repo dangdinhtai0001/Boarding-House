@@ -3,6 +3,7 @@ package hus.k61a3.demo.blog.domains;
 import lombok.*;
 
 import javax.persistence.*;
+import javax.validation.constraints.Null;
 import java.util.Date;
 
 @Entity
@@ -15,7 +16,7 @@ import java.util.Date;
 public class Comment {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private int id;
 
@@ -35,6 +36,6 @@ public class Comment {
     @Column(name = "display")
     private boolean isDisplay;
 
-    @Column(name = "date_created")
+    @Column(name = "date_created",nullable = true)
     private Date dateCreated;
 }

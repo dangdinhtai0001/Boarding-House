@@ -54,21 +54,27 @@ public class Controller {
     @RequestMapping("/blog")
     public String blog(Model model, HttpServletRequest request, RedirectAttributes redirect) {
         request.getSession().setAttribute("postList", null);
-        model.addAttribute("title","HOME | BLOG");
+        model.addAttribute("title", "HOME | BLOG");
         return "redirect:/blog/page/1";
     }
 
     @RequestMapping("/blog/page/{pageNumber}")
     public String pagination(HttpServletRequest request, @PathVariable String pageNumber, Model model) {
-        blogService.pagination(model,request,pageNumber);
+        blogService.pagination(model, request, pageNumber);
         return "blog";
     }
+
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     @RequestMapping(value = "/blog/post/{id}", method = RequestMethod.GET)
-    public String singleBlog(@PathVariable String id,Model model){
-        blogService.displaySinglePost(model,id);
+    public String singleBlog(@PathVariable String id, Model model) {
+        blogService.displaySinglePost(model, id);
         return "singleBlog";
     }
 
+    @RequestMapping(value = "/blog/post/{id}/submit", method = RequestMethod.POST)
+    public String submitComment(@ModelAttribute("submitCommentForm") SubmitCommentForm form, @PathVariable String id) {
+        blogService.submitComment(form, Integer.parseInt(id));
+        return "redirect:/blog/post/{id}";
+    }
 
 }

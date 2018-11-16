@@ -74,18 +74,18 @@
                         <h5>Leave a reply</h5>
 
                         <!-- Comment Form -->
-                        <form th:action="@{/replyComment}" th:object="${submitCommentForm}" method="post" >
+                        <form th:action="@{/blog/post/{id}/submit(id=${post.post.id})}" th:object="${submitCommentForm}" method="post" >
                             <div class="form-group">
                                 <input type="text" th:field="*{name}" class="form-control" id="contact-name" placeholder="Name">
                             </div>
                             <div class="form-group">
-                                <input type="email" th:name="*{email}" class="form-control" id="contact-email" placeholder="Email">
+                                <input type="email" th:field="*{email}" class="form-control" id="contact-email" placeholder="Email">
                             </div>
                             <div class="form-group">
-                                <textarea th:name="*{message}" class="form-control" name="message" id="message" cols="30" rows="10"
+                                <textarea th:field="*{message}" class="form-control" name="message" id="message" cols="30" rows="10"
                                           placeholder="Message"></textarea>
                             </div>
-                            <p th:if="${error}" th:utext="${errorMessage}" style="color:red;font-style:italic;"> </p>
+                            <!--<p th:if="${error}" th:utext="${errorMessage}" style="color:red;font-style:italic;"> </p>-->
                             <button type="submit" class="btn south-btn">Submit Reply</button>
                         </form>
                     </div>
