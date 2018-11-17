@@ -67,14 +67,14 @@ public class Controller {
 
     @RequestMapping("/blog/page/{pageNumber}")
     public String pagination(HttpServletRequest request, @PathVariable String pageNumber, Model model) {
-        blogService.displayBlog(request, pageNumber, model);
+        blogService.displayBlog(request, pageNumber, model,homeService);
         return "blog";
     }
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     @RequestMapping(value = "/blog/post/{id}", method = RequestMethod.GET)
     public String singleBlog(@PathVariable String id, Model model) {
-        blogService.displaySinglePost(model, id);
+        blogService.displaySinglePost(model, id,homeService);
         return "singleBlog";
     }
 
@@ -91,6 +91,8 @@ public class Controller {
         homeService.displayHome(model);
         homeService.displayFeedback(model);
         homeService.displayRoomList(model);
+
+        System.out.println(homeService.findTop2());
         return "home";
     }
 }

@@ -1,12 +1,15 @@
 package hus.k61a3.demo.home.services;
 
 import hus.k61a3.demo.home.domains.ConfigHome;
+import hus.k61a3.demo.home.domains.Room;
 import hus.k61a3.demo.home.repositories.FeedbackRepository;
 import hus.k61a3.demo.home.repositories.HomeRepository;
 import hus.k61a3.demo.home.repositories.RoomRepositoriy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
+
+import java.util.List;
 
 @Service
 public class HomeService {
@@ -26,8 +29,15 @@ public class HomeService {
     }
 
     public void displayRoomList(Model model){
-        model.addAttribute("rooms", roomRepositoriy.findAll());
-        System.out.println(roomRepositoriy.findAll());
+        model.addAttribute("rooms", getRoomList());
+    }
+
+    public List<Room> getRoomList(){
+        return (List)roomRepositoriy.findAll();
+    }
+
+    public List<Room> findTop2(){
+        return roomRepositoriy.findTop2ByOrderByPriceDesc();
     }
 
     public ConfigHome getHomeData(){

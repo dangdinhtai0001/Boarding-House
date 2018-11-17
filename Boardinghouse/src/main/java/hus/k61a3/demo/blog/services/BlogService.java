@@ -90,40 +90,44 @@ public class BlogService {
         model.addAttribute("posts", pagedListHolder);
     }
 
-    public void displaySinglePost(Model model, String id) {
-        model.addAttribute("post", getOne(id));
-        SubmitCommentForm form = new SubmitCommentForm();
-        model.addAttribute("submitCommentForm", form);
-        model.addAttribute("home", homeService.getHomeData());
-        model.addAttribute("topics",findAllTopic());
 
-        model.addAttribute("error", error);
-        if(error){
-            model.addAttribute("errorMessage", "Không được để trống trường email và nội dung");
-        }
-    }
-
-    public void submitComment(SubmitCommentForm form, int postId,Model model) {
+    public void submitComment(SubmitCommentForm form, int postId, Model model) {
         String name = form.getName();
         String email = form.getEmail();
         String message = form.getMessage();
         Date date = new Date();
-        if(!email.equals("") && !message.equals("")){
+        if (!email.equals("") && !message.equals("")) {
             error = false;
             commentRepository.save(new Comment(0, postRepository.getOne(postId), name, email, message, false, date));
-        }else{
+        } else {
             error = true;
         }
     }
 
-    private List<Topic> findAllTopic(){
+    private List<Topic> findAllTopic() {
         return topicRepository.findAll();
     }
 
-    public void displayBlog(HttpServletRequest request, @PathVariable String pageNumber, Model model){
+    public void displayBlog(HttpServletRequest request, @PathVariable String pageNumber, Model model, HomeService homeService) {
         pagination(model, request, pageNumber);
-        model.addAttribute("topics",findAllTopic());
+        model.addAttribute("topics", findAllTopic());
         model.addAttribute("home", homeService.getHomeData());
+        model.addAttribute("rooms", homeService.getRoomList());
     }
+
+    public void displaySinglePost(Model model, String id, HomeService homeService) {
+        model.addAttribute("post", getOne(id));
+        SubmitCommentForm form = new SubmitCommentForm();
+        model.addAttribute("submitCommentForm", form);
+        model.addAttribute("home", homeService.getHomeData());
+        model.addAttribute("topics", findAllTopic());
+        model.addAttribute("rooms", homeService.getRoomList());
+
+        model.addAttribute("error", error);
+        if (error) {
+            model.addAttribute("errorMessage", "Không được để trống trường email và nội dung");
+        }
+    }
+
 
 }
