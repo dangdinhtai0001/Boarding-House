@@ -20,8 +20,8 @@ public class Room {
     @Column(name = "name")
     private String name;
 
-    @Column(name = "status")
-    private String status;
+    @Column(name = "is_saled")
+    private String isSaled;
 
     @Column(name = "recommend")
     private int recommend;
@@ -30,7 +30,7 @@ public class Room {
     private int floor;
 
     @Column(name = "price")
-    private double price;
+    private Integer price;
 
     @Column(name = "square")
     private int square;
@@ -41,8 +41,8 @@ public class Room {
     @Column(name = "bathroom")
     private int bathroom;
 
-    @Column(name = "windows")
-    private int windows;
+    @Column(name = "window")
+    private int window;
 
     @Column(name = "image")
     private String image;

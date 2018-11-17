@@ -95,6 +95,7 @@ public class BlogService {
         SubmitCommentForm form = new SubmitCommentForm();
         model.addAttribute("submitCommentForm", form);
         model.addAttribute("home", homeService.getHomeData());
+        model.addAttribute("topics",findAllTopic());
 
         model.addAttribute("error", error);
         if(error){
@@ -124,6 +125,5 @@ public class BlogService {
         model.addAttribute("topics",findAllTopic());
         model.addAttribute("home", homeService.getHomeData());
     }
-
 
 }

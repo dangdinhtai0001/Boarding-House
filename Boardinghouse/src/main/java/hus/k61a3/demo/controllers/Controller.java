@@ -89,6 +89,8 @@ public class Controller {
     @RequestMapping(value = "/home" , method = RequestMethod.GET)
     public String home(Model model){
         homeService.displayHome(model);
+        homeService.displayFeedback(model);
+        homeService.displayRoomList(model);
         return "home";
     }
 }
