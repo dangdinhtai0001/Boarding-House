@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="layout :: head"></head>
+<head><title> HOME</title></head>
+<body>
+<!-- Preloader -->
+<div id="preloader">
+    <div class="south-load"></div>
+</div>
+<!-- ##### Header Area Start ##### -->
+<header th:replace="layout :: header"></header>
+<!-- ##### Header Area End ##### -->
+
+<!-- ##### Hero Area Start ##### -->
+<section th:replace="layout :: hero_area"></section>
+<!-- ##### Hero Area End ##### -->
+
+
+<!-- ##### Testimonials Area Start ##### -->
+<section class="south-testimonials-area section-padding-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-heading wow fadeInUp" data-wow-delay="250ms">
+                    <h2>Client testimonials</h2>
+                    <p>Suspendisse dictum enim sit amet libero malesuada feugiat.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="testimonials-slides owl-carousel wow fadeInUp" data-wow-delay="500ms">
+
+                    <!-- Single Testimonial Slide -->
+                    <div class="single-testimonial-slide text-center">
+                        <h5>Perfect Home for me</h5>
+                        <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit amet tellus blandit. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. Etiam nec odio vestibulum est mat tis effic iturut magna.</p>
+
+                        <div class="testimonial-author-info">
+                            <img src="/images/bg-img/feature6.jpg" alt="">
+                            <p>Daiane Smith, <span>Customer</span></p>
+                        </div>
+                    </div>
+
+                    <!-- Single Testimonial Slide -->
+                    <div class="single-testimonial-slide text-center">
+                        <h5>Perfect Home for me</h5>
+                        <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit amet tellus blandit. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. Etiam nec odio vestibulum est mat tis effic iturut magna.</p>
+
+                        <div class="testimonial-author-info">
+                            <img src="/images/bg-img/feature6.jpg" alt="">
+                            <p>Daiane Smith, <span>Customer</span></p>
+                        </div>
+                    </div>
+
+                    <!-- Single Testimonial Slide -->
+                    <div class="single-testimonial-slide text-center">
+                        <h5>Perfect Home for me</h5>
+                        <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit amet tellus blandit. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. Etiam nec odio vestibulum est mat tis effic iturut magna.</p>
+
+                        <div class="testimonial-author-info">
+                            <img src="/images/bg-img/feature6.jpg" alt="">
+                            <p>Daiane Smith, <span>Customer</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ##### Testimonials Area End ##### -->
+
+<!-- ##### Editor Area Start ##### -->
+<section class="south-editor-area d-flex align-items-center">
+    <!-- Editor Content -->
+    <div class="editor-content-area">
+        <!-- Section Heading -->
+        <div class="section-heading wow fadeInUp" data-wow-delay="250ms">
+            <img src="/images/icons/prize.png" alt="">
+            <h2 th:utext="${home.name}"></h2>
+            <p>Realtor</p>
+        </div>
+        <p th:utext="${home.description}" class="wow fadeInUp" data-wow-delay="500ms"></p>
+        <div class="address wow fadeInUp" data-wow-delay="750ms">
+            <h6><img src="/images/icons/phone-call.png" alt="" th:utext="${home.phoneNumber}"> </h6>
+            <h6><img src="/images/icons/envelope.png" alt="" th:utext="${home.email}"> </h6>
+        </div>
+        <div class="signature mt-50 wow fadeInUp" data-wow-delay="1000ms">
+            <img src="/images/core-img/signature.png" alt="">
+        </div>
+    </div>
+
+    <!-- Editor Thumbnail -->
+    <div class="editor-thumbnail">
+        <img th:src=${home.image} alt="">
+    </div>
+</section>
+<!-- ##### Editor Area End ##### -->
+
+<footer th:replace="layout :: footer"></footer>
+<div th:replace="layout :: js"></div>
+</body>
+</html>

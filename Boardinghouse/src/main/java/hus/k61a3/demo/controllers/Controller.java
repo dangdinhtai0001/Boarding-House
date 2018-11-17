@@ -2,6 +2,7 @@ package hus.k61a3.demo.controllers;
 
 import hus.k61a3.demo.blog.entities.SubmitCommentForm;
 import hus.k61a3.demo.blog.services.BlogService;
+import hus.k61a3.demo.home.services.HomeService;
 import hus.k61a3.demo.ultis.services.ErrorServiceImp;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -25,6 +26,9 @@ public class Controller {
 
     @Autowired
     private BlogService blogService;
+
+    @Autowired
+    private HomeService homeService;
 
 //    @Autowired
 //    private RoomService roomService;
@@ -80,8 +84,10 @@ public class Controller {
         return "redirect:/blog/post/{id}";
     }
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//    @RequestMapping(name = "/home", method = RequestMethod.GET)
-//    public String index(){
-//        return "index";
-//    }
+
+    @RequestMapping(value = "/home" , method = RequestMethod.GET)
+    public String home(Model model){
+        homeService.displayHome(model);
+        return "home";
+    }
 }

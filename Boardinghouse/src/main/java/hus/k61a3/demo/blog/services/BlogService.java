@@ -7,6 +7,7 @@ import hus.k61a3.demo.blog.entities.SubmitCommentForm;
 import hus.k61a3.demo.blog.repositories.CommentRepository;
 import hus.k61a3.demo.blog.repositories.PostRepository;
 import hus.k61a3.demo.blog.repositories.TopicRepository;
+import hus.k61a3.demo.home.services.HomeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.support.PagedListHolder;
 import org.springframework.stereotype.Service;
@@ -27,6 +28,8 @@ public class BlogService {
     private CommentRepository commentRepository;
     @Autowired
     private TopicRepository topicRepository;
+    @Autowired
+    private HomeService homeService;
 
     //Dùng cho phân trang
     private static int pageSize = 3;
@@ -90,6 +93,7 @@ public class BlogService {
         model.addAttribute("post", getOne(id));
         SubmitCommentForm form = new SubmitCommentForm();
         model.addAttribute("submitCommentForm", form);
+        model.addAttribute("home", homeService.getHomeData());
     }
 
     public void submitComment(SubmitCommentForm form, int postId) {
@@ -107,6 +111,7 @@ public class BlogService {
     public void displayBlog(HttpServletRequest request, @PathVariable String pageNumber, Model model){
         pagination(model, request, pageNumber);
         model.addAttribute("topics",findAllTopic());
+        model.addAttribute("home", homeService.getHomeData());
     }
 
 

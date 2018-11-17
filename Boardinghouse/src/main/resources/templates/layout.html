@@ -26,7 +26,7 @@
             <nav class="classy-navbar justify-content-between" id="southNav">
 
                 <!-- Logo -->
-                <a class="nav-brand" href="index.html"><h3 style="color: white">Boarding House</h3></a>
+                <a class="nav-brand" href="home.html"><h3 style="color: white">Boarding House</h3></a>
 
                 <!-- Navbar Toggler -->
                 <div class="classy-navbar-toggler">
@@ -44,13 +44,12 @@
                     <!-- Nav Start -->
                     <div class="classynav">
                         <ul>
-                            <li><a href="index.html">Trang chủ</a></li>
+                            <li><a th:href="home">Trang chủ</a></li>
                             <li><a href="about-us.html">Giới thiệu</a></li>
                             <li><a href="listings.html">Thư viện</a></li>
                             <li><a href="contact.html">Liên hệ</a></li>
-                            <li><a href="blog.html">Blog</a></li>
+                            <li><a th:href="blog">Blog</a></li>
                             <li><a href="#">Quản trị</a></li>
-
                         </ul>
 
                         <!-- Search Form -->
@@ -86,6 +85,49 @@
 </section>
 <!-- ##### Breadcumb Area End ##### -->
 
+<!-- ##### Hero Area Start ##### -->
+<section th:fragment="hero_area" class="hero-area">
+    <div class="hero-slides owl-carousel">
+        <!-- Single Hero Slide -->
+        <div class="single-hero-slide bg-img" style="background-image: url(/images/bg-img/hero1.jpg);">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12">
+                        <!--<div class="hero-slides-content">
+                            <h2 data-animation="fadeInUp" data-delay="100ms">Find your home</h2>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Single Hero Slide -->
+        <div class="single-hero-slide bg-img" style="background-image: url(/images/bg-img/hero5.jpg);">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12">
+                        <!--<div class="hero-slides-content">
+                            <h2 data-animation="fadeInUp" data-delay="100ms">Find your dream house</h2>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Single Hero Slide -->
+        <div class="single-hero-slide bg-img" style="background-image: url(/images/bg-img/hero3.jpg);">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12">
+                        <!--<div class="hero-slides-content">
+                            <h2 data-animation="fadeInUp" data-delay="100ms">Find your perfect house</h2>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ##### Hero Area End ##### -->
+
 <!-- ##### Footer Area Start ##### -->
 <footer th:fragment="footer" class="footer-area section-padding-100-0 bg-img gradient-background-overlay"
         style="background-image: url(/images/bg-img/cta.jpg);">
@@ -103,10 +145,9 @@
 
                         <!-- Address -->
                         <div class="address">
-                            <h6><img src="/images/icons/phone-call.png" alt=""> +45 677 8993000 223</h6>
-                            <h6><img src="/images/icons/envelope.png" alt=""> boardinghouse@gmail.com</h6>
-                            <h6><img src="/images/icons/location.png" alt=""> Trường Đại học Khoa học Tự
-                                Nhiên</h6>
+                            <h6><img src="/images/icons/phone-call.png" alt="" th:utext="${home.phoneNumber}"></h6>
+                            <h6><img src="/images/icons/envelope.png" alt="" th:utext="${home.email}"> </h6>
+                            <h6><img src="/images/icons/location.png" alt="" th:utext="${home.address}"> </h6>
                         </div>
                     </div>
                 </div>

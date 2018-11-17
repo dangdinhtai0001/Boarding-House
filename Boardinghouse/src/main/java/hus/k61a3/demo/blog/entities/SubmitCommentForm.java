@@ -20,5 +20,6 @@ public class SubmitCommentForm {
     @Email
     private String email;
 
+    @NotNull
     private String message;
 }
