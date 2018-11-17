@@ -3,6 +3,7 @@ package hus.k61a3.demo.blog.domains;
 import lombok.*;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Null;
 import java.util.Date;
 

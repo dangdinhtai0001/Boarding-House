@@ -79,8 +79,9 @@ public class Controller {
     }
 
     @RequestMapping(value = "/blog/post/{id}/submit", method = RequestMethod.POST)
-    public String submitComment(@ModelAttribute("submitCommentForm") SubmitCommentForm form, @PathVariable String id) {
-        blogService.submitComment(form, Integer.parseInt(id));
+    public String submitComment(@ModelAttribute("submitCommentForm") SubmitCommentForm form, @PathVariable String id
+                                , Model model) {
+        blogService.submitComment(form, Integer.parseInt(id),model);
         return "redirect:/blog/post/{id}";
     }
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

@@ -33,6 +33,7 @@ public class BlogService {
 
     //Dùng cho phân trang
     private static int pageSize = 3;
+    private boolean error = false;
 
     private List<Post> getAllPost() {
         List<Post> posts = new ArrayList<>();
@@ -94,14 +95,24 @@ public class BlogService {
         SubmitCommentForm form = new SubmitCommentForm();
         model.addAttribute("submitCommentForm", form);
         model.addAttribute("home", homeService.getHomeData());
+
+        model.addAttribute("error", error);
+        if(error){
+            model.addAttribute("errorMessage", "Không được để trống trường email và nội dung");
+        }
     }
 
-    public void submitComment(SubmitCommentForm form, int postId) {
+    public void submitComment(SubmitCommentForm form, int postId,Model model) {
         String name = form.getName();
         String email = form.getEmail();
         String message = form.getMessage();
         Date date = new Date();
-        commentRepository.save(new Comment(0, postRepository.getOne(postId), name, email, message, false, date));
+        if(!email.equals("") && !message.equals("")){
+            error = false;
+            commentRepository.save(new Comment(0, postRepository.getOne(postId), name, email, message, false, date));
+        }else{
+            error = true;
+        }
     }
 
     private List<Topic> findAllTopic(){
