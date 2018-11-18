@@ -1,13 +1,13 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.heroku.sample</groupId>
-    <artifactId>webappRunnerSample</artifactId>
+    <groupId>javachallenged</groupId>
+    <artifactId>javachallenged</artifactId>
     <packaging>war</packaging>
-    <version>1.0-SNAPSHOT</version>
-    <name>webappRunnerSample Maven Webapp</name>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>javachallenged Maven Webapp</name>
     <url>http://maven.apache.org</url>
-
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -15,14 +15,28 @@
             <version>3.8.1</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.1.0</version>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
     <build>
-        <finalName>webappRunnerSample</finalName>
+        <finalName>javachallenged</finalName>
         <plugins>
+            <plugin>
+                <groupId>org.apache.tomcat.maven</groupId>
+                <artifactId>tomcat7-maven-plugin</artifactId>
+                <version>2.2</version>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
                 <version>2.3</version>
+                <configuration>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                </configuration>
                 <executions>
                     <execution>
                         <phase>package</phase>
@@ -32,36 +46,16 @@
                         <configuration>
                             <artifactItems>
                                 <artifactItem>
-                                    <!-- https://mvnrepository.com/artifact/com.github.jsimone/webapp-runner -->
                                     <groupId>com.github.jsimone</groupId>
                                     <artifactId>webapp-runner</artifactId>
-                                    <version>9.0.13.0</version>
+                                    <version>8.0.30.2</version>
+                                    <destFileName>webapp-runner.jar</destFileName>
                                 </artifactItem>
                             </artifactItems>
                         </configuration>
                     </execution>
                 </executions>
             </plugin>
-
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-war-plugin</artifactId>
-                <version>2.6</version>
-                <configuration>
-                    <failOnMissingWebXml>false</failOnMissingWebXml>
-                </configuration>
-            </plugin>
-
-            <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-catalina -->
-            <plugin>
-                <groupId>org.apache.tomcat</groupId>
-                <artifactId>tomcat-catalina</artifactId>
-                <version>9.0.13</version>
-            </plugin>
-
-
         </plugins>
     </build>
-
-
 </project>
