@@ -10,6 +10,7 @@
 
     <name>Boarding House</name>
     <description>Demo project for Spring Boot</description>
+    <url>http://maven.apache.org</url>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -18,8 +19,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
+
     <build>
-        <finalName>webappRunnerSample</finalName>
+        <finalName>Boarding House</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -31,20 +33,28 @@
                 <executions>
                     <execution>
                         <phase>package</phase>
+                        <goals><goal>copy</goal></goals>
                         <configuration>
                             <artifactItems>
                                 <artifactItem>
                                     <groupId>com.github.jsimone</groupId>
                                     <artifactId>webapp-runner</artifactId>
                                     <version>9.0.13.0</version>
+                                    <destFileName>boardinghouse-runner.jar</destFileName>
                                 </artifactItem>
                             </artifactItems>
                         </configuration>
                     </execution>
                 </executions>
             </plugin>
+
+
+
+
+
+
+
+
         </plugins>
     </build>
-
-
 </project>
