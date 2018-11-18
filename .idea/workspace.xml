@@ -91,8 +91,8 @@
           <entry key="java" value="13982" />
           <entry key="properties" value="150" />
           <entry key="sql" value="11" />
-          <entry key="txt" value="848" />
-          <entry key="xml" value="76" />
+          <entry key="txt" value="850" />
+          <entry key="xml" value="77" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -100,10 +100,10 @@
           <entry key="CSS" value="9" />
           <entry key="HTML" value="3169" />
           <entry key="JAVA" value="13982" />
-          <entry key="PLAIN_TEXT" value="863" />
+          <entry key="PLAIN_TEXT" value="865" />
           <entry key="Properties" value="150" />
           <entry key="Scratch" value="11" />
-          <entry key="XML" value="87" />
+          <entry key="XML" value="88" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -164,8 +164,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+            <state relative-caret-position="15">
+              <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -472,7 +472,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542546335048" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542546517368" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../spring-boot-thymeleaf" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -605,14 +605,7 @@
       <workItem from="1542440765408" duration="16135000" />
       <workItem from="1542466682838" duration="2476000" />
       <workItem from="1542469252569" duration="3840000" />
-      <workItem from="1542526130758" duration="16971000" />
-    </task>
-    <task id="LOCAL-00006" summary="project structure">
-      <created>1540816597983</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1540816597983</updated>
+      <workItem from="1542526130758" duration="17152000" />
     </task>
     <task id="LOCAL-00007" summary="Xong login dạng x">
       <created>1540886294070</created>
@@ -950,11 +943,18 @@
       <option name="project" value="LOCAL" />
       <updated>1542546108056</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="test deploy heroku lần 21">
+      <created>1542546345838</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1542546345838</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="230903000" />
+    <option name="totallyTimeSpent" value="231084000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1366" height="740" extended-state="6" />
@@ -1005,7 +1005,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="phát hiện lỗi reoly cooment trống" />
     <MESSAGE value="Sửa lỗi reply comment trống thành công" />
     <MESSAGE value="Xong đổ dữ liệu màn home" />
     <MESSAGE value="Xong đổ dữ liệu màn home, sửa 1 số lỗi màn blog" />
@@ -1030,7 +1029,8 @@
     <MESSAGE value="test deploy heroku lần 18" />
     <MESSAGE value="test deploy heroku lần 19" />
     <MESSAGE value="test deploy heroku lần 20" />
-    <option name="LAST_COMMIT_MESSAGE" value="test deploy heroku lần 20" />
+    <MESSAGE value="test deploy heroku lần 21" />
+    <option name="LAST_COMMIT_MESSAGE" value="test deploy heroku lần 21" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -1368,8 +1368,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+        <state relative-caret-position="15">
+          <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
         </state>
       </provider>
     </entry>
