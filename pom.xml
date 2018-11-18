@@ -26,14 +26,16 @@
                 <executions>
                     <execution>
                         <phase>package</phase>
-                        <goals><goal>copy</goal></goals>
+                        <goals>
+                            <goal>copy</goal>
+                        </goals>
                         <configuration>
                             <artifactItems>
                                 <artifactItem>
+                                    <!-- https://mvnrepository.com/artifact/com.github.jsimone/webapp-runner -->
                                     <groupId>com.github.jsimone</groupId>
                                     <artifactId>webapp-runner</artifactId>
-                                    <version>7.0.22</version>
-                                    <destFileName>webapp-runner.jar</destFileName>
+                                    <version>9.0.13.0</version>
                                 </artifactItem>
                             </artifactItems>
                         </configuration>
@@ -49,6 +51,14 @@
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
             </plugin>
+
+            <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-catalina -->
+            <plugin>
+                <groupId>org.apache.tomcat</groupId>
+                <artifactId>tomcat-catalina</artifactId>
+                <version>9.0.13</version>
+            </plugin>
+
 
         </plugins>
     </build>
