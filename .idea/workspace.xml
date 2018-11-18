@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="662c5528-0214-4e27-ac6b-c600bc6f1014" name="Default Changelist" comment="test deploy heroku lần 06">
+    <list default="true" id="662c5528-0214-4e27-ac6b-c600bc6f1014" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boardinghouse/system.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/system.properties" beforeDir="false" afterPath="$PROJECT_DIR$/system.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -90,9 +89,9 @@
           <entry key="dummy" value="26" />
           <entry key="html" value="3169" />
           <entry key="java" value="13978" />
-          <entry key="properties" value="147" />
+          <entry key="properties" value="148" />
           <entry key="sql" value="11" />
-          <entry key="txt" value="816" />
+          <entry key="txt" value="817" />
           <entry key="xml" value="52" />
         </counts>
       </usages-collector>
@@ -101,8 +100,8 @@
           <entry key="CSS" value="9" />
           <entry key="HTML" value="3169" />
           <entry key="JAVA" value="13978" />
-          <entry key="PLAIN_TEXT" value="842" />
-          <entry key="Properties" value="147" />
+          <entry key="PLAIN_TEXT" value="843" />
+          <entry key="Properties" value="148" />
           <entry key="Scratch" value="11" />
           <entry key="XML" value="52" />
         </counts>
@@ -184,7 +183,7 @@
         <entry file="file://$PROJECT_DIR$/system.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
-              <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+              <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -539,7 +538,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542541673171" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542541737348" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../spring-boot-thymeleaf" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -672,7 +671,7 @@
       <workItem from="1542440765408" duration="16135000" />
       <workItem from="1542466682838" duration="2476000" />
       <workItem from="1542469252569" duration="3840000" />
-      <workItem from="1542526130758" duration="12310000" />
+      <workItem from="1542526130758" duration="12374000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1540554190618</created>
@@ -954,11 +953,18 @@
       <option name="project" value="LOCAL" />
       <updated>1542539314098</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="test deploy heroku lần 07">
+      <created>1542541684676</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1542541684676</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="226242000" />
+    <option name="totallyTimeSpent" value="226306000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1366" height="740" extended-state="6" />
@@ -1009,7 +1015,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Database version 3" />
     <MESSAGE value="Database version 4" />
     <MESSAGE value="Tải database thành công lên database server" />
     <MESSAGE value="sửa lại cấu trúc project" />
@@ -1034,7 +1039,8 @@
     <MESSAGE value="test deploy heroku lần 04" />
     <MESSAGE value="test deploy heroku lần 05" />
     <MESSAGE value="test deploy heroku lần 06" />
-    <option name="LAST_COMMIT_MESSAGE" value="test deploy heroku lần 06" />
+    <MESSAGE value="test deploy heroku lần 07" />
+    <option name="LAST_COMMIT_MESSAGE" value="test deploy heroku lần 07" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -1373,7 +1379,7 @@
     <entry file="file://$PROJECT_DIR$/system.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
         </state>
       </provider>
     </entry>
