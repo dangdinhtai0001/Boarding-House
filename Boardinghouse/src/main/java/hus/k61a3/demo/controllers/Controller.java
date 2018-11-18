@@ -1,5 +1,6 @@
 package hus.k61a3.demo.controllers;
 
+import hus.k61a3.demo.Listings.ListingsService;
 import hus.k61a3.demo.blog.entities.SubmitCommentForm;
 import hus.k61a3.demo.blog.services.BlogService;
 import hus.k61a3.demo.home.services.HomeService;
@@ -30,11 +31,14 @@ public class Controller {
     @Autowired
     private HomeService homeService;
 
+    @Autowired
+    private ListingsService listingsService;
+
 //    @Autowired
 //    private RoomService roomService;
 
 
-    @RequestMapping(value = {"/", "/login"})
+    @RequestMapping(value = {"/login"})
     public String login() {
         return "login";
     }
@@ -86,13 +90,17 @@ public class Controller {
     }
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    @RequestMapping(value = "/home" , method = RequestMethod.GET)
+    @RequestMapping(value = {"/home","/"} , method = RequestMethod.GET)
     public String home(Model model){
         homeService.displayHome(model);
         homeService.displayFeedback(model);
-        homeService.displayRoomList(model);
-
-        System.out.println(homeService.findTop2());
+        homeService.displayRoomList(model, 6);
         return "home";
+    }
+
+    @RequestMapping(value = "/listings")
+    public String listings(Model model){
+        listingsService.displayListingsPage(model);
+        return "listings";
     }
 }

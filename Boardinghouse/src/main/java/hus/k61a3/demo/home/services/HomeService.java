@@ -14,7 +14,7 @@ import java.util.List;
 @Service
 public class HomeService {
     @Autowired
-    private HomeRepository  homeRepository;
+    private HomeRepository homeRepository;
     @Autowired
     private FeedbackRepository feedbackRepository;
     @Autowired
@@ -24,23 +24,23 @@ public class HomeService {
         model.addAttribute("home", homeRepository.getOne(1));
     }
 
-    public void displayFeedback(Model model){
+    public void displayFeedback(Model model) {
         model.addAttribute("feedbacks", feedbackRepository.findAll());
     }
 
-    public void displayRoomList(Model model){
-        model.addAttribute("rooms", getRoomList());
+    public void displayRoomList(Model model, int limit) {
+        model.addAttribute("rooms", findRandomRoom(limit));
     }
 
-    public List<Room> getRoomList(){
-        return (List)roomRepositoriy.findAll();
+    public List<Room> findAllRooms() {
+        return (List) roomRepositoriy.findAll();
     }
 
-    public List<Room> findTop2(){
-        return roomRepositoriy.findTop2ByOrderByPriceDesc();
+    public List<Room> findRandomRoom(int limit) {
+        return roomRepositoriy.findRandomRoom(limit);
     }
 
-    public ConfigHome getHomeData(){
+    public ConfigHome getHomeData() {
         return homeRepository.getOne(1);
     }
 }
