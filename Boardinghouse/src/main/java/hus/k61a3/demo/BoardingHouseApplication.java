@@ -6,11 +6,7 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 @SpringBootApplication
-public class BoardingHouseApplication extends SpringBootServletInitializer {
-    @Override
-    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-        return application.sources(BoardingHouseApplication .class);
-    }
+public class BoardingHouseApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(BoardingHouseApplication.class, args);
