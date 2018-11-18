@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="662c5528-0214-4e27-ac6b-c600bc6f1014" name="Default Changelist" comment="">
+    <list default="true" id="662c5528-0214-4e27-ac6b-c600bc6f1014" name="Default Changelist" comment="test deploy heroku lần 06">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boardinghouse/system.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Boardinghouse/system.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Boardinghouse/system.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/system.properties" beforeDir="false" afterPath="$PROJECT_DIR$/system.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/B/target/" />
@@ -89,9 +90,9 @@
           <entry key="dummy" value="26" />
           <entry key="html" value="3169" />
           <entry key="java" value="13978" />
-          <entry key="properties" value="143" />
+          <entry key="properties" value="147" />
           <entry key="sql" value="11" />
-          <entry key="txt" value="815" />
+          <entry key="txt" value="816" />
           <entry key="xml" value="52" />
         </counts>
       </usages-collector>
@@ -100,8 +101,8 @@
           <entry key="CSS" value="9" />
           <entry key="HTML" value="3169" />
           <entry key="JAVA" value="13978" />
-          <entry key="PLAIN_TEXT" value="841" />
-          <entry key="Properties" value="143" />
+          <entry key="PLAIN_TEXT" value="842" />
+          <entry key="Properties" value="147" />
           <entry key="Scratch" value="11" />
           <entry key="XML" value="52" />
         </counts>
@@ -129,7 +130,7 @@
           <entry key="js" value="9" />
           <entry key="md" value="3" />
           <entry key="png" value="6" />
-          <entry key="properties" value="17" />
+          <entry key="properties" value="18" />
           <entry key="scss" value="1" />
           <entry key="sql" value="5" />
           <entry key="user_role" value="1" />
@@ -147,7 +148,7 @@
           <entry key="JavaScript" value="9" />
           <entry key="Markdown" value="3" />
           <entry key="PLAIN_TEXT" value="8" />
-          <entry key="Properties" value="17" />
+          <entry key="Properties" value="18" />
           <entry key="SCSS" value="1" />
           <entry key="SQL" value="4" />
           <entry key="Scratch" value="1" />
@@ -164,7 +165,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
+            <state relative-caret-position="165">
               <caret line="41" column="63" selection-start-line="41" selection-start-column="63" selection-end-line="41" selection-end-column="63" />
             </state>
           </provider>
@@ -180,19 +181,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Boardinghouse/system.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/system.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
-              <caret line="1" column="27" lean-forward="true" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
+              <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -314,9 +306,9 @@
         <option value="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/Listings/ListingsService.java" />
         <option value="$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/layout.html" />
         <option value="$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/listings.html" />
-        <option value="$PROJECT_DIR$/system.properties" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/Boardinghouse/system.properties" />
+        <option value="$PROJECT_DIR$/system.properties" />
       </list>
     </option>
   </component>
@@ -547,7 +539,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542539305254" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542541673171" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../spring-boot-thymeleaf" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -680,7 +672,7 @@
       <workItem from="1542440765408" duration="16135000" />
       <workItem from="1542466682838" duration="2476000" />
       <workItem from="1542469252569" duration="3840000" />
-      <workItem from="1542526130758" duration="10062000" />
+      <workItem from="1542526130758" duration="12310000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1540554190618</created>
@@ -955,11 +947,18 @@
       <option name="project" value="LOCAL" />
       <updated>1542539272078</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="test deploy heroku lần 06">
+      <created>1542539314098</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1542539314098</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="223994000" />
+    <option name="totallyTimeSpent" value="226242000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1366" height="740" extended-state="6" />
@@ -1010,7 +1009,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test heroku pom.xml" />
     <MESSAGE value="Database version 3" />
     <MESSAGE value="Database version 4" />
     <MESSAGE value="Tải database thành công lên database server" />
@@ -1035,7 +1033,8 @@
     <MESSAGE value="test deploy heroku lần 03" />
     <MESSAGE value="test deploy heroku lần 04" />
     <MESSAGE value="test deploy heroku lần 05" />
-    <option name="LAST_COMMIT_MESSAGE" value="test deploy heroku lần 05" />
+    <MESSAGE value="test deploy heroku lần 06" />
+    <option name="LAST_COMMIT_MESSAGE" value="test deploy heroku lần 06" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -1343,13 +1342,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/system.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="27" lean-forward="true" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/listings.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="295">
@@ -1359,8 +1351,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
+        <state relative-caret-position="165">
           <caret line="41" column="63" selection-start-line="41" selection-start-column="63" selection-end-line="41" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Boardinghouse/system.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
@@ -1371,10 +1370,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Boardinghouse/system.properties">
+    <entry file="file://$PROJECT_DIR$/system.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+          <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
         </state>
       </provider>
     </entry>
