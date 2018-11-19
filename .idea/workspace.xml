@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="662c5528-0214-4e27-ac6b-c600bc6f1014" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="662c5528-0214-4e27-ac6b-c600bc6f1014" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/B/target/" />
     <ignored path="$PROJECT_DIR$/BoardingHouse/target/" />
@@ -86,13 +82,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="Procfile" value="18" />
           <entry key="css" value="9" />
           <entry key="dummy" value="26" />
           <entry key="html" value="3169" />
           <entry key="java" value="13985" />
           <entry key="properties" value="150" />
           <entry key="sql" value="11" />
-          <entry key="txt" value="854" />
+          <entry key="txt" value="856" />
           <entry key="xml" value="79" />
         </counts>
       </usages-collector>
@@ -101,7 +98,7 @@
           <entry key="CSS" value="9" />
           <entry key="HTML" value="3169" />
           <entry key="JAVA" value="13985" />
-          <entry key="PLAIN_TEXT" value="869" />
+          <entry key="PLAIN_TEXT" value="889" />
           <entry key="Properties" value="150" />
           <entry key="Scratch" value="11" />
           <entry key="XML" value="90" />
@@ -165,7 +162,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
+            <state relative-caret-position="-1080">
               <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
             </state>
           </provider>
@@ -184,7 +181,7 @@
         <entry file="file://$PROJECT_DIR$/Procfile">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="61" selection-start-column="61" selection-end-column="61" />
+              <caret column="60" lean-forward="true" selection-start-column="60" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -602,21 +599,7 @@
       <workItem from="1542466682838" duration="2476000" />
       <workItem from="1542469252569" duration="3840000" />
       <workItem from="1542526130758" duration="18424000" />
-      <workItem from="1542599266957" duration="92000" />
-    </task>
-    <task id="LOCAL-00011" summary="test heroku">
-      <created>1541000503553</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1541000503553</updated>
-    </task>
-    <task id="LOCAL-00012" summary="test heroku pom.xml">
-      <created>1541001087421</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1541001087421</updated>
+      <workItem from="1542599266957" duration="343000" />
     </task>
     <task id="LOCAL-00013" summary="test heroku pom.xml">
       <created>1541005534409</created>
@@ -947,11 +930,25 @@
       <option name="project" value="LOCAL" />
       <updated>1542547161161</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="test deploy heroku lần 26">
+      <created>1542599371856</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1542599371856</updated>
+    </task>
+    <task id="LOCAL-00061" summary="test deploy heroku lần 27">
+      <created>1542599601737</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1542599601737</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="232448000" />
+    <option name="totallyTimeSpent" value="232699000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1366" height="740" extended-state="6" />
@@ -1002,8 +999,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test deploy heroku lần 01" />
-    <MESSAGE value="test deploy heroku lần 02" />
     <MESSAGE value="test deploy heroku lần 03" />
     <MESSAGE value="test deploy heroku lần 04" />
     <MESSAGE value="test deploy heroku lần 05" />
@@ -1027,7 +1022,9 @@
     <MESSAGE value="test deploy heroku lần 23" />
     <MESSAGE value="test deploy heroku lần 24" />
     <MESSAGE value="test deploy heroku lần 25" />
-    <option name="LAST_COMMIT_MESSAGE" value="test deploy heroku lần 25" />
+    <MESSAGE value="test deploy heroku lần 26" />
+    <MESSAGE value="test deploy heroku lần 27" />
+    <option name="LAST_COMMIT_MESSAGE" value="test deploy heroku lần 27" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -1303,7 +1300,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
+        <state relative-caret-position="-1080">
           <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
         </state>
       </provider>
@@ -1311,7 +1308,7 @@
     <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="61" selection-start-column="61" selection-end-column="61" />
+          <caret column="60" lean-forward="true" selection-start-column="60" selection-end-column="60" />
         </state>
       </provider>
     </entry>
