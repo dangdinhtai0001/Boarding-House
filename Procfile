@@ -1,1 +1,1 @@
-web:    java $JAVA_OPTS -jar target/dependency/Boarding_House.jar --port $PORT target/*.war
+web: java -Dserver.port=$PORT -jar target/Boarding_House.war
