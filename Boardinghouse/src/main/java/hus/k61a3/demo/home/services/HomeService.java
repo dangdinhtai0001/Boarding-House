@@ -32,6 +32,12 @@ public class HomeService {
         model.addAttribute("rooms", findRandomRoom(limit));
     }
 
+    public void displayHomePage(Model model, int limit){
+        displayHome(model);
+        displayFeedback(model);
+        displayRoomList(model, limit);
+    }
+
     public List<Room> findAllRooms() {
         return (List) roomRepositoriy.findAll();
     }

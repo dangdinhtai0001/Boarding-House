@@ -11,7 +11,7 @@
     <link rel="icon" href="/images/core-img/favicon.ico">
 
     <!-- Style CSS -->
-    <link rel="stylesheet" href="/css/blog_style.css">
+    <link rel="stylesheet" href="/css/master_styles.css">
 
 
 </head>
@@ -149,7 +149,7 @@
     <!-- Catagories Widget -->
 
     <!-- Catagories Widget -->
-    <div class="featured-properties-slides owl-carousel" >
+    <div class="featured-properties-slides owl-carousel">
         <!-- Single Slide -->
         <div class="single-featured-property" th:each="room : ${rooms}">
             <!-- Property Thumbnail -->
@@ -291,5 +291,29 @@
     <!-- Active js -->
     <script src="/js/active.js"></script>
 </div>
+
+
+<div class="map-area mb-100" th:fragment="google-maps">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <!--API key-->
+                <!--AIzaSyDrgMGaL8enyaz_PXsdYurQ8Z4LKGg-id8-->
+                <div id="googleMap" class="googleMap"></div>
+                <script> var map;
+
+                function initMap() {
+                    map = new google.maps.Map(document.getElementById('googleMap'), {
+                        center: {lat: 21.017030, lng: 105.783902},
+                        zoom: 13
+                    });
+                }</script>
+                <script async defer
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrgMGaL8enyaz_PXsdYurQ8Z4LKGg-id8&callback=initMap"></script>
+            </div>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>

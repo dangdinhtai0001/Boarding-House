@@ -92,9 +92,7 @@ public class Controller {
 
     @RequestMapping(value = {"/home","/"} , method = RequestMethod.GET)
     public String home(Model model){
-        homeService.displayHome(model);
-        homeService.displayFeedback(model);
-        homeService.displayRoomList(model, 6);
+        homeService.displayHomePage(model, 6);
         return "home";
     }
 
@@ -102,5 +100,12 @@ public class Controller {
     public String listings(Model model){
         listingsService.displayListingsPage(model);
         return "listings";
+    }
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    @RequestMapping(value = "/contact")
+    public String contact(Model model){
+        homeService.displayHome(model);
+        return "contact";
     }
 }
