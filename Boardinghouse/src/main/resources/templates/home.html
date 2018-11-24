@@ -29,13 +29,13 @@
 
         <div class="row">
             <!-- Single Featured Property -->
-            <div  th:each="room : ${rooms}" class="col-12 col-md-6 col-xl-4">
+            <div th:each="room : ${rooms}" class="col-12 col-md-6 col-xl-4">
                 <div class="single-featured-property mb-50 wow fadeInUp" data-wow-delay="100ms">
                     <!-- Property Thumbnail -->
                     <div class="property-thumb">
                         <img th:src="${room.image}" alt="">
 
-                        <div class="tag" >
+                        <div class="tag">
                             <span th:if="${room.isSaled} == '1'">For Sale</span>
                         </div>
                         <div class="list-price">
@@ -45,13 +45,14 @@
                     <!-- Property Content -->
                     <div class="property-content">
                         <h5 th:utext="${room.name}"></h5>
-                        <p class="location"><img src="/images/icons/floor.png" alt=""> Tầng <span th:utext="${room.floor}"></span></p>
+                        <p class="location"><img src="/images/icons/floor.png" alt=""> Tầng <span
+                                th:utext="${room.floor}"></span></p>
                         <p th:utext="${room.description}"></p>
                         <div class="property-meta-data d-flex align-items-end justify-content-between">
                             <div class="new-tag">
-                                <img src="/images/icons/people.png" alt="" >
+                                <img src="/images/icons/people.png" alt="">
                                 <span th:utext="${room.recommend}"></span>
-                           </div>
+                            </div>
                             <div class="bathroom">
                                 <img src="/images/icons/bathtub.png" alt="">
                                 <span th:utext="${room.bathroom}"></span>
@@ -99,6 +100,8 @@
                     <h2>Nhận xét của khách hàng
                         <h2>
                             <p>Hãy xem nhưng khách hàng của chúng tôi nói gì</p>
+                        </h2>
+                    </h2>
                 </div>
             </div>
         </div>

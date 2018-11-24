@@ -46,8 +46,8 @@
                         <ul>
                             <li><a th:href="@{/home}">Trang chủ</a></li>
                             <li><a href="#">Giới thiệu</a></li>
-                            <li><a href="/listings">Phòng</a></li>
-                            <li><a href="#">Liên hệ</a></li>
+                            <li><a th:href="@{/listings}">Phòng</a></li>
+                            <li><a th:href="@{/contact}">Liên hệ</a></li>
                             <li><a th:href="@{/blog}">Blog</a></li>
                             <li><a href="#">Quản trị</a></li>
                         </ul>
@@ -290,6 +290,10 @@
     <script src="/js/jquery-ui.min.js"></script>
     <!-- Active js -->
     <script src="/js/active.js"></script>
+    <!-- Google Maps -->
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrgMGaL8enyaz_PXsdYurQ8Z4LKGg-id8&callback=initMap"></script>
+    <script src="js/map-active.js"></script>
 </div>
 
 
@@ -300,16 +304,7 @@
                 <!--API key-->
                 <!--AIzaSyDrgMGaL8enyaz_PXsdYurQ8Z4LKGg-id8-->
                 <div id="googleMap" class="googleMap"></div>
-                <script> var map;
-
-                function initMap() {
-                    map = new google.maps.Map(document.getElementById('googleMap'), {
-                        center: {lat: 21.017030, lng: 105.783902},
-                        zoom: 13
-                    });
-                }</script>
-                <script async defer
-                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrgMGaL8enyaz_PXsdYurQ8Z4LKGg-id8&callback=initMap"></script>
+                <!--<script> </script>-->
             </div>
         </div>
     </div>

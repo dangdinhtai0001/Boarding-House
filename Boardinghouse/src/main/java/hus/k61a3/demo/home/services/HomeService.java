@@ -25,7 +25,7 @@ public class HomeService {
     }
 
     public void displayFeedback(Model model) {
-        model.addAttribute("feedbacks", feedbackRepository.findAll());
+        model.addAttribute("feedbacks", feedbackRepository.findRandomFeedback(3));
     }
 
     public void displayRoomList(Model model, int limit) {

@@ -90,7 +90,7 @@ public class BlogService {
     }
 
 
-    public void submitComment(SubmitCommentForm form, int postId, Model model) {
+    public boolean submitComment(SubmitCommentForm form, int postId) {
         String name = form.getName();
         String email = form.getEmail();
         String message = form.getMessage();
@@ -101,6 +101,8 @@ public class BlogService {
         } else {
             error = true;
         }
+
+        return !error;
     }
 
     private List<Topic> findAllTopic() {
