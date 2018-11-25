@@ -1,31 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
-
-<head>
+<head th:fragment="head">
     <meta charset="UTF-8">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <!-- Title  -->
-    <title>Home | Blog</title>
 
     <!-- Favicon  -->
-    <link rel="icon" href="img/core-img/favicon.ico">
+    <link rel="icon" href="/images/core-img/favicon.ico">
 
     <!-- Style CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/blog_style.css">
+
 
 </head>
-
 <body>
-<!-- Preloader -->
-<div id="preloader">
-    <div class="south-load"></div>
-</div>
 
 <!-- ##### Header Area Start ##### -->
-<header class="header-area" th:fragment="header">
+<header th:fragment="header" class="header-area">
     <!-- Main Header Area -->
     <div class="main-header-area" id="stickyHeader">
         <div class="classy-nav-container breakpoint-off">
@@ -33,7 +26,7 @@
             <nav class="classy-navbar justify-content-between" id="southNav">
 
                 <!-- Logo -->
-                <a class="nav-brand" href="index.html"><h3 style="color: white">Boarding House</h3></a>
+                <a class="nav-brand" href="home.html"><h3 style="color: white">Boarding House</h3></a>
 
                 <!-- Navbar Toggler -->
                 <div class="classy-navbar-toggler">
@@ -51,11 +44,12 @@
                     <!-- Nav Start -->
                     <div class="classynav">
                         <ul>
-                            <li><a href="index.html">Trang chủ</a></li>
-                            <li><a href="about-us.html">Giới thiệu</a></li>
-                            <li><a href="listings.html">Thư viện</a></li>
-                            <li><a href="contact.html">Liên hệ</a></li>
-                            <li><a href="blog.html">Blog</a></li>
+                            <li><a th:href="@{/home}">Trang chủ</a></li>
+                            <li><a href="#">Giới thiệu</a></li>
+                            <li><a href="/listings">Phòng</a></li>
+                            <li><a href="#">Liên hệ</a></li>
+                            <li><a th:href="@{/blog}">Blog</a></li>
+                            <li><a href="#">Quản trị</a></li>
                         </ul>
 
                         <!-- Search Form -->
@@ -75,11 +69,133 @@
         </div>
     </div>
 </header>
+<!-- ##### Header Area End ##### -->
 
+<!-- ##### Breadcumb Area Start ##### -->
+<section th:fragment="Breadcumb" class="breadcumb-area bg-img" style="background-image: url(/images/bg-img/hero1.jpg);">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-12">
+                <div class="breadcumb-content">
+                    <h3 class="breadcumb-title"></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ##### Breadcumb Area End ##### -->
+
+<!-- ##### Hero Area Start ##### -->
+<section th:fragment="hero_area" class="hero-area">
+    <div class="hero-slides owl-carousel">
+        <!-- Single Hero Slide -->
+        <div class="single-hero-slide bg-img" style="background-image: url(/images/bg-img/hero1.jpg);">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12">
+                        <!--<div class="hero-slides-content">
+                            <h2 data-animation="fadeInUp" data-delay="100ms">Find your home</h2>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Single Hero Slide -->
+        <div class="single-hero-slide bg-img" style="background-image: url(/images/bg-img/hero5.jpg);">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12">
+                        <!--<div class="hero-slides-content">
+                            <h2 data-animation="fadeInUp" data-delay="100ms">Find your dream house</h2>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Single Hero Slide -->
+        <div class="single-hero-slide bg-img" style="background-image: url(/images/bg-img/hero3.jpg);">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12">
+                        <!--<div class="hero-slides-content">
+                            <h2 data-animation="fadeInUp" data-delay="100ms">Find your perfect house</h2>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ##### Hero Area End ##### -->
+
+<!--<#### blog side bar Start ####>-->
+<div class="blog-sidebar-area" th:fragment="blog_sidebar">
+    <!-- Search Widget -->
+    <div class="search-widget-area mb-70">
+        <form action="#" method="get">
+            <input type="search" name="search" id="searchInput" placeholder="Search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+
+    <!-- Catagories Widget -->
+    <div class="south-catagories-card mb-70">
+        <h5>Chủ đề</h5>
+        <ul class="catagories-menu" th:each="topic : ${topics}">
+            <li><a href="#" th:text="${topic.name}"></a></li>
+        </ul>
+    </div>
+
+    <!-- Catagories Widget -->
+
+    <!-- Catagories Widget -->
+    <div class="featured-properties-slides owl-carousel" >
+        <!-- Single Slide -->
+        <div class="single-featured-property" th:each="room : ${rooms}">
+            <!-- Property Thumbnail -->
+            <div class="property-thumb">
+                <img th:src="${room.image}" alt="">
+
+                <div class="tag">
+                    <span th:if="${room.isSaled} == '1'">For Sale</span>
+                </div>
+                <div class="list-price">
+                    <p th:utext="${room.price} + VNĐ"></p>
+                </div>
+            </div>
+            <!-- Property Content -->
+            <div class="property-content">
+                <h5 th:utext="${room.name}"></h5>
+                <p class="location"><img src="/images/icons/floor.png" alt=""> Tầng <span
+                        th:utext="${room.floor}"></span></p>
+                <p th:utext="${room.description}"></p>
+                <div class="property-meta-data d-flex align-items-end justify-content-between">
+                    <div class="new-tag">
+                        <img src="/images/icons/people.png" alt="">
+                        <span th:utext="${room.recommend}"></span>
+                    </div>
+                    <div class="bathroom">
+                        <img src="/images/icons/bathtub.png" alt="">
+                        <span th:utext="${room.bathroom}"></span>
+                    </div>
+                    <div class="garage">
+                        <img src="/images/icons/window.png" alt="">
+                        <span th:utext="${room.window}"></span>
+                    </div>
+                    <div class="space">
+                        <img src="/images/icons/square.png" alt="">
+                        <span th:utext="${room.square} + m2"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--<#### blog side bar end ####>-->
 
 <!-- ##### Footer Area Start ##### -->
 <footer th:fragment="footer" class="footer-area section-padding-100-0 bg-img gradient-background-overlay"
-        style="background-image: url(img/bg-img/cta.jpg);">
+        style="background-image: url(/images/bg-img/cta.jpg);">
     <!-- Main Footer Area -->
     <div class="main-footer-area">
         <div class="container">
@@ -94,9 +210,9 @@
 
                         <!-- Address -->
                         <div class="address">
-                            <h6><img src="img/icons/phone-call.png" alt=""> +45 677 8993000 223</h6>
-                            <h6><img src="img/icons/envelope.png" alt=""> boardinghouse@gmail.com</h6>
-                            <h6><img src="img/icons/location.png" alt=""> Trường Đại học Khoa học Tự Nhiên</h6>
+                            <h6><img src="/images/icons/phone-call.png" alt="" th:utext="${home.phoneNumber}"></h6>
+                            <h6><img src="/images/icons/envelope.png" alt="" th:utext="${home.email}"></h6>
+                            <h6><img src="/images/icons/location.png" alt="" th:utext="${home.address}"></h6>
                         </div>
                     </div>
                 </div>
@@ -110,19 +226,12 @@
                         </div>
                         <!-- Nav -->
                         <ul class="useful-links-nav d-flex align-items-center">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Properties</a></li>
-                            <li><a href="#">Listings</a></li>
-                            <li><a href="#">Testimonials</a></li>
-                            <li><a href="#">Properties</a></li>
+                            <li><a href="#">Trang chủ</a></li>
+                            <li><a href="#">Giới thiệu</a></li>
+                            <li><a href="#">Thư viện</a></li>
+                            <li><a href="#">Liên hệ</a></li>
                             <li><a href="#">Blog</a></li>
-                            <li><a href="#">Testimonials</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Elements</a></li>
-                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Quản trị</a></li>
                         </ul>
                     </div>
                 </div>
@@ -138,20 +247,19 @@
                         <div class="featured-properties-slides owl-carousel">
                             <!-- Single Slide -->
                             <div class="single-featured-properties-slide">
-                                <a href="#"><img src="img/bg-img/fea-product.jpg" alt=""></a>
+                                <a href="#"><img src="/images/bg-img/fea-product.jpg" alt=""></a>
                             </div>
                             <!-- Single Slide -->
                             <div class="single-featured-properties-slide">
-                                <a href="#"><img src="img/bg-img/fea-product.jpg" alt=""></a>
+                                <a href="#"><img src="/images/bg-img/fea-product.jpg" alt=""></a>
                             </div>
                             <!-- Single Slide -->
                             <div class="single-featured-properties-slide">
-                                <a href="#"><img src="img/bg-img/fea-product.jpg" alt=""></a>
+                                <a href="#"><img src="/images/bg-img/fea-product.jpg" alt=""></a>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
@@ -162,12 +270,26 @@
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             Copyright &copy;
             <script>document.write(new Date().getFullYear());</script>
-            All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a
+            All rights reserved | This template is made with <i class="fa fa-heart-o"
+                                                                aria-hidden="true"></i> by <a
                 href="https://colorlib.com" target="_blank">Colorlib</a>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
     </div>
 </footer>
 <!-- ##### Footer Area End ##### -->
+<div th:fragment="js">
+    <!-- jQuery (Necessary for All JavaScript Plugins) -->
+    <script src="/js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="/js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="/js/bootstrap.min.js"></script>
+    <!-- Plugins js -->
+    <script src="/js/plugins.js"></script>
+    <script src="/js/classy-nav.min.js"></script>
+    <script src="/js/jquery-ui.min.js"></script>
+    <!-- Active js -->
+    <script src="/js/active.js"></script>
+</div>
 </body>
-
 </html>
