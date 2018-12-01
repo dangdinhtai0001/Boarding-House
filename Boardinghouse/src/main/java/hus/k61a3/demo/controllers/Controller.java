@@ -1,18 +1,22 @@
 package hus.k61a3.demo.controllers;
 
-import hus.k61a3.demo.blog.entities.Post;
+import hus.k61a3.demo.Listings.ListingsService;
+import hus.k61a3.demo.blog.entities.SubmitCommentForm;
 import hus.k61a3.demo.blog.services.BlogService;
+import hus.k61a3.demo.contact.ContactService;
+import hus.k61a3.demo.contact.SubmitFeedbackForm;
+import hus.k61a3.demo.home.services.HomeService;
 import hus.k61a3.demo.ultis.services.ErrorServiceImp;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.support.PagedListHolder;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.List;
 
 @org.springframework.stereotype.Controller
 public class Controller {
@@ -25,11 +29,21 @@ public class Controller {
 
     @Autowired
     private BlogService blogService;
-    //Dùng cho phân trang
-    private static int pageSize = 3;
+
+    @Autowired
+    private HomeService homeService;
+
+    @Autowired
+    private ListingsService listingsService;
+
+    @Autowired
+    private ContactService contactService;
+
+//    @Autowired
+//    private RoomService roomService;
 
 
-    @RequestMapping(value = {"/", "/login"})
+    @RequestMapping(value = {"/login"})
     public String login() {
         return "login";
     }
@@ -49,60 +63,59 @@ public class Controller {
         model.addAttribute("error", errorServiceImp.getOne("403"));
         return "errors";
     }
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
+    //Blog
     //https://shareeverythings.com/lap-trinh/java/huong-dan-phan-trang-trong-thymeleaf-va-spring-boot/
     @RequestMapping("/blog")
-    public String blog(Model model, HttpServletRequest request
-            , RedirectAttributes redirect) {
+    public String blog(Model model, HttpServletRequest request, RedirectAttributes redirect) {
         request.getSession().setAttribute("postList", null);
-
+        model.addAttribute("title", "HOME | BLOG");
         return "redirect:/blog/page/1";
-//        List<Post> posts = blogService.getAllPost();
-//        model.addAttribute("posts", posts);
-//
-//
-//        return "blog";
     }
 
     @RequestMapping("/blog/page/{pageNumber}")
     public String pagination(HttpServletRequest request, @PathVariable String pageNumber, Model model) {
-        PagedListHolder<?> pagedListHolder = (PagedListHolder<?>) request.getSession().getAttribute("postList");
-        List<Post> list = blogService.getAllPost();
-
-        //Chưa rõ nguyên nhân lỗi
-        int pageNumberInt = 1;
-        if (String.valueOf(pageNumber).contains("null")) {
-            pageNumber = pageNumber.substring(4, pageNumber.length());
-//            System.out.println(pageNumber.substring(4,pageNumber.length()));
-        }
-        pageNumberInt = Integer.parseInt(pageNumber);
-
-
-        if (pagedListHolder == null) {
-            pagedListHolder = new PagedListHolder<>(list);
-            pagedListHolder.setPageSize(pageSize);
-        } else {
-            final int goToPage = pageNumberInt - 1;
-            if (goToPage <= pagedListHolder.getPageCount() && goToPage >= 0) {
-                pagedListHolder.setPage(goToPage);
-            }
-        }
-
-        request.getSession().setAttribute("postList", pagedListHolder);
-        int current = pagedListHolder.getPage() + 1;
-        int begin = Math.max(1, current - list.size());
-        int end = Math.min(begin + pageSize, pagedListHolder.getPageCount());
-        int totalPageCount = pagedListHolder.getPageCount();
-        String baseURL = "/blog/page/";
-
-        model.addAttribute("beginIndex", begin);
-        model.addAttribute("endIndex", end);
-        model.addAttribute("currentIndex", current);
-        model.addAttribute("totalPageCount", totalPageCount);
-        model.addAttribute("baseURL", baseURL);
-        model.addAttribute("posts", pagedListHolder);
-
+        blogService.displayBlog(request, pageNumber, model, homeService);
         return "blog";
+    }
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    @RequestMapping(value = "/blog/post/{id}", method = RequestMethod.GET)
+    public String singleBlog(@PathVariable String id, Model model) {
+        blogService.displaySinglePost(model, id, homeService);
+        return "singleBlog";
+    }
+
+    @RequestMapping(value = "/blog/post/{id}/submit", method = RequestMethod.POST)
+    public String submitComment(@ModelAttribute("submitCommentForm") SubmitCommentForm form, @PathVariable String id) {
+        blogService.submitComment(form, Integer.parseInt(id));
+        return "redirect:/blog/post/{id}";
+    }
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    @RequestMapping(value = {"/home", "/"}, method = RequestMethod.GET)
+    public String home(Model model) {
+        homeService.displayHomePage(model, 6);
+        return "home";
+    }
+
+    @RequestMapping(value = "/listings")
+    public String listings(Model model) {
+        listingsService.displayListingsPage(model);
+        return "listings";
+    }
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    @RequestMapping(value = "/contact", method = RequestMethod.GET)
+    public String contact(Model model) {
+        contactService.displayContactPage(model);
+        return "contact";
+    }
+
+    @RequestMapping(value = "/contact/submit", method = RequestMethod.POST)
+    public String submitFeedback(@ModelAttribute("submitFeedbackForm") SubmitFeedbackForm form, Model model) {
+        contactService.submitfeedback(form);
+        return "redirect:/contact";
     }
 }

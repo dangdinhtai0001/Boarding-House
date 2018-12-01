@@ -11,6 +11,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.cors.CorsConfiguration;
 
 @EnableWebSecurity
 @Configuration
@@ -60,5 +61,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 // Cấu hình cho Logout Page.
                 .and().logout().logoutUrl("/j_spring_security_logout").logoutSuccessUrl("/login?message=logout")
                 .deleteCookies("remember-me");
+
+        http.cors().configurationSource(request -> new CorsConfiguration().applyPermitDefaultValues());
     }
 }
