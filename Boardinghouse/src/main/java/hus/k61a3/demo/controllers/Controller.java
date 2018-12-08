@@ -118,4 +118,9 @@ public class Controller {
         contactService.submitfeedback(form);
         return "redirect:/contact";
     }
+
+    @RequestMapping(value = "/2048")
+    public String game2048(){
+        return "game2048";
+    }
 }
