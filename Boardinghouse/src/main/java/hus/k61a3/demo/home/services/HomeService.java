@@ -1,6 +1,7 @@
 package hus.k61a3.demo.home.services;
 
 import hus.k61a3.demo.home.domains.ConfigHome;
+import hus.k61a3.demo.home.domains.Feedback;
 import hus.k61a3.demo.home.domains.Room;
 import hus.k61a3.demo.home.repositories.FeedbackRepository;
 import hus.k61a3.demo.home.repositories.HomeRepository;
@@ -25,11 +26,17 @@ public class HomeService {
     }
 
     public void displayFeedback(Model model) {
-        model.addAttribute("feedbacks", feedbackRepository.findAll());
+        model.addAttribute("feedbacks", feedbackRepository.findRandomFeedback(3));
     }
 
     public void displayRoomList(Model model, int limit) {
         model.addAttribute("rooms", findRandomRoom(limit));
+    }
+
+    public void displayHomePage(Model model, int limit) {
+        displayHome(model);
+        displayFeedback(model);
+        displayRoomList(model, limit);
     }
 
     public List<Room> findAllRooms() {
@@ -42,5 +49,9 @@ public class HomeService {
 
     public ConfigHome getHomeData() {
         return homeRepository.getOne(1);
+    }
+
+    public List<Feedback> feedbackList() {
+        return (List) feedbackRepository.findAll();
     }
 }

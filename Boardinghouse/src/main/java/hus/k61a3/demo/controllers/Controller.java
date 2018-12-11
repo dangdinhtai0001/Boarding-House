@@ -3,8 +3,9 @@ package hus.k61a3.demo.controllers;
 import hus.k61a3.demo.Listings.ListingsService;
 import hus.k61a3.demo.blog.entities.SubmitCommentForm;
 import hus.k61a3.demo.blog.services.BlogService;
+import hus.k61a3.demo.contact.ContactService;
+import hus.k61a3.demo.contact.SubmitFeedbackForm;
 import hus.k61a3.demo.home.services.HomeService;
-import hus.k61a3.demo.aboutus.AboutusService;
 import hus.k61a3.demo.ultis.services.ErrorServiceImp;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -36,7 +37,7 @@ public class Controller {
     private ListingsService listingsService;
 
     @Autowired
-    private AboutusService aboutusService;
+    private ContactService contactService;
 
 //    @Autowired
 //    private RoomService roomService;
@@ -75,42 +76,46 @@ public class Controller {
 
     @RequestMapping("/blog/page/{pageNumber}")
     public String pagination(HttpServletRequest request, @PathVariable String pageNumber, Model model) {
-        blogService.displayBlog(request, pageNumber, model,homeService);
+        blogService.displayBlog(request, pageNumber, model, homeService);
         return "blog";
     }
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     @RequestMapping(value = "/blog/post/{id}", method = RequestMethod.GET)
     public String singleBlog(@PathVariable String id, Model model) {
-        blogService.displaySinglePost(model, id,homeService);
+        blogService.displaySinglePost(model, id, homeService);
         return "singleBlog";
     }
 
     @RequestMapping(value = "/blog/post/{id}/submit", method = RequestMethod.POST)
-    public String submitComment(@ModelAttribute("submitCommentForm") SubmitCommentForm form, @PathVariable String id
-                                , Model model) {
-        blogService.submitComment(form, Integer.parseInt(id),model);
+    public String submitComment(@ModelAttribute("submitCommentForm") SubmitCommentForm form, @PathVariable String id) {
+        blogService.submitComment(form, Integer.parseInt(id));
         return "redirect:/blog/post/{id}";
     }
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    @RequestMapping(value = {"/home","/"} , method = RequestMethod.GET)
-    public String home(Model model){
-        homeService.displayHome(model);
-        homeService.displayFeedback(model);
-        homeService.displayRoomList(model, 6);
+    @RequestMapping(value = {"/home", "/"}, method = RequestMethod.GET)
+    public String home(Model model) {
+        homeService.displayHomePage(model, 6);
         return "home";
     }
 
     @RequestMapping(value = "/listings")
-    public String listings(Model model){
+    public String listings(Model model) {
         listingsService.displayListingsPage(model);
         return "listings";
     }
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    @RequestMapping(value = "/aboutus")
-    public String aboutUs(Model model){
-        aboutusService.displayAboutus(model);
-        return "aboutUs";
+    @RequestMapping(value = "/contact", method = RequestMethod.GET)
+    public String contact(Model model) {
+        contactService.displayContactPage(model);
+        return "contact";
+    }
+
+    @RequestMapping(value = "/contact/submit", method = RequestMethod.POST)
+    public String submitFeedback(@ModelAttribute("submitFeedbackForm") SubmitFeedbackForm form, Model model) {
+        contactService.submitfeedback(form);
+        return "redirect:/contact";
     }
 }

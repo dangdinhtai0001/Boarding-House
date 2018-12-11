@@ -1,12 +1,18 @@
 var map;
+function initMap() {
+    map = new google.maps.Map(document.getElementById('googleMap'), {
+        center: {lat: 21.017030, lng: 105.783902},
+        zoom: 13
+    });
+}
 var latlng = new google.maps.LatLng(56.9496, 24.1052);
 var stylez = [{
     featureType: "all",
     elementType: "all",
     stylers: [{
         saturation: -25
-            }]
-        }];
+    }]
+}];
 var mapOptions = {
     zoom: 15,
     center: latlng,
