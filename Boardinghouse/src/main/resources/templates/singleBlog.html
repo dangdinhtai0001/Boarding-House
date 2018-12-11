@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="layout :: head"></head>
+<head><title> HOME | BLOG </title></head>
+<body>
+<!-- Preloader -->
+<div id="preloader">
+    <div class="south-load"></div>
+</div>
+<!-- ##### Header Area Start ##### -->
+<header th:replace="layout :: header"></header>
+<!-- ##### Header Area End ##### -->
+
+<!-- ##### Breadcumb Area Start ##### -->
+<section th:replace="layout :: Breadcumb"></section>
+<!-- ##### Breadcumb Area End ##### -->
+
+<!-- ##### Blog Area Start ##### -->
+<section class="blog-area section-padding-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-8">
+
+                <div class="single-blog-area">
+                    <!-- Post Thumbnail -->
+                    <div class="blog-post-thumbnail">
+                        <img th:src=${post.post.image} alt="">
+                    </div>
+                    <!-- Post Content -->
+                    <div class="post-content">
+                        <!-- Date -->
+                        <div class="post-date">
+                            <a href="#" th:text="${post.post.dateCreated}"></a>
+                        </div>
+                        <!-- Headline -->
+                        <a href="#" th:text="${post.post.title}" class="headline"></a>
+                        <!-- Post Meta -->
+                        <div class="post-meta">
+                            <p>By <a href="#" th:text="${post.post.createdBy}"></a> | in <a href="#" th:utext="${post.post.topic.name}"></a>
+                                | <a href="#" th:text="${post.numberOfComment} + Comments"></a>
+                            </p>
+                        </div>
+                        <p th:text="${post.post.content}"></p>
+                        <!--<img class="mb-50" src="img/bg-img/hero3.jpg" alt="">-->
+                    </div>
+                </div>
+
+                <div class="comments-area">
+                    <h5 th:utext="${post.numberOfComment} + comment"></h5>
+                    <ol>
+                        <!-- Single Comment Area -->
+                        <li class="single_comment_area"  th:each="comment : ${post.comments}">
+                            <div class="comment-wrapper d-flex">
+                                <!-- Comment Meta -->
+                                <div class="comment-author">
+                                    <img src="/blog-img/c-1.jpg" alt="">
+                                </div>
+                                <!-- Comment Content -->
+                                <div class="comment-content">
+                                    <div class="comment-meta">
+                                        <a href="#" class="comment-author-name" th:text="${comment.name}"></a> |
+                                        <a href="#" class="comment-date" th:text="${comment.dateCreated}"></a> |
+                                    </div>
+                                    <p th:utext="${comment.content}"></p>
+                                </div>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+
+                <!-- Leave A Comment -->
+                <div class="leave-comment-area mt-70 clearfix">
+                    <div class="comment-form">
+                        <h5>Leave a reply</h5>
+
+                        <!-- Comment Form -->
+                        <form th:action="@{/blog/post/{id}/submit(id=${post.post.id})}" th:object="${submitCommentForm}" method="post" >
+                            <div class="form-group">
+                                <input type="text" th:field="*{name}" class="form-control" id="contact-name" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" th:field="*{email}" class="form-control" id="contact-email" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <textarea th:field="*{message}" class="form-control" name="message" id="message" cols="30" rows="10"
+                                          placeholder="Message"></textarea>
+                            </div>
+                            <p th:if="${error}" th:utext="${errorMessage}" style="color:red;font-style:italic;"> </p>
+                            <button type="submit" class="btn south-btn">Submit Reply</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4">
+                <div th:replace="layout :: blog_sidebar"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ##### Blog Area End ##### -->
+
+<!-- ##### Footer Area Start ##### -->
+<footer th:replace="layout :: footer"></footer>
+<!-- ##### Footer Area End ##### -->
+
+<div th:replace="layout :: js"></div>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="layout :: head"></head>
+<head><title> HOME | BLOG </title></head>
+<body>
+<!-- Preloader -->
+<div id="preloader">
+    <div class="south-load"></div>
+</div>
+<!-- ##### Header Area Start ##### -->
+<header th:replace="layout :: header"></header>
+<!-- ##### Header Area End ##### -->
+
+<!-- ##### Breadcumb Area Start ##### -->
+<section th:replace="layout :: Breadcumb"></section>
+<!-- ##### Breadcumb Area End ##### -->
+
+<!-- ##### Blog Area Start ##### -->
+<section class="south-blog-area section-padding-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-8">
+
+                <!-- Single Blog Area -->
+                <th:block th:unless="${#lists.isEmpty(posts.pageList)}">
+                    <th:block th:each="post : ${posts.pageList}">
+                        <!-- Post Thumbnail -->
+                        <div class="blog-post-thumbnail">
+                            <!--<img src="/blog-/images/blog1.jpg" alt="">-->
+                            <img th:src=${post.post.image}/>
+                        </div>
+                        <div class="post-content">
+                            <!-- Date -->
+                            <div class="post-date">
+                                <a href="#" th:text="${post.post.dateCreated}"></a>
+                            </div>
+                            <!-- Headline -->
+                            <a href="#" class="headline" th:text="${post.post.title}"></a>
+                            <!-- Post Meta -->
+                            <div class="post-meta">
+                                <p>By <a href="#" th:utext="${post.post.createdBy}"></a> | in <a
+                                        href="#" th:utext="${post.post.topic.name}"></a> | <a
+                                        href="#" th:text="${post.numberOfComment} + Comments"></a></p>
+                            </div>
+                            <p th:text="${post.summary}"></p>
+                            <!-- Read More btn -->
+                            <!--<a th:href="@{/blog/post (id=${post.post.id}) }" class="btn south-btn" style="margin-bottom: 40px">Read More</a>-->
+                            <a th:href="@{/blog/post/{id}(id=${post.post.id})}" class="btn south-btn"
+                               style="margin-bottom: 40px">Read More</a>
+                        </div>
+                    </th:block>
+                </th:block>
+
+                <th:block th:if="${#lists.isEmpty(posts.pageList)} == true">
+                    <h3>Không có bài đăng nào</h3>
+                </th:block>
+
+            </div>
+            <div class="col-12 col-lg-4">
+                <div th:replace="layout :: blog_sidebar"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <!-- Pagination -->
+                <div class="south-pagination mt-100 d-flex">
+                    <nav aria-label="Page navigation">
+                        <!-- Pagination -->
+                        <ul class="pagination">
+                            <li
+                                    th:class="${currentIndex == 1}? 'page-item disabled' : 'page-item'">
+                                <a class="page-link" th:href="@{/blog}">First</a>
+                            </li>
+                            <li
+                                    th:class="${currentIndex == 1}? 'page-item disabled': 'page-item' ">
+                                <a class="page-link" aria-label="Previous"
+                                   th:href="@{|${baseUrl}${currentIndex - 1}|}"
+                                   title='Go to previous page'><span aria-hidden="true">«</span>
+                                    <span class="sr-only">Previous</span></a>
+                            </li>
+                            <li th:each="item : ${#numbers.sequence(beginIndex,endIndex)}"
+                                th:class="${item == currentIndex ? 'page-item active' :'page-item' }">
+                                <a class="page-link" th:href="@{|${baseUrl}${item}|}"> <span
+                                        th:text='${item}'>1</span>
+                                </a>
+                            </li>
+                            <li
+                                    th:class="${currentIndex == totalPageCount}? 'page-item disabled': 'page-item'">
+                                <a class="page-link" aria-label="Next"
+                                   th:href="@{|${baseUrl}${currentIndex + 1}|}" title='Go to next page'><span
+                                        aria-hidden="true">»</span> <span class="sr-only">Next</span></a>
+                            </li>
+                            <li
+                                    th:class="${currentIndex == totalPageCount}? 'page-item disabled':'page-item'">
+                                <a class="page-link" th:href="@{|${baseUrl}${totalPageCount}|}">Last</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- ##### Blog Area End ##### -->
+
+<!-- ##### Footer Area Start ##### -->
+<footer th:replace="layout :: footer"></footer>
+<!-- ##### Footer Area End ##### -->
+
+<div th:replace="layout :: js"></div>
+</body>
+</html>
