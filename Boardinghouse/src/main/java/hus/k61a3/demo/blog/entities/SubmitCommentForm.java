@@ -25,4 +25,7 @@ public class SubmitCommentForm {
     @NotEmpty
     @NotNull
     private String message;
+
+    private int parentId;
+
 }

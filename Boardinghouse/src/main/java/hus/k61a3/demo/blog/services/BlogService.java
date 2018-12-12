@@ -97,7 +97,7 @@ public class BlogService {
         Date date = new Date();
         if (!email.equals("") && !message.equals("")) {
             error = false;
-            commentRepository.save(new Comment(0, postRepository.getOne(postId), name, email, message, false, date));
+            commentRepository.save(new Comment(0, postRepository.getOne(postId), name, email, message, false, date,0));
         } else {
             error = true;
         }
@@ -128,6 +128,7 @@ public class BlogService {
         if (error) {
             model.addAttribute("errorMessage", "Không được để trống trường email và nội dung");
         }
+//        System.out.println(commentRepository.findByParentIdAndAndPostId(0,1));
     }
 
 

@@ -50,7 +50,7 @@
                     <ol>
                         <!-- Single Comment Area -->
                         <li class="single_comment_area"  th:each="comment : ${post.comments}">
-                            <div class="comment-wrapper d-flex">
+                            <div class="comment-wrapper d-flex" th:if="${comment.parentId == 0 }">
                                 <!-- Comment Meta -->
                                 <div class="comment-author">
                                     <img src="/blog-img/c-1.jpg" alt="">
@@ -60,10 +60,31 @@
                                     <div class="comment-meta">
                                         <a href="#" class="comment-author-name" th:text="${comment.name}"></a> |
                                         <a href="#" class="comment-date" th:text="${comment.dateCreated}"></a> |
+                                        <a href="#" class="comment-reply">Reply</a>
                                     </div>
                                     <p th:utext="${comment.content}"></p>
                                 </div>
                             </div>
+
+                            <ol class="children">
+                                <li class="single_comment_area" th:each="replyComment : ${post.comments}">
+                                    <div class="comment-wrapper d-flex" th:if="${replyComment.parentId == comment.id }">
+                                        <!-- Comment Meta -->
+                                        <div class="comment-author">
+                                            <img src="/blog-img/c-2.jpg" alt="">
+                                        </div>
+                                        <!-- Comment Content -->
+                                        <div class="comment-content">
+                                            <div class="comment-meta">
+                                                <a href="#" class="comment-author-name" th:text="${replyComment.name}"></a> |
+                                                <a href="#" class="comment-date" th:text="${replyComment.dateCreated}"></a> |
+                                            </div>
+                                            <p th:utext="${replyComment.content}"></p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ol>
+
                         </li>
                     </ol>
                 </div>

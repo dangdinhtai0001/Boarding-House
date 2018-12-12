@@ -5,8 +5,6 @@ html, body {
   background: #faf8ef;
   color: #776e65;}
 
-
-
 .heading:after {
   content: "";
   display: block;

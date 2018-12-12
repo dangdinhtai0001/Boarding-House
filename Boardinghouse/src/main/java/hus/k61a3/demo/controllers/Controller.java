@@ -129,8 +129,8 @@ public class Controller {
         return "game2048";
     }
 
-    @RequestMapping(value = "/aboutus")
-    public String aboutUs(Model model){
+    @RequestMapping(value = "/about-us")
+    public String aboutUs(Model model) {
         aboutusService.displayAboutus(model);
         return "aboutUs";
     }
