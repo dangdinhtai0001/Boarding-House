@@ -12,7 +12,15 @@
 
     <!-- Style CSS -->
     <link rel="stylesheet" href="/css/master_styles.css">
-    <link rel="stylesheet" href="/css/live-chat.css">
+    <!--<link rel="stylesheet" href="/css/live-chat.css">-->
+
+    <!--chatlive-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet'
+          href='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.min.css'>
+    <link rel="stylesheet" href="/css/chat_style.css">
 </head>
 <body>
 
@@ -48,6 +56,7 @@
                             <li><a th:href="@{/listings}">Phòng</a></li>
                             <li><a th:href="@{/contact}">Liên hệ</a></li>
                             <li><a th:href="@{/blog}">Blog</a></li>
+                            <li><a th:href="@{/2048}">Game</a></li>
                             <li><a href="#">Quản trị</a></li>
                         </ul>
 
@@ -276,7 +285,68 @@
     </div>
 </footer>
 <!-- ##### Footer Area End ##### -->
+
+<!-- ##### Live chat start ##### -->
+<div th:fragment="live-chat" style="position:fixed; z-index: 2147483647;">
+    <section class="avenue-messenger" >
+        <div class="menu" >
+            <div class="items">
+                <span>
+                    <a href="#" title="Minimize" id="minimize-chat">&mdash;</a><br>
+                    <a href="#" title="End Chat">&#10005;</a>
+                </span>
+            </div>
+            <div class="button">...</div>
+        </div>
+        <div class="agent-face">
+            <div class="half">
+                <!-- <img class="agent circle" src="http://askavenue.com/img/17.jpg" alt="Jesse Tino"></div> -->
+                <img class="agent circle" alt="Erza_Scarlet"
+                     src="https://vignette.wikia.nocookie.net/fairytailwarcraftage/images/9/9a/Erza_Scarlet.png/revision/latest?cb=20160623135737">
+            </div>
+        </div>
+        <div class="chat">
+            <div class="chat-title">
+                <h1>ADMIN</h1>
+                <h2>online</h2>
+                <!--  <figure class="avatar">
+              <img src="http://askavenue.com/img/17.jpg" /></figure>-->
+            </div>
+            <div class="messages">
+                <div class="messages-content"></div>
+            </div>
+            <div class="message-box">
+                <textarea type="text" class="message-input" placeholder="Type message..."></textarea>
+                <button type="submit" class="message-submit">Send</button>
+            </div>
+        </div>
+        <button type="button" name="button" id="btnFaceBook">Login</button>
+    </section>
+</div>
+<!-- end live-chat -->
+
 <div th:fragment="js">
+    <!--firebase-->
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCIGRiuB9yJt0ucvX4fmnRaONHMjChsiPY",
+            authDomain: "boardinghouse-223403.firebaseapp.com",
+            databaseURL: "https://boardinghouse-223403.firebaseio.com",
+            projectId: "boardinghouse-223403",
+            storageBucket: "boardinghouse-223403.appspot.com",
+            messagingSenderId: "680507230835"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+    <!--chat live-->
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.concat.min.js'></script>
+    <!-- <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script> -->
+    <script src="/js/chat.js"></script>
+
     <!-- jQuery (Necessary for All JavaScript Plugins) -->
     <script src="/js/jquery/jquery-2.2.4.min.js"></script>
     <!-- Popper js -->
@@ -290,13 +360,10 @@
     <!-- Active js -->
     <script src="/js/active.js"></script>
 
-    <!--live chat-->
-    <script src="/js/live-chat.js"></script>
-
     <!-- Google Maps -->
     <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrgMGaL8enyaz_PXsdYurQ8Z4LKGg-id8&callback=initMap"></script>
-    <script src="js/map-active.js"></script>
+    <script src="/js/map-active.js"></script>
 </div>
 
 
@@ -313,53 +380,6 @@
     </div>
 </div>
 
-<div id="live-chat" th:fragment="live-chat" style="position:fixed; z-index: 2147483647;">
-    <div class="clearfix" id="headerChat">
-        <h4>John Doe</h4>
-        <span class="chat-message-counter">3</span>
-    </div>
-    <div class="chat">
-        <div class="chat-history">
-            <div class="chat-message clearfix">
-                <img src="http://lorempixum.com/32/32/people" alt="" width="32" height="32">
-                <div class="chat-message-content clearfix">
-                    <span class="chat-time">13:35</span>
-                    <h5>John Doe</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, explicabo quasi ratione odio
-                        dolorum harum.</p>
-                </div> <!-- end chat-message-content -->
-            </div> <!-- end chat-message -->
-            <hr>
-            <div class="chat-message clearfix">
-                <img src="http://gravatar.com/avatar/2c0ad52fc5943b78d6abe069cc08f320?s=32" alt="" width="32"
-                     height="32">
-                <div class="chat-message-content clearfix">
-                    <span class="chat-time">13:37</span>
-                    <h5>Marco Biedermann</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, nulla accusamus magni vel
-                        debitis numquam qui tempora rem voluptatem delectus!</p>
-                </div> <!-- end chat-message-content -->
-            </div> <!-- end chat-message -->
-            <hr>
-            <div class="chat-message clearfix">
-                <img src="http://lorempixum.com/32/32/people" alt="" width="32" height="32">
-                <div class="chat-message-content clearfix">
-                    <span class="chat-time">13:38</span>
-                    <h5>John Doe</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                </div> <!-- end chat-message-content -->
-            </div> <!-- end chat-message -->
-            <hr>
-        </div> <!-- end chat-history -->
-        <p class="chat-feedback">Your partner is typing…</p>
-        <form action="#" method="post">
-            <fieldset>
-                <input type="text" placeholder="Type your message…" autofocus>
-                <input type="hidden">
-            </fieldset>
-        </form>
-    </div> <!-- end chat -->
-</div> <!-- end live-chat -->
 
 </body>
 </html>

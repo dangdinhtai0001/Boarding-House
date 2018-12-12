@@ -39,4 +39,7 @@ public class Comment {
 
     @Column(name = "date_created",nullable = true)
     private Date dateCreated;
+
+    @Column(name = "parent_id")
+    private int parentId;
 }

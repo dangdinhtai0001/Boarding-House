@@ -49,15 +49,15 @@
 
 /* :: 2.0 Import All CSS */
 
-@import 'css/bootstrap.min.css';
-@import 'css/animate.css';
-@import 'css/owl.carousel.css';
-@import 'css/classy-nav.min.css';
-@import 'css/magnific-popup.css';
-@import 'css/font-awesome.min.css';
-@import 'css/themify-icons.css';
-@import 'css/nice-select.css';
-@import 'css/jquery-ui.min.css';
+@import '/css/bootstrap.min.css';
+@import '/css/animate.css';
+@import '/css/owl.carousel.css';
+@import '/css/classy-nav.min.css';
+@import '/css/magnific-popup.css';
+@import '/css/font-awesome.min.css';
+@import '/css/themify-icons.css';
+@import '/css/nice-select.css';
+@import '/css/jquery-ui.min.css';
 
 /* :: 3.0 Base CSS */
 
@@ -2158,3 +2158,4 @@ img {
         color: $text-color;
     }
 }
+

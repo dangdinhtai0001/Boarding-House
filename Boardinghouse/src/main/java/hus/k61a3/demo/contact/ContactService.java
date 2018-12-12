@@ -16,20 +16,22 @@ public class ContactService {
 
     private int error = 2;
 
-    public boolean submitfeedback(SubmitFeedbackForm form) {
+    public Feedback submitfeedback(SubmitFeedbackForm form) {
 
         String name = form.getName();
         String email = form.getEmail();
         String phone = form.getPhoneNumber();
         String content = form.getContent();
+        Feedback feedback = null;
 
         if (name.equals("\\s+") || email.equals("\\s+") || phone.equals("\\s+") || content.equals("\\s+")) {
             error = 1;
         } else {
-            feedbackRepository.save(new Feedback(name, phone, email, content));
+            feedback = new Feedback(name, phone, email, content);
+            feedbackRepository.save(feedback);
             error = 0;
         }
-        return error==0;
+        return feedback;
     }
 
     public void displayContactPage(Model model) {
