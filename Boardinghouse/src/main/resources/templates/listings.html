@@ -22,7 +22,7 @@
             <div class="col-12">
                 <div class="advanced-search-form">
                     <!-- Search Title -->
-                    <div class="search-title">
+                    <div class="search-title" style="width: 290px">
                         <p>Hãy tìm căn phòng của bạn</p>
                     </div>
                     <!-- Search Form -->
@@ -289,7 +289,7 @@
                     </div>
                     <!-- Property Content -->
                     <div class="property-content">
-                        <h5 th:utext="${room.name}"></h5>
+                        <a href="#" style="text-decoration:underline"><h5 th:utext="${room.name}"></h5></a>
                         <p class="location"><img src="/images/icons/floor.png" alt=""> Tầng <span th:utext="${room.floor}"></span></p>
                         <p th:utext="${room.description}"></p>
                         <div class="property-meta-data d-flex align-items-end justify-content-between">
@@ -309,9 +309,7 @@
                                 <img src="/images/icons/square.png" alt="">
                                 <span th:utext="${room.square} + m2"></span>
                             </div>
-                            <div>
-                                <button type="submit" class="btn btn-success" style="float:left;">Xem thêm</button>
-                            </div>
+
                         </div>
                     </div>
                 </div>
