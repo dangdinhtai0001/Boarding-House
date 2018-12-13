@@ -1,6 +1,6 @@
 package hus.k61a3.demo.controllers;
 
-import hus.k61a3.demo.Listings.ListingsService;
+import hus.k61a3.demo.Listings.RoomService;
 import hus.k61a3.demo.blog.entities.SubmitCommentForm;
 import hus.k61a3.demo.blog.services.BlogService;
 import hus.k61a3.demo.contact.ContactService;
@@ -34,7 +34,7 @@ public class Controller {
     private HomeService homeService;
 
     @Autowired
-    private ListingsService listingsService;
+    private RoomService roomService;
 
     @Autowired
     private ContactService contactService;
@@ -102,7 +102,7 @@ public class Controller {
 
     @RequestMapping(value = "/listings")
     public String listings(Model model) {
-        listingsService.displayListingsPage(model);
+        roomService.displayListingsPage(model);
         return "listings";
     }
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -123,5 +123,12 @@ public class Controller {
     public String game2048(Model model) {
         homeService.displayHome(model);
         return "game2048";
+    }
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    @RequestMapping(value = "/listings/room/{id}", method = RequestMethod.GET)
+    public String singleRoom(@PathVariable String id, Model model) {
+        roomService.displaySingleRoomPage(model,id);
+        return "singleListings";
     }
 }

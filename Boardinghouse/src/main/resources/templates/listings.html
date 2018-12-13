@@ -283,15 +283,15 @@
             </div>
         </div>
 
-        <div class="row">
+        <div class="row" th:fragment="listRoom">
             <!-- Single Featured Property -->
-            <div  th:each="room : ${rooms}" class="col-12 col-md-6 col-xl-4">
+            <div th:each="room : ${rooms}" class="col-12 col-md-6 col-xl-4">
                 <div class="single-featured-property mb-50 wow fadeInUp" data-wow-delay="100ms">
                     <!-- Property Thumbnail -->
                     <div class="property-thumb">
                         <img th:src="${room.image}" alt="">
 
-                        <div class="tag" >
+                        <div class="tag">
                             <span th:if="${room.isSaled} == '1'">For Sale</span>
                         </div>
                         <div class="list-price">
@@ -301,11 +301,15 @@
                     <!-- Property Content -->
                     <div class="property-content">
                         <h5 th:utext="${room.name}"></h5>
-                        <p class="location"><img src="/images/icons/floor.png" alt=""> Tầng <span th:utext="${room.floor}"></span></p>
-                        <p th:utext="${room.description}"></p>
+                        <p class="location"><img src="/images/icons/floor.png" alt=""> Tầng <span
+                                th:utext="${room.floor}"></span></p>
+                        <th:block th:with="description = ${room.description}">
+                            <p th:if="*{#strings.length(description)>=35}" th:text="${#strings.substring(description,0,35) + '...'}"></p>
+                            <p th:unless="*{#strings.length(description)>=35}" th:text="${#strings.substring(description,0,#strings.length(description))}"></p>
+                        </th:block>
                         <div class="property-meta-data d-flex align-items-end justify-content-between">
                             <div class="new-tag">
-                                <img src="/images/icons/people.png" alt="" >
+                                <img src="/images/icons/people.png" alt="">
                                 <span th:utext="${room.recommend}"></span>
                             </div>
                             <div class="bathroom">
