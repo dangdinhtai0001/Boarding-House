@@ -42,7 +42,7 @@
                                         href="#" th:utext="${post.post.topic.name}"></a> | <a
                                         href="#" th:text="${post.numberOfComment} + Comments"></a></p>
                             </div>
-                            <p th:text="${post.summary}"></p>
+                            <p th:with="summary = ${post.post.content}" th:text="${#strings.substring(summary,0,200) + '...'}"></p>
                             <!-- Read More btn -->
                             <!--<a th:href="@{/blog/post (id=${post.post.id}) }" class="btn south-btn" style="margin-bottom: 40px">Read More</a>-->
                             <a th:href="@{/blog/post/{id}(id=${post.post.id})}" class="btn south-btn"

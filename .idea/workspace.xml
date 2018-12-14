@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="662c5528-0214-4e27-ac6b-c600bc6f1014" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/singleListings.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/Listings/ListingsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/Listings/RoomService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/controllers/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/controllers/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/listings.html" beforeDir="false" afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/listings.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/singleBlog.html" beforeDir="false" afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/singleBlog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/entities/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/entities/Post.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/blog.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/B/target/" />
@@ -58,29 +54,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/singleListings.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
+            <state relative-caret-position="-46">
               <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/singleBlog.html">
+        <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/listings.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="61" column="145" selection-start-line="61" selection-start-column="145" selection-end-line="61" selection-end-column="145" />
-              <folding>
-                <element signature="n#style#0;n#p#0;n#form#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="73">
+              <caret line="306" column="132" selection-start-line="306" selection-start-column="75" selection-end-line="306" selection-end-column="132" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/entities/Post.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="23" column="40" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/application.properties">
+        <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/blog.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="76" selection-start-line="14" selection-start-column="76" selection-end-line="14" selection-end-column="76" />
+            <state relative-caret-position="144">
+              <caret line="44" column="115" selection-start-line="44" selection-start-column="115" selection-end-line="44" selection-end-column="115" />
             </state>
           </provider>
         </entry>
@@ -101,7 +103,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>read</find>
       <find>pag</find>
       <find>img/icons/</find>
       <find>img/core-img/</find>
@@ -131,6 +132,7 @@
       <find>js/</find>
       <find>postList</find>
       <find>img/</find>
+      <find>post.</find>
     </findStrings>
     <replaceStrings>
       <replace>css/login_style.css</replace>
@@ -160,12 +162,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/home/domains/ConfigHome.java" />
         <option value="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/home/domains/FeedBack.java" />
         <option value="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/home/domains/Room.java" />
         <option value="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/home/repositories/HomeRepository.java" />
         <option value="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/home/repositories/RoomRepositoriy.java" />
-        <option value="$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/blog.html" />
         <option value="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/Listings/ListingsService.java" />
         <option value="$PROJECT_DIR$/Boardinghouse/system.properties" />
         <option value="$PROJECT_DIR$/system.properties" />
@@ -211,6 +211,8 @@
         <option value="$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/singleListings.html" />
         <option value="$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/singleBlog.html" />
         <option value="$PROJECT_DIR$/Boardinghouse/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/entities/Post.java" />
+        <option value="$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/blog.html" />
       </list>
     </option>
   </component>
@@ -251,6 +253,31 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Scope 'Changed Files'; set:Changed Files; ALL; class com.intellij.packageDependencies.ChangeListScope">
+          <expand>
+            <path>
+              <item name="Boarding-House" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="Boarding-House" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="Boarding-House" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name=".idea" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -292,6 +319,16 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
               <item name="blog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Boarding-House" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Boardinghouse" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="entities" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Boarding-House" type="b2602c69:ProjectViewProjectNode" />
@@ -387,31 +424,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Scope 'Changed Files'; set:Changed Files; ALL; class com.intellij.packageDependencies.ChangeListScope">
-          <expand>
-            <path>
-              <item name="Boarding-House" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="Boarding-House" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-            <path>
-              <item name="Boarding-House" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name=".idea" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -451,7 +463,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544723528556" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544723575795" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../spring-boot-thymeleaf" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -635,14 +647,8 @@
       <workItem from="1544266972616" duration="1493000" />
       <workItem from="1544455694532" duration="6119000" />
       <workItem from="1544496306482" duration="7842000" />
-      <workItem from="1544702051277" duration="12824000" />
-    </task>
-    <task id="LOCAL-00024" summary="Xong màn blog và phân trang + điều hướng sang single blog">
-      <created>1542194114083</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1542194114083</updated>
+      <workItem from="1544702051277" duration="12997000" />
+      <workItem from="1544759934079" duration="340000" />
     </task>
     <task id="LOCAL-00025" summary="Xong replace thymeleaf">
       <created>1542198803224</created>
@@ -980,7 +986,14 @@
       <option name="project" value="LOCAL" />
       <updated>1544710828047</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="Router đc đến màn singleListings">
+      <created>1544723567205</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1544723567206</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -992,13 +1005,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="351907000" />
+    <option name="totallyTimeSpent" value="352420000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1366" height="740" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49434572" visible="true" weight="0.34266263" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49434572" visible="true" weight="0.34795764" />
       <window_info id="Structure" order="1" sideWeight="0.502447" side_tool="true" weight="0.34218514" />
       <window_info id="Web" order="2" sideWeight="0.5037037" side_tool="true" weight="0.34901366" />
       <window_info id="Designer" order="3" />
@@ -1042,7 +1055,7 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test deploy heroku lần 13" />
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="test deploy heroku lần 14" />
     <MESSAGE value="test deploy heroku lần 15" />
     <MESSAGE value="test deploy heroku lần 16" />
@@ -1067,7 +1080,9 @@
     <MESSAGE value="Sửa lại màn game" />
     <MESSAGE value="đẩy tạm âm thanh vào màn home, chưa rõ lỗi" />
     <MESSAGE value="chuẩn bị làm màn singlehouse" />
-    <option name="LAST_COMMIT_MESSAGE" value="chuẩn bị làm màn singlehouse" />
+    <MESSAGE value="Router đc đến màn singleListings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Router đc đến màn singleListings" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
@@ -1083,18 +1098,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/config/HibernateProxyTypeAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-60">
-          <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#901#902#0" expanded="true" />
-            <element signature="e#939#940#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/controllers/RestController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -1336,20 +1339,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/blog.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="101" column="14" lean-forward="true" selection-start-line="63" selection-start-column="8" selection-end-line="101" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/listings.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1185">
-          <caret line="329" column="18" selection-start-line="329" selection-start-column="18" selection-end-line="329" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/controllers/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -1403,13 +1392,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/singleListings.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/singleBlog.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -1424,6 +1406,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="76" selection-start-line="14" selection-start-column="76" selection-end-line="14" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/singleListings.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-46">
+          <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/listings.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="306" column="132" selection-start-line="306" selection-start-column="75" selection-end-line="306" selection-end-column="132" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/entities/Post.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="23" column="40" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/blog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="44" column="115" selection-start-line="44" selection-start-column="115" selection-end-line="44" selection-end-column="115" />
         </state>
       </provider>
     </entry>
