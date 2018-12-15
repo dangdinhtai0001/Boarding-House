@@ -1,5 +1,7 @@
 package hus.k61a3.demo.Listings;
 
+import hus.k61a3.demo.contact.ContactService;
+import hus.k61a3.demo.contact.SubmitFeedbackForm;
 import hus.k61a3.demo.home.domains.Room;
 import hus.k61a3.demo.home.repositories.RoomRepositoriy;
 import hus.k61a3.demo.home.services.HomeService;
@@ -16,6 +18,9 @@ public class RoomService {
     private RoomRepositoriy roomRepositoriy;
     @Autowired
     private HomeService homeService;
+    @Autowired
+    private ContactService contactService;
+    private int error = 2;
 
     public void displayListingsPage(Model model){
         model.addAttribute("home",homeService.getHomeData());
@@ -26,7 +31,16 @@ public class RoomService {
         return roomRepositoriy.findAll();
     }
 
-    public void displaySingleRoomPage(Model model, String id) {
-        homeService.displayHome(model);
+    private Room getOne(String id){
+        return roomRepositoriy.getOne(Integer.parseInt(id));
     }
+
+    public void displaySingleRoomPage(Model model, String id) {
+        SubmitFeedbackForm submitFeedbackForm = new SubmitFeedbackForm();
+        model.addAttribute("room", getOne(id));
+        model.addAttribute("home", homeService.getHomeData());
+        homeService.displayHome(model);
+        contactService.displaySubmitForm(model, submitFeedbackForm);
+    }
+
 }

@@ -266,8 +266,10 @@
                 <div class="listings-top-meta d-flex justify-content-between mb-100">
                     <div class="view-area d-flex align-items-center">
                         <span>View as:</span>
-                        <div class="grid_view ml-15"><a href="#" class="active"><i class="fa fa-th" aria-hidden="true"></i></a></div>
-                        <div class="list_view ml-15"><a href="#"><i class="fa fa-th-list" aria-hidden="true"></i></a></div>
+                        <div class="grid_view ml-15"><a href="#" class="active"><i class="fa fa-th"
+                                                                                   aria-hidden="true"></i></a></div>
+                        <div class="list_view ml-15"><a href="#"><i class="fa fa-th-list" aria-hidden="true"></i></a>
+                        </div>
                     </div>
                     <div class="order-by-area d-flex align-items-center">
                         <span class="mr-15">Order by:</span>
@@ -286,7 +288,7 @@
         <div class="row" th:fragment="listRoom">
             <!-- Single Featured Property -->
             <div th:each="room : ${rooms}" class="col-12 col-md-6 col-xl-4">
-                <div class="single-featured-property mb-50 wow fadeInUp" data-wow-delay="100ms">
+                <div class="single-featured-property mb-50 wow fadeInUp" data-wow-delay="100ms" >
                     <!-- Property Thumbnail -->
                     <div class="property-thumb">
                         <img th:src="${room.image}" alt="">
@@ -301,11 +303,15 @@
                     <!-- Property Content -->
                     <div class="property-content">
                         <h5 th:utext="${room.name}"></h5>
+                        <a th:href="@{/listings/room/{id}(id=${room.id})}" class="btn south-btn"
+                           style="margin-bottom: 40px">Read More</a>
                         <p class="location"><img src="/images/icons/floor.png" alt=""> Tầng <span
                                 th:utext="${room.floor}"></span></p>
                         <th:block th:with="description = ${room.description}">
-                            <p th:if="*{#strings.length(description)>=35}" th:text="${#strings.substring(description,0,35) + '...'}"></p>
-                            <p th:unless="*{#strings.length(description)>=35}" th:text="${#strings.substring(description,0,#strings.length(description))}"></p>
+                            <p th:if="*{#strings.length(description)>=35}"
+                               th:text="${#strings.substring(description,0,35) + '...'}"></p>
+                            <p th:unless="*{#strings.length(description)>=35}"
+                               th:text="${#strings.substring(description,0,#strings.length(description))}"></p>
                         </th:block>
                         <div class="property-meta-data d-flex align-items-end justify-content-between">
                             <div class="new-tag">

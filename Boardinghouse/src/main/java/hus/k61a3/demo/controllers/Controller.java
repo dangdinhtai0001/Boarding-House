@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -68,7 +67,7 @@ public class Controller {
     //Blog
     //https://shareeverythings.com/lap-trinh/java/huong-dan-phan-trang-trong-thymeleaf-va-spring-boot/
     @RequestMapping("/blog")
-    public String blog(Model model, HttpServletRequest request, RedirectAttributes redirect) {
+    public String blog(Model model, HttpServletRequest request) {
         request.getSession().setAttribute("postList", null);
         model.addAttribute("title", "HOME | BLOG");
         return "redirect:/blog/page/1";
@@ -83,7 +82,7 @@ public class Controller {
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     @RequestMapping(value = "/blog/post/{id}", method = RequestMethod.GET)
     public String singleBlog(@PathVariable String id, Model model) {
-        blogService.displaySinglePost(model, id, homeService);
+        blogService.displaySinglePost(model, id);
         return "singleBlog";
     }
 
@@ -126,9 +125,11 @@ public class Controller {
     }
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    @RequestMapping(value = "/listings/room/{id}", method = RequestMethod.GET)
-    public String singleRoom(@PathVariable String id, Model model) {
-        roomService.displaySingleRoomPage(model,id);
+    @RequestMapping(path = "/listings/room/{id}", method = RequestMethod.GET)
+    public String singleRoom(@PathVariable("id") String id, Model model) {
+        System.out.println("---------------" + id);
+        roomService.displaySingleRoomPage(model, id);
         return "singleListings";
     }
+
 }
