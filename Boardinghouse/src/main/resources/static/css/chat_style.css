@@ -1,16 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
 
-/* ---------- GENERAL ---------- */
-
-
-.clearfix { *zoom: 1; } /* For IE 6/7 */
-.clearfix:before, .clearfix:after {
-  content: "";
-  display: table;
-}
-.clearfix:after { clear: both; }
-
 /* ---------- LIVE-CHAT ---------- */
 
 #live-chat {
@@ -21,7 +11,7 @@
   width: 300px;
 }
 
-#live-chat header {
+#chat-header{
   background: #293239;
   border-radius: 5px 5px 0 0;
   color: #fff;
