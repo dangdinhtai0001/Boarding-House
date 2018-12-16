@@ -1,4 +1,4 @@
-var database = firebase.database();
+var count = 0 ;
 var $messages = $('.messages-content'),
     d, h, m,
     i = 0;
@@ -72,17 +72,16 @@ function fakeMessage() {
     if ($('.message-input').val() != '') {
         return false;
     }
-    $('<div class="message loading new"><figure class="avatar"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/156381/profile/profile-80.jpg" /></figure><span></span></div>').appendTo($('.mCSB_container'));
+    $('<div class="message loading new"><figure class="avatar"><img src="/images/core-img/avatar.jpg"/></figure><span></span></div>').appendTo($('.mCSB_container'));
     updateScrollbar();
 
     setTimeout(function () {
         $('.message.loading').remove();
-        $('<div class="message new"><figure class="avatar"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/156381/profile/profile-80.jpg" /></figure>' + Fake[i] + '</div>').appendTo($('.mCSB_container')).addClass('new');
+        $('<div class="message new"><figure class="avatar"><img src="/images/core-img/avatar.jpg"/></figure>' + Fake[i] + '</div>').appendTo($('.mCSB_container')).addClass('new');
         setDate();
         updateScrollbar();
         i++;
     }, 1000 + (Math.random() * 20) * 100);
-
 }
 
 $('#chat-header').on('click', function () {
@@ -91,6 +90,7 @@ $('#chat-header').on('click', function () {
     $('.chat-message-counter').fadeToggle(300, 'swing');
 });
 
+// var database = firebase.database();
 
 // function toggleSignIn() {
 //   if (!firebase.auth().currentUser) {
