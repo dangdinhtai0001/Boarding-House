@@ -42,6 +42,7 @@ public class Controller {
 
     @Autowired
     private AboutusService aboutusService;
+
 //    @Autowired
 //    private RoomService roomService;
 
@@ -129,7 +130,7 @@ public class Controller {
     }
 
     @RequestMapping(value = "/about-us")
-    public String aboutUs(Model model){
+    public String aboutUs(Model model) {
         aboutusService.displayAboutus(model);
         return "aboutUs";
     }

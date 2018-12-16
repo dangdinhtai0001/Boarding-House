@@ -1,29 +1,46 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.springframework.org/schema/security">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head th:replace="layout :: head"></head>
 <head>
-    <meta charset="utf-8">
     <title>2048</title>
     <link rel="stylesheet" href="/game_style/main2.css">
 </head>
 <body>
+<!-- Preloader -->
+<div id="preloader">
+    <div class="south-load"></div>
+</div>
 <!-- ##### Header Area Start ##### -->
 <header th:replace="layout :: header"></header>
 <!-- ##### Header Area End ##### -->
 
+<!-- ##### Breadcumb Area Start ##### -->
+<section class="breadcumb-area bg-img" style="background-image: url(/images/bg-img/hero1.jpg);">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-12">
+                <div class="breadcumb-content">
+                    <h3 class="breadcumb-title">Game</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ##### Breadcumb Area End ##### -->
+
 <section class="featured-properties-area section-padding-100-50">
-    <div class="container">
+    <div class="container_game">
         <div class="heading">
             <h1 class="title">2048</h1>
             <div class="scores-container">
-                <div class="score-container">0</div>
-                <div class="best-container">0</div>
+                <div class="score-container" style="color: #0b0b0b">0</div>
+                <div class="best-container" style="color: #0b0b0b">0</div>
             </div>
         </div>
 
         <div class="above-game">
             <p class="game-intro">Join the numbers and get to the <strong>2048 tile!</strong></p>
-            <a class="restart-button">New Game</a>
+            <a class="restart-button" style="color: white">New Game</a>
         </div>
 
         <div class="game-container">
@@ -81,6 +98,8 @@
     </div>
 </section>
 
+<footer th:replace="layout :: footer"></footer>
+
 <script src="/game_js/bind_polyfill.js"></script>
 <script src="/game_js/classlist_polyfill.js"></script>
 <script src="/game_js/animframe_polyfill.js"></script>
@@ -91,9 +110,6 @@
 <script src="/game_js/local_storage_manager.js"></script>
 <script src="/game_js/game_manager.js"></script>
 <script src="/game_js/application.js"></script>
-
-
-<footer th:replace="layout :: footer"></footer>
 <div th:replace="layout :: js"></div>
 </body>
 </html>
