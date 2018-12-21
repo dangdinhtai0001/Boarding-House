@@ -116,7 +116,7 @@ public class BlogService {
         model.addAttribute("rooms", homeService.findRandomRoom(3));
     }
 
-    public void displaySinglePost(Model model, String id, HomeService homeService) {
+    public void displaySinglePost(Model model, String id) {
         model.addAttribute("post", getOne(id));
         SubmitCommentForm form = new SubmitCommentForm();
         model.addAttribute("submitCommentForm", form);

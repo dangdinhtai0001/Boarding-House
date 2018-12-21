@@ -1,8 +1,9 @@
 package hus.k61a3.demo.controllers;
 
-import hus.k61a3.demo.Listings.ListingsService;
-import hus.k61a3.demo.aboutus.AboutusService;
+import hus.k61a3.demo.Listings.RoomService;
+
 import hus.k61a3.demo.blog.entities.SubmitCommentForm;
+import hus.k61a3.demo.aboutus.AboutusService;
 import hus.k61a3.demo.blog.services.BlogService;
 import hus.k61a3.demo.contact.ContactService;
 import hus.k61a3.demo.contact.SubmitFeedbackForm;
@@ -15,7 +16,6 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -35,7 +35,7 @@ public class Controller {
     private HomeService homeService;
 
     @Autowired
-    private ListingsService listingsService;
+    private RoomService roomService;
 
     @Autowired
     private ContactService contactService;
@@ -71,7 +71,7 @@ public class Controller {
     //Blog
     //https://shareeverythings.com/lap-trinh/java/huong-dan-phan-trang-trong-thymeleaf-va-spring-boot/
     @RequestMapping("/blog")
-    public String blog(Model model, HttpServletRequest request, RedirectAttributes redirect) {
+    public String blog(Model model, HttpServletRequest request) {
         request.getSession().setAttribute("postList", null);
         model.addAttribute("title", "HOME | BLOG");
         return "redirect:/blog/page/1";
@@ -86,7 +86,7 @@ public class Controller {
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     @RequestMapping(value = "/blog/post/{id}", method = RequestMethod.GET)
     public String singleBlog(@PathVariable String id, Model model) {
-        blogService.displaySinglePost(model, id, homeService);
+        blogService.displaySinglePost(model, id);
         return "singleBlog";
     }
 
@@ -105,7 +105,7 @@ public class Controller {
 
     @RequestMapping(value = "/listings")
     public String listings(Model model) {
-        listingsService.displayListingsPage(model);
+        roomService.displayListingsPage(model);
         return "listings";
     }
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -128,9 +128,20 @@ public class Controller {
         return "game2048";
     }
 
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    @RequestMapping(path = "/listings/room/{id}", method = RequestMethod.GET)
+    public String singleRoom(@PathVariable("id") String id, Model model) {
+        System.out.println("---------------" + id);
+        roomService.displaySingleRoomPage(model, id);
+        return "singleListings";
+    }
+
+
     @RequestMapping(value = "/about-us")
     public String aboutUs(Model model){
         aboutusService.displayAboutus(model);
         return "aboutUs";
     }
+
 }

@@ -3,12 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="662c5528-0214-4e27-ac6b-c600bc6f1014" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/domains/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/domains/Comment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/entities/SubmitCommentForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/entities/SubmitCommentForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/repositories/CommentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/repositories/CommentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/services/BlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/services/BlogService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/singleBlog.html" beforeDir="false" afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/singleBlog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/js/chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/js/chat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/layout.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/B/target/" />
@@ -55,77 +51,57 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/controllers/Controller.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="123" column="37" selection-start-line="123" selection-start-column="37" selection-end-line="123" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1477#1478#0" expanded="true" />
-                <element signature="e#1507#1508#0" expanded="true" />
-                <element signature="e#1564#1565#0" expanded="true" />
-                <element signature="e#1593#1594#0" expanded="true" />
-                <element signature="e#1652#1653#0" expanded="true" />
-                <element signature="e#1682#1683#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/singleBlog.html">
+        <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/layout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="62" column="83" selection-start-line="62" selection-start-column="83" selection-end-line="62" selection-end-column="83" />
+            <state relative-caret-position="232">
+              <caret line="302" column="37" selection-start-line="302" selection-start-column="37" selection-end-line="302" selection-end-column="37" />
               <folding>
-                <element signature="n#style#0;n#p#0;n#form#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h3#0;n#a#0;n#nav#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/entities/SubmitCommentForm.java">
+        <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/contact.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+            <state relative-caret-position="1006">
+              <caret line="68" column="104" lean-forward="true" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="104" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/domains/Comment.java">
+        <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/static/js/chat.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="43" column="23" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
+            <state relative-caret-position="-585">
+              <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/services/BlogService.java">
+        <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/static/css/chat_style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="120" column="57" lean-forward="true" selection-start-line="120" selection-start-column="57" selection-end-line="120" selection-end-column="57" />
+            <state relative-caret-position="1785">
+              <caret line="119" column="19" selection-start-line="119" selection-start-column="19" selection-end-line="119" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/repositories/CommentRepository.java">
+        <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/static/css/master_styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="8" column="44" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/home/services/HomeService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="54" column="50" selection-start-line="54" selection-start-column="50" selection-end-line="54" selection-end-column="50" />
+            <state relative-caret-position="315">
+              <caret line="66" column="3" selection-start-line="66" selection-start-column="3" selection-end-line="66" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -137,26 +113,17 @@
       <list>
         <option value="package-info" />
         <option value="Interface" />
-        <option value="HTML File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>pagi</find>
-      <find>read</find>
-      <find>pag</find>
-      <find>img/icons/</find>
-      <find>img/core-img/</find>
-      <find>p</find>
-      <find>more</find>
-      <find>&lt;a  th:href=&quot;@{/blog/post(id=${post.post.id})}&quot; class=&quot;btn south-btn&quot;&gt;Read More&lt;/a&gt;</find>
       <find>blog</find>
       <find>cta.jpg</find>
-      <find>img/</find>
       <find>img/b</find>
       <find>topics</find>
       <find>img/bg-img/</find>
@@ -169,13 +136,22 @@
       <find>h4</find>
       <find>before</find>
       <find>close</find>
-      <find>header</find>
       <find>scss</find>
       <find>ch</find>
       <find>style</find>
       <find>style/</find>
       <find>js</find>
       <find>js/</find>
+      <find>postList</find>
+      <find>img/</find>
+      <find>post.</find>
+      <find>chat</find>
+      <find>header</find>
+      <find>chat.js</find>
+      <find>live-chat</find>
+      <find>/js/</find>
+      <find>/js/chat</find>
+      <find>&lt;img src=&quot;https://s3-us-west-2.amazonaws.com/s.cdpn.io/156381/profile/profile-80.jpg&quot; /&gt;</find>
     </findStrings>
     <replaceStrings>
       <replace>css/login_style.css</replace>
@@ -187,11 +163,12 @@
       <replace>/images/icons/</replace>
       <replace>/images/core-/</replace>
       <replace>/images//</replace>
-      <replace>/images/</replace>
       <replace>/images/b</replace>
       <replace>/images/bg-img/</replace>
       <replace>/game_style/</replace>
       <replace>/game_js/</replace>
+      <replace>/images/</replace>
+      <replace>&lt;img src=&quot;/images/core-img/avatar.jpg&quot;/&gt;</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -205,14 +182,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/ultis/repositories/HomeRepository.java" />
-        <option value="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/home/services/ConfigHomeService.java" />
-        <option value="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/home/domains/ConfigHome.java" />
         <option value="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/home/domains/FeedBack.java" />
         <option value="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/home/domains/Room.java" />
         <option value="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/home/repositories/HomeRepository.java" />
         <option value="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/home/repositories/RoomRepositoriy.java" />
-        <option value="$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/blog.html" />
         <option value="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/Listings/ListingsService.java" />
         <option value="$PROJECT_DIR$/Boardinghouse/system.properties" />
         <option value="$PROJECT_DIR$/system.properties" />
@@ -231,7 +204,6 @@
         <option value="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/config/HibernateProxyTypeAdapter.java" />
         <option value="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/home/services/HomeService.java" />
         <option value="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/config/WebSecurityConfig.java" />
-        <option value="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/contact/ContactService.java" />
         <option value="$PROJECT_DIR$/Boardinghouse/pom.xml" />
         <option value="$PROJECT_DIR$/Boardinghouse/src/test/java/hus/k61a3/demo/BoardingHouseApplicationTests.java" />
         <option value="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/controllers/RestController.java" />
@@ -240,22 +212,27 @@
         <option value="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/scss/_variables.scss" />
         <option value="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/scss/style.scss" />
         <option value="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/js/map-active.js" />
-        <option value="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/css/master_styles.css" />
-        <option value="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/js/chat.js" />
-        <option value="$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/contact.html" />
-        <option value="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/css/chat_style.css" />
-        <option value="$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/listings.html" />
         <option value="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/game_style/main.scss" />
-        <option value="$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/layout.html" />
-        <option value="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/controllers/Controller.java" />
         <option value="$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/game2048.html" />
-        <option value="$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/home.html" />
-        <option value="$PROJECT_DIR$/Boardinghouse/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/domains/Comment.java" />
         <option value="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/repositories/CommentRepository.java" />
-        <option value="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/services/BlogService.java" />
         <option value="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/entities/SubmitCommentForm.java" />
+        <option value="$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/home.html" />
         <option value="$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/singleBlog.html" />
+        <option value="$PROJECT_DIR$/Boardinghouse/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/entities/Post.java" />
+        <option value="$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/contact.html" />
+        <option value="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/services/BlogService.java" />
+        <option value="$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/blog.html" />
+        <option value="$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/listings.html" />
+        <option value="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/contact/ContactService.java" />
+        <option value="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/Listings/RoomService.java" />
+        <option value="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/controllers/Controller.java" />
+        <option value="$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/singleListings.html" />
+        <option value="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/css/chat_style.css" />
+        <option value="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/css/master_styles.css" />
+        <option value="$PROJECT_DIR$/Boardinghouse/src/main/resources/static/js/chat.js" />
+        <option value="$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/layout.html" />
       </list>
     </option>
   </component>
@@ -312,6 +289,39 @@
               <item name="Boarding-House" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
+            <path>
+              <item name="Boarding-House" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name=".idea" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Boarding-House" type="58d84e3e:PackageViewProjectNode" />
+              <item name="Boardinghouse" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="Boarding-House" type="58d84e3e:PackageViewProjectNode" />
+              <item name="Boardinghouse" type="616d4139:PackageViewModuleNode" />
+              <item name="hus.k61a3.demo" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="Boarding-House" type="58d84e3e:PackageViewProjectNode" />
+              <item name="Boardinghouse" type="616d4139:PackageViewModuleNode" />
+              <item name="hus.k61a3.demo" type="1f31426a:PackageElementNode" />
+              <item name="config" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="Boarding-House" type="58d84e3e:PackageViewProjectNode" />
+              <item name="Boardinghouse" type="616d4139:PackageViewModuleNode" />
+              <item name="hus.k61a3.demo" type="1f31426a:PackageElementNode" />
+              <item name="controllers" type="1f31426a:PackageElementNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -366,16 +376,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
               <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="domains" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Boarding-House" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Boardinghouse" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
               <item name="entities" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -386,7 +386,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
               <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="repositories" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Boarding-House" type="b2602c69:ProjectViewProjectNode" />
@@ -395,8 +395,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="contact" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Boarding-House" type="b2602c69:ProjectViewProjectNode" />
@@ -424,6 +423,26 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
               <item name="home" type="462c0819:PsiDirectoryNode" />
+              <item name="domains" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Boarding-House" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Boardinghouse" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+              <item name="repositories" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Boarding-House" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Boardinghouse" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -431,6 +450,15 @@
               <item name="Boardinghouse" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="Listings" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Boarding-House" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Boardinghouse" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -448,7 +476,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="audio" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Boarding-House" type="b2602c69:ProjectViewProjectNode" />
@@ -457,7 +485,18 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="blog-img" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="bg-img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Boarding-House" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Boardinghouse" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="core-img" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Boarding-House" type="b2602c69:ProjectViewProjectNode" />
@@ -466,34 +505,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Boarding-House" type="58d84e3e:PackageViewProjectNode" />
-              <item name="Boardinghouse" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="Boarding-House" type="58d84e3e:PackageViewProjectNode" />
-              <item name="Boardinghouse" type="616d4139:PackageViewModuleNode" />
-              <item name="hus.k61a3.demo" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="Boarding-House" type="58d84e3e:PackageViewProjectNode" />
-              <item name="Boardinghouse" type="616d4139:PackageViewModuleNode" />
-              <item name="hus.k61a3.demo" type="1f31426a:PackageElementNode" />
-              <item name="config" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="Boarding-House" type="58d84e3e:PackageViewProjectNode" />
-              <item name="Boardinghouse" type="616d4139:PackageViewModuleNode" />
-              <item name="hus.k61a3.demo" type="1f31426a:PackageElementNode" />
-              <item name="controllers" type="1f31426a:PackageElementNode" />
             </path>
           </expand>
           <select />
@@ -510,8 +521,9 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544461825177" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544928759316" />
     <property name="database.console.LAST_STATE" value="false" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../spring-boot-thymeleaf" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -573,8 +585,9 @@
       </method>
     </configuration>
     <configuration name="BoardingHouseApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="Boardinghouse" />
+      <module name="demo" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="hus.k61a3.demo.BoardingHouseApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -693,41 +706,13 @@
       <workItem from="1544266972616" duration="1493000" />
       <workItem from="1544455694532" duration="6119000" />
       <workItem from="1544496306482" duration="7842000" />
-    </task>
-    <task id="LOCAL-00023" summary="blog gặp lỗi giao diện">
-      <created>1542102745225</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1542102745225</updated>
-    </task>
-    <task id="LOCAL-00024" summary="Xong màn blog và phân trang + điều hướng sang single blog">
-      <created>1542194114083</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1542194114083</updated>
-    </task>
-    <task id="LOCAL-00025" summary="Xong replace thymeleaf">
-      <created>1542198803224</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1542198803224</updated>
-    </task>
-    <task id="LOCAL-00026" summary="Sửa lỗi background ở footer">
-      <created>1542202015520</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1542202015520</updated>
-    </task>
-    <task id="LOCAL-00027" summary="viết lại controller gọn hơn">
-      <created>1542289728825</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1542289728825</updated>
+      <workItem from="1544702051277" duration="12997000" />
+      <workItem from="1544759934079" duration="4295000" />
+      <workItem from="1544775634065" duration="5865000" />
+      <workItem from="1544793255963" duration="3000" />
+      <workItem from="1544799153333" duration="4363000" />
+      <workItem from="1544860087857" duration="3112000" />
+      <workItem from="1544871397333" duration="6727000" />
     </task>
     <task id="LOCAL-00028" summary="Xong chức năng submit comment">
       <created>1542347924653</created>
@@ -1037,7 +1022,42 @@
       <option name="project" value="LOCAL" />
       <updated>1544461812861</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="chuẩn bị làm màn singlehouse">
+      <created>1544710828046</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1544710828047</updated>
+    </task>
+    <task id="LOCAL-00073" summary="Router đc đến màn singleListings">
+      <created>1544723567205</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1544723567206</updated>
+    </task>
+    <task id="LOCAL-00074" summary="Dùng thymeleaf để substring cho tính năng hiện ngắn gọn màn blog">
+      <created>1544760345792</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1544760345794</updated>
+    </task>
+    <task id="LOCAL-00075" summary="Sửa tạm màn chat(đang lỗi)">
+      <created>1544872705015</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1544872705015</updated>
+    </task>
+    <task id="LOCAL-00076" summary="Đặt được khung chat đúng vị trí nhưng chưa chạy được file script">
+      <created>1544874468948</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1544874468948</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1049,13 +1069,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="338894000" />
+    <option name="totallyTimeSpent" value="376445000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1366" height="740" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49434572" visible="true" weight="0.3214826" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49434572" visible="true" weight="0.34114978" />
       <window_info id="Structure" order="1" sideWeight="0.502447" side_tool="true" weight="0.34218514" />
       <window_info id="Web" order="2" sideWeight="0.5037037" side_tool="true" weight="0.34901366" />
       <window_info id="Designer" order="3" />
@@ -1071,14 +1091,55 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3284553" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3279483" />
       <window_info anchor="bottom" id="Database Changes" order="8" weight="0.32952693" />
       <window_info anchor="bottom" id="Spring" order="9" weight="0.3279483" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32952693" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5022762" side_tool="true" weight="0.33931485" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5030257" side_tool="true" weight="0.3069467" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3279483" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.32952693" />
-      <window_info active="true" anchor="bottom" id="Run Dashboard" order="14" sideWeight="0.49772382" visible="true" weight="0.3069467" />
+      <window_info active="true" anchor="bottom" id="Run Dashboard" order="14" sideWeight="0.4969743" visible="true" weight="0.3069467" />
+      <window_info anchor="bottom" id="Database Console" order="15" weight="0.32952693" />
+      <window_info anchor="bottom" id="Application Servers" order="16" sideWeight="0.49924126" weight="0.3279483" />
+      <window_info anchor="bottom" id="Docker" order="17" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Duplicate detector" order="18" weight="0.32956383" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Maven Projects" order="1" weight="0.32928678" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Bean Validation" order="4" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="right" id="Ant Build" order="8" weight="0.24962063" />
+      <window_info anchor="right" id="Database" order="9" weight="0.32829046" />
+      <window_info anchor="right" id="Maven" order="10" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49434572" visible="true" weight="0.34795764" />
+      <window_info id="Structure" order="1" sideWeight="0.502447" side_tool="true" weight="0.34218514" />
+      <window_info id="Web" order="2" sideWeight="0.5037037" side_tool="true" weight="0.34901366" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" sideWeight="0.5008157" side_tool="true" weight="0.27389985" />
+      <window_info id="Image Layers" order="6" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info id="JavaEE:App" order="8" sideWeight="0.5056543" side_tool="true" weight="0.25340393" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3279483" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924126" weight="0.3441034" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39967373" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3279483" />
+      <window_info anchor="bottom" id="Database Changes" order="8" weight="0.32952693" />
+      <window_info anchor="bottom" id="Spring" order="9" weight="0.3279483" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32952693" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5030257" side_tool="true" weight="0.3069467" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3279483" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.32952693" />
+      <window_info anchor="bottom" id="Run Dashboard" order="14" sideWeight="0.4969743" visible="true" weight="0.3069467" />
       <window_info anchor="bottom" id="Database Console" order="15" weight="0.32952693" />
       <window_info anchor="bottom" id="Application Servers" order="16" sideWeight="0.49924126" weight="0.3279483" />
       <window_info anchor="bottom" id="Docker" order="17" show_stripe_button="false" />
@@ -1093,17 +1154,13 @@
       <window_info anchor="right" id="Ant Build" order="8" weight="0.24962063" />
       <window_info anchor="right" id="Database" order="9" weight="0.32829046" />
       <window_info anchor="right" id="Maven" order="10" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test deploy heroku lần 12" />
-    <MESSAGE value="test deploy heroku lần 13" />
-    <MESSAGE value="test deploy heroku lần 14" />
-    <MESSAGE value="test deploy heroku lần 15" />
-    <MESSAGE value="test deploy heroku lần 16" />
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="test deploy heroku lần 17" />
     <MESSAGE value="test deploy heroku lần 18" />
     <MESSAGE value="test deploy heroku lần 19" />
@@ -1124,7 +1181,13 @@
     <MESSAGE value="Ghép xong màn game" />
     <MESSAGE value="Sửa lại màn game" />
     <MESSAGE value="đẩy tạm âm thanh vào màn home, chưa rõ lỗi" />
-    <option name="LAST_COMMIT_MESSAGE" value="đẩy tạm âm thanh vào màn home, chưa rõ lỗi" />
+    <MESSAGE value="chuẩn bị làm màn singlehouse" />
+    <MESSAGE value="Router đc đến màn singleListings" />
+    <MESSAGE value="Dùng thymeleaf để substring cho tính năng hiện ngắn gọn màn blog" />
+    <MESSAGE value="Sửa tạm màn chat(đang lỗi)" />
+    <MESSAGE value="Đặt được khung chat đúng vị trí nhưng chưa chạy được file script" />
+    <option name="LAST_COMMIT_MESSAGE" value="Đặt được khung chat đúng vị trí nhưng chưa chạy được file script" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
@@ -1140,74 +1203,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/home/domains/ConfigHome.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/config/WebSecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="64" column="39" lean-forward="true" selection-start-line="64" selection-start-column="39" selection-end-line="64" selection-end-column="102" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/thymeleaf/thymeleaf/3.0.10.RELEASE/thymeleaf-3.0.10.RELEASE.jar!/org/thymeleaf/standard/processor/StandardUtextTagProcessor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/BoardingHouseApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="8" column="37" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/test/java/hus/k61a3/demo/BoardingHouseApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="39" column="31" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
-          <folding>
-            <element signature="e#611#612#0" expanded="true" />
-            <element signature="e#695#696#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Boardinghouse/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="106" column="21" selection-start-line="106" selection-start-column="21" selection-end-line="106" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/config/HibernateProxyTypeAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-60">
-          <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#901#902#0" expanded="true" />
-            <element signature="e#939#940#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/controllers/RestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="49" lean-forward="true" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/static/css/login_style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="261">
@@ -1250,13 +1245,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/static/css/master_styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="2544" lean-forward="true" selection-start-line="2544" selection-end-line="2544" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/static/js/live-chat.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1265,66 +1253,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/static/css/live-chat.css" />
-    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/static/css/chat_style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="285" column="35" lean-forward="true" selection-start-line="285" selection-start-column="35" selection-end-line="285" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/static/js/chat.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="157" column="12" selection-start-line="157" selection-start-column="12" selection-end-line="157" selection-end-column="12" />
-          <folding>
-            <element signature="e#38#45#1" expanded="true" />
-            <element signature="e#28#35#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/contact/SubmitFeedbackForm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="26" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/contact/ContactService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/listings.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="64" column="45" selection-start-line="64" selection-start-column="45" selection-end-line="64" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/Listings/ListingsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/blog.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="107" selection-start-line="107" selection-end-line="113" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -1374,73 +1306,10 @@
     <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/static/game_style/main2.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="870">
-          <caret line="58" column="67" selection-start-line="58" selection-start-column="67" selection-end-line="58" selection-end-column="67" />
-          <folding>
-            <element signature="n#style#0;n#h3#0;n#a#0;n#nav#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/home/services/HomeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="54" column="50" selection-start-line="54" selection-start-column="50" selection-end-line="54" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/game2048.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="81" column="10" selection-start-line="81" selection-start-column="10" selection-end-line="81" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-32">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="n#style#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/controllers/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="123" column="37" selection-start-line="123" selection-start-column="37" selection-end-line="123" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1477#1478#0" expanded="true" />
-            <element signature="e#1507#1508#0" expanded="true" />
-            <element signature="e#1564#1565#0" expanded="true" />
-            <element signature="e#1593#1594#0" expanded="true" />
-            <element signature="e#1652#1653#0" expanded="true" />
-            <element signature="e#1682#1683#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/domains/Topic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" selection-start-line="13" selection-end-line="17" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -1458,13 +1327,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/services/BlogService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="120" column="57" lean-forward="true" selection-start-line="120" selection-start-column="57" selection-end-line="120" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/entities/SubmitCommentForm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -1472,12 +1334,198 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="51" lean-forward="true" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
+          <folding>
+            <element signature="e#9991#9995#0" expanded="true" />
+            <element signature="e#10006#10012#0" expanded="true" />
+            <element signature="e#10045#10051#0" expanded="true" />
+            <element signature="e#10058#10064#0" expanded="true" />
+            <element signature="e#10077#10083#0" expanded="true" />
+            <element signature="e#10083#10087#0" expanded="true" />
+            <element signature="e#10096#10100#0" expanded="true" />
+            <element signature="e#10102#10106#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Boardinghouse/demo.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1596" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Boarding-House.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Boardinghouse/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/game2048.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="88" column="40" selection-start-line="88" selection-start-column="40" selection-end-line="88" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/singleBlog.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="62" column="83" selection-start-line="62" selection-start-column="83" selection-end-line="62" selection-end-column="83" />
+        <state relative-caret-position="150">
+          <caret line="61" column="145" selection-start-line="61" selection-start-column="145" selection-end-line="61" selection-end-column="145" />
           <folding>
             <element signature="n#style#0;n#p#0;n#form#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="76" selection-start-line="14" selection-start-column="76" selection-end-line="14" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/entities/Post.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="22" column="40" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/home/repositories/RoomRepositoriy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="41" lean-forward="true" selection-start-column="41" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/home/services/HomeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="36" column="27" lean-forward="true" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="121" column="41" lean-forward="true" selection-start-line="121" selection-start-column="8" selection-end-line="121" selection-end-column="41" />
+          <folding>
+            <element signature="n#style#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/home/domains/Room.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="50" column="30" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/controllers/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1680">
+          <caret line="134" selection-start-line="134" selection-end-line="134" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/blog/services/BlogService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1530">
+          <caret line="121" column="54" selection-start-line="121" selection-start-column="54" selection-end-line="121" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/Listings/RoomService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="42" column="66" selection-start-line="42" selection-start-column="66" selection-end-line="42" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/singleListings.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1455">
+          <caret line="97" column="27" selection-start-line="97" selection-start-column="27" selection-end-line="97" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/contact/ContactService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="49" column="73" selection-start-line="49" selection-start-column="73" selection-end-line="49" selection-end-column="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/listings.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="305" column="72" selection-start-line="305" selection-start-column="57" selection-end-line="305" selection-end-column="72" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/blog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="47" column="27" selection-start-line="47" selection-start-column="27" selection-end-line="48" selection-end-column="72" />
+          <folding>
+            <element signature="n#style#0;n#a#1;n#div#1;n#th:block#0;n#th:block#0;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/static/css/master_styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="66" column="3" selection-start-line="66" selection-start-column="3" selection-end-line="66" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/static/css/chat_style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1785">
+          <caret line="119" column="19" selection-start-line="119" selection-start-column="19" selection-end-line="119" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/static/js/chat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-585">
+          <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1006">
+          <caret line="68" column="104" lean-forward="true" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="302" column="37" selection-start-line="302" selection-start-column="37" selection-end-line="302" selection-end-column="37" />
+          <folding>
+            <element signature="n#style#0;n#h3#0;n#a#0;n#nav#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
