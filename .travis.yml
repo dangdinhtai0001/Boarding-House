@@ -2,7 +2,7 @@ language: java
 sudo: required
 branches:
   only:
-    -master
+    -DangDinhTai
 
 jdk:
   - oraclejdk8
