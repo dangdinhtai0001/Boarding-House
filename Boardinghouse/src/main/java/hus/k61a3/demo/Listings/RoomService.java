@@ -22,17 +22,21 @@ public class RoomService {
     private ContactService contactService;
     private int error = 2;
 
-    public void displayListingsPage(Model model){
-        model.addAttribute("home",homeService.getHomeData());
+    public void displayListingsPage(Model model) {
+        model.addAttribute("home", homeService.getHomeData());
         model.addAttribute("rooms", findAllRooms());
     }
 
-    private List<Room> findAllRooms(){
+    private List<Room> findAllRooms() {
         return roomRepositoriy.findAll();
     }
 
-    private Room getOne(String id){
+    private Room getOne(String id) {
         return roomRepositoriy.getOne(Integer.parseInt(id));
+    }
+
+    public List<Room> findAllByOrderBySquareDesc() {
+        return roomRepositoriy.findAllByOrderBySquareDesc();
     }
 
     public void displaySingleRoomPage(Model model, String id) {

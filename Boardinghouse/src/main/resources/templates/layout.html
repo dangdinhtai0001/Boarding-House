@@ -55,12 +55,11 @@
                     <div class="classynav">
                         <ul>
                             <li><a th:href="@{/home}">Trang chủ</a></li>
-                            <li><a href="#">Giới thiệu</a></li>
                             <li><a th:href="@{/listings}">Phòng</a></li>
                             <li><a th:href="@{/contact}">Liên hệ</a></li>
                             <li><a th:href="@{/blog}">Blog</a></li>
                             <li><a th:href="@{/2048}">Game</a></li>
-                            <li><a href="#">Quản trị</a></li>
+                            <li><a th:href="@{/admin}">Quản trị</a></li>
                         </ul>
 
                         <!-- Search Form -->
@@ -177,9 +176,16 @@
             <!-- Property Content -->
             <div class="property-content">
                 <h5 th:utext="${room.name}"></h5>
+                <a th:href="@{/listings/room/{id}(id=${room.id})}" class="btn south-btn"
+                   style="margin-bottom: 40px">Read More</a>
                 <p class="location"><img src="/images/icons/floor.png" alt=""> Tầng <span
                         th:utext="${room.floor}"></span></p>
-                <p th:utext="${room.description}"></p>
+                <th:block th:with="description = ${room.description}">
+                    <p th:if="*{#strings.length(description)>=35}"
+                       th:text="${#strings.substring(description,0,35) + '...'}"></p>
+                    <p th:unless="*{#strings.length(description)>=35}"
+                       th:text="${#strings.substring(description,0,#strings.length(description))}"></p>
+                </th:block>
                 <div class="property-meta-data d-flex align-items-end justify-content-between">
                     <div class="new-tag">
                         <img src="/images/icons/people.png" alt="">
@@ -315,7 +321,7 @@
     </div>
 
     <!-- <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script> -->
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="/js/jquery/jquery-2.2.4.min.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.concat.min.js'></script>
     <script src="/js/chat.js"></script>
 </div>

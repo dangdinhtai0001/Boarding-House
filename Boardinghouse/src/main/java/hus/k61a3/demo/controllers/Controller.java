@@ -1,7 +1,6 @@
 package hus.k61a3.demo.controllers;
 
 import hus.k61a3.demo.Listings.RoomService;
-
 import hus.k61a3.demo.blog.entities.SubmitCommentForm;
 import hus.k61a3.demo.blog.services.BlogService;
 import hus.k61a3.demo.contact.ContactService;
@@ -38,9 +37,6 @@ public class Controller {
 
     @Autowired
     private ContactService contactService;
-
-    @Autowired
-    private AboutusService aboutusService;
 //    @Autowired
 //    private RoomService roomService;
 
@@ -131,16 +127,9 @@ public class Controller {
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     @RequestMapping(path = "/listings/room/{id}", method = RequestMethod.GET)
     public String singleRoom(@PathVariable("id") String id, Model model) {
-        System.out.println("---------------" + id);
         roomService.displaySingleRoomPage(model, id);
         return "singleListings";
     }
 
-
-    @RequestMapping(value = "/about-us")
-    public String aboutUs(Model model){
-        aboutusService.displayAboutus(model);
-        return "aboutUs";
-    }
 
 }
