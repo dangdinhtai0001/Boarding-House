@@ -1,6 +1,3 @@
 sudo: required
 language: java
-jdk: oraclejdk8
-
-script:
-  - ./mvnw clean install -B
+jdk: oraclejdk10
