@@ -1,19 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="662c5528-0214-4e27-ac6b-c600bc6f1014" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Boardinghouse/.travis.yml" afterDir="false" />
+    <list default="true" id="662c5528-0214-4e27-ac6b-c600bc6f1014" name="Default Changelist" comment="Test travis CI">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/Listings/RoomService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/Listings/RoomService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/aboutus/AboutusService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/controllers/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/controllers/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/controllers/RestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/controllers/RestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/home/repositories/RoomRepositoriy.java" beforeDir="false" afterPath="$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/home/repositories/RoomRepositoriy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boardinghouse/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/aboutUs.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/listings.html" beforeDir="false" afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/listings.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Boardinghouse/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/B/target/" />
@@ -64,7 +54,7 @@
         <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/controllers/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1185">
-              <caret line="101" column="40" selection-start-line="101" selection-start-column="40" selection-end-line="101" selection-end-column="40" />
+              <caret line="100" column="40" selection-start-line="100" selection-start-column="40" selection-end-line="100" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1569#1570#0" expanded="true" />
@@ -110,7 +100,7 @@
         <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/controllers/RestController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="525">
-              <caret line="47" column="49" selection-start-line="47" selection-start-column="49" selection-end-line="47" selection-end-column="49" />
+              <caret line="46" column="49" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -145,11 +135,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Boardinghouse/.travis.yml">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
               <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/blog.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="59" column="39" lean-forward="true" selection-start-line="59" selection-start-column="39" selection-end-line="59" selection-end-column="39" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#1;n#div#1;n#th:block#0;n#th:block#0;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -317,7 +320,7 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -368,7 +371,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547027163061" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547027354917" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -565,14 +568,7 @@
       <workItem from="1545043246783" duration="8434000" />
       <workItem from="1545466229100" duration="633000" />
       <workItem from="1546167542130" duration="1644000" />
-      <workItem from="1547026907242" duration="236000" />
-    </task>
-    <task id="LOCAL-00029" summary="Đang làm /home">
-      <created>1542389019732</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1542389019733</updated>
+      <workItem from="1547026907242" duration="482000" />
     </task>
     <task id="LOCAL-00030" summary="phát hiện lỗi reoly cooment trống">
       <created>1542428897762</created>
@@ -910,7 +906,14 @@
       <option name="project" value="LOCAL" />
       <updated>1544928844196</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="Test travis CI">
+      <created>1547027197743</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1547027197747</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -922,11 +925,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="396105000" />
+    <option name="totallyTimeSpent" value="396351000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1366" height="740" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49434572" visible="true" weight="0.37367624" />
       <window_info id="Structure" order="1" sideWeight="0.502447" side_tool="true" weight="0.34218514" />
@@ -948,10 +950,10 @@
       <window_info anchor="bottom" id="Database Changes" order="8" weight="0.3279483" />
       <window_info anchor="bottom" id="Spring" order="9" weight="0.3279483" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3279483" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5030257" side_tool="true" weight="0.3069467" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50378215" side_tool="true" weight="0.3069467" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3279483" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.3279483" />
-      <window_info anchor="bottom" id="Run Dashboard" order="14" sideWeight="0.4969743" visible="true" weight="0.3069467" />
+      <window_info anchor="bottom" id="Run Dashboard" order="14" sideWeight="0.49621785" weight="0.3069467" />
       <window_info anchor="bottom" id="Database Console" order="15" weight="0.32952693" />
       <window_info anchor="bottom" id="Application Servers" order="16" sideWeight="0.49924126" weight="0.3279483" />
       <window_info anchor="bottom" id="Docker" order="17" show_stripe_button="false" />
@@ -974,7 +976,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="test deploy heroku lần 18" />
     <MESSAGE value="test deploy heroku lần 19" />
     <MESSAGE value="test deploy heroku lần 20" />
     <MESSAGE value="test deploy heroku lần 21" />
@@ -999,7 +1000,8 @@
     <MESSAGE value="Sửa tạm màn chat(đang lỗi)" />
     <MESSAGE value="Đặt được khung chat đúng vị trí nhưng chưa chạy được file script" />
     <MESSAGE value="Hoàn thành màn chat" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hoàn thành màn chat" />
+    <MESSAGE value="Test travis CI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test travis CI" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
@@ -1242,16 +1244,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/blog.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="59" column="55" selection-start-line="59" selection-start-column="43" selection-end-line="59" selection-end-column="55" />
-          <folding>
-            <element signature="n#style#0;n#a#1;n#div#1;n#th:block#0;n#th:block#0;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/system.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1272,7 +1264,7 @@
     <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/controllers/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1185">
-          <caret line="101" column="40" selection-start-line="101" selection-start-column="40" selection-end-line="101" selection-end-column="40" />
+          <caret line="100" column="40" selection-start-line="100" selection-start-column="40" selection-end-line="100" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1569#1570#0" expanded="true" />
@@ -1312,7 +1304,7 @@
     <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/java/hus/k61a3/demo/controllers/RestController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
-          <caret line="47" column="49" selection-start-line="47" selection-start-column="49" selection-end-line="47" selection-end-column="49" />
+          <caret line="46" column="49" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -1340,10 +1332,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Boardinghouse/.travis.yml">
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Boardinghouse/src/main/resources/templates/blog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="59" column="39" lean-forward="true" selection-start-line="59" selection-start-column="39" selection-end-line="59" selection-end-column="39" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#div#1;n#th:block#0;n#th:block#0;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
