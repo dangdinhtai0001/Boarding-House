@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="layout :: head"></head>
+<head><title> PHÒNG</title></head>
+<body>
+<!-- Preloader -->
+<div id="preloader">
+    <div class="south-load"></div>
+</div>
+<!-- ##### Header Area Start ##### -->
+<header th:replace="layout :: header"></header>
+<!-- ##### Header Area End ##### -->
+
+<!-- ##### Breadcumb Area Start ##### -->
+<section th:replace="layout :: Breadcumb"></section>
+<!-- ##### Breadcumb Area End ##### -->
+
+<!-- ##### Advance Search Area Start ##### -->
+<div class="south-search-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="advanced-search-form">
+                    <!-- Search Title -->
+                    <div class="search-title" style="width: auto">
+                        <p>Hãy tìm căn phòng của bạn <3</p>
+                    </div>
+                    <!-- Search Form -->
+                    <form action="#" method="post" id="advanceSearch">
+                        <div class="row">
+
+                            <div class="col-12 col-md-4 col-lg-3">
+                                <div class="form-group">
+                                    <input type="input" class="form-control" name="input" placeholder="Từ khóa">
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-4 col-lg-3">
+                                <div class="form-group">
+                                    <select class="form-control" id="cities">
+                                        <option>Diện tích</option>
+                                        <option>Dưới 10m2</option>
+                                        <option>10-15m2</option>
+                                        <option>15-20m2</option>
+                                        <option>20-25m2</option>
+                                        <option>Trên 25m2</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 col-lg-3">
+                                <div class="form-group">
+                                    <select class="form-control" id="catagories">
+                                        <option>Giá</option>
+                                        <option>1.000.000đ-1.500.000đ</option>
+                                        <option>1.500.000đ-2.000.000đ</option>
+                                        <option>2.000.000đ-2.500.000đ</option>
+                                        <option>2.500.000đ-3.000.000đ</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 col-lg-3">
+                                <div class="form-group">
+                                    <select class="form-control" id="offers">
+                                        <option>Khép kín</option>
+                                        <option>Không khép kín</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-12 d-flex justify-content-between align-items-end">
+                                <!-- Submit -->
+                                <div class="form-group mb-0">
+                                    <button type="submit" class="btn south-btn" style="right: -490%">Tìm kiếm</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ##### Advance Search Area End ##### -->
+
+<!-- ##### Featured Properties Area Start ##### -->
+<section class="featured-properties-area section-padding-100-50">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-heading wow fadeInUp">
+                    <h2>THƯ VIỆN</h2>
+                    <p>Hãy xem chúng tôi có gì cho bạn !</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="listings-top-meta d-flex justify-content-between mb-100">
+                    <div class="view-area d-flex align-items-center">
+                        <span>View as:</span>
+                        <div class="grid_view ml-15"><a href="#" class="active"><i class="fa fa-th"
+                                                                                   aria-hidden="true"></i></a></div>
+                        <div class="list_view ml-15"><a href="#"><i class="fa fa-th-list" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="order-by-area d-flex align-items-center">
+                        <span class="mr-15">Order by:</span>
+                        <select>
+                            <option selected>Default</option>
+                            <option value="1">Newest</option>
+                            <option value="2">Sales</option>
+                            <option value="3">Ratings</option>
+                            <option value="3">Popularity</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" th:fragment="listRoom">
+            <!-- Single Featured Property -->
+            <div th:each="room : ${rooms}" class="col-12 col-md-6 col-xl-4">
+                <div class="single-featured-property mb-50 wow fadeInUp" data-wow-delay="100ms" >
+                    <!-- Property Thumbnail -->
+                    <div class="property-thumb">
+                        <img th:src="${room.image}" alt="">
+
+                        <div class="tag">
+                            <span th:if="${room.isSaled} == '1'">For Sale</span>
+                        </div>
+                        <div class="list-price">
+                            <p th:utext="${room.price} + VNĐ"></p>
+                        </div>
+                    </div>
+                    <!-- Property Content -->
+                    <div class="property-content">
+                        <h5 th:utext="${room.name}"></h5>
+
+                        <p class="location"><img src="/images/icons/floor.png" alt=""> Tầng <span
+                                th:utext="${room.floor}"></span></p>
+                        <th:block th:with="description = ${room.description}">
+                            <p th:if="*{#strings.length(description)>=35}"
+                               th:text="${#strings.substring(description,0,35) + '...'}"></p>
+                            <p th:unless="*{#strings.length(description)>=35}"
+                               th:text="${#strings.substring(description,0,#strings.length(description))}"></p>
+                        </th:block>
+                        <div class="property-meta-data d-flex align-items-end justify-content-between">
+                            <div class="new-tag">
+                                <img src="/images/icons/people.png" alt="">
+                                <span th:utext="${room.recommend}"></span>
+                            </div>
+                            <div class="bathroom">
+                                <img src="/images/icons/bathtub.png" alt="">
+                                <span th:utext="${room.bathroom}"></span>
+                            </div>
+                            <div class="garage">
+                                <img src="/images/icons/window.png" alt="">
+                                <span th:utext="${room.window}"></span>
+                            </div>
+                            <div class="space">
+                                <img src="/images/icons/square.png" alt="">
+                                <span th:utext="${room.square} + m2"></span>
+                            </div>
+                        </div>
+                        <a th:href="@{/listings/room/{id}(id=${room.id})}" class="btn south-btn"
+                           style="margin-top: 5%">Chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ##### Featured Properties Area End ##### -->
+
+<footer th:replace="layout :: footer"></footer>
+<div th:replace="layout :: js"></div>
+</body>
+</html>

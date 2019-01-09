@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="layout :: head"></head>
+<head><title> HOME | CONTACT </title>
+</head>
+<body>
+<!-- Preloader -->
+<div id="preloader">
+    <div class="south-load"></div>
+</div>
+<!-- ##### Header Area Start ##### -->
+<header th:replace="layout :: header"></header>
+<!-- ##### Header Area End ##### -->
+
+<!-- ##### Breadcumb Area Start ##### -->
+<section th:replace="layout :: Breadcumb"></section>
+<!-- ##### Breadcumb Area End ##### -->
+
+<div th:replace="layout :: live-chat"></div>
+
+<!--<####  ####>-->
+<section class="south-contact-area section-padding-100">
+    <div class="row">
+        <div class="col-12">
+            <div class="section-heading wow fadeInUp" data-wow-delay="250ms">
+                <h2>Nhận xét của khách hàng
+                    <h2>
+                        <p>Hãy xem những khách hàng của chúng tôi nói gì</p>
+                    </h2>
+                </h2>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="contact-heading">
+                    <h6>Thông tin liên hệ</h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-lg-4">
+                <div class="content-sidebar">
+                    <!-- Office Hours -->
+                    <div class="weekly-office-hours">
+                        <ul>
+                            <li class="d-flex align-items-center justify-content-between"><span>Thứ 2 - Thứ 6</span>
+                                <span>08 AM - 17 PM</span></li>
+                            <li class="d-flex align-items-center justify-content-between"><span>Thứ 7</span> <span>09 AM - 14 PM</span>
+                            </li>
+                            <li class="d-flex align-items-center justify-content-between"><span>Chủ nhật</span> <span>Nghỉ</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Address -->
+                    <div class="address mt-30">
+                        <h6><img src="/images/icons/phone-call.png" alt="" th:utext="${home.phoneNumber}"></h6>
+                        <h6><img src="/images/icons/envelope.png" alt="" th:utext="${home.email}"></h6>
+                        <h6><img src="/images/icons/location.png" alt="" th:utext="${home.address}"></h6>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form Area -->
+            <div class="col-12 col-lg-8">
+                <div class="contact-form">
+                    <form th:action="@{/contact/submit}" th:object="${submitFeedbackForm}" method="post">
+                        <div th:fragment="submitFeedback">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="contact-name"
+                                       placeholder="Tên của bạn(VD: Nguyễn Văn A,...)..." th:field="*{name}"/>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="contact-number"
+                                       placeholder="Số điện thoại của bạn (VD: 01626xxxxxx,...)..."
+                                       th:field="*{phoneNumber}">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="contact-email"
+                                       placeholder="Địa chỉ mail của bạn (VD: name@example.com,...)"
+                                       th:field="*{email}">
+                            </div>
+                            <div class="form-group">
+                            <textarea class="form-control" id="message" cols="30" rows="10"
+                                      placeholder="Nội dung phản hồi..." th:field="*{content}"></textarea>
+                            </div>
+                            <p th:if="${error}" style="color:red;font-style:italic;" th:utext="${message}"></p>
+                            <p th:unless="${error}" style="color:green;font-style:italic;" th:utext="${message}"></p>
+                            <button type="submit" class="btn south-btn" style="margin-top: 3%">Phản hồi</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--<####  ####>-->
+
+<!-- Google Maps -->
+<div th:replace="layout :: google-maps"></div>
+
+
+<!-- ##### Footer Area Start ##### -->
+<footer th:replace="layout :: footer"></footer>
+<!-- ##### Footer Area End ##### -->
+
+<div th:replace="layout :: js"></div>
+</body>
+</html>

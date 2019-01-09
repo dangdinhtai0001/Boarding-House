@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:fragment="head">
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Favicon  -->
+    <link rel="icon" href="/images/core-img/favicon.ico">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="/css/master_styles.css">
+    <!--<link rel="stylesheet" href="/css/live-chat.css">-->
+
+    <!--chatlive-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet'
+          href='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.min.css'>
+    <link rel="stylesheet" href="/css/chat_style.css">
+
+
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+</head>
+<body>
+
+<!-- ##### Header Area Start ##### -->
+<header th:fragment="header" class="header-area">
+    <!-- Main Header Area -->
+    <div class="main-header-area" id="stickyHeader">
+        <div class="classy-nav-container breakpoint-off">
+            <!-- Classy Menu -->
+            <nav class="classy-navbar justify-content-between" id="southNav">
+
+                <!-- Logo -->
+                <a class="nav-brand" href="home.html"><h3 style="color: white">Boarding House</h3></a>
+
+                <!-- Navbar Toggler -->
+                <div class="classy-navbar-toggler">
+                    <span class="navbarToggler"><span></span><span></span><span></span></span>
+                </div>
+
+                <!-- Menu -->
+                <div class="classy-menu">
+
+                    <!-- close btn -->
+                    <div class="classycloseIcon">
+                        <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                    </div>
+
+                    <!-- Nav Start -->
+                    <div class="classynav">
+                        <ul>
+                            <li><a th:href="@{/home}">Trang chủ</a></li>
+                            <li><a href="#">Giới thiệu</a></li>
+                            <li><a th:href="@{/listings}">Phòng</a></li>
+                            <li><a th:href="@{/contact}">Liên hệ</a></li>
+                            <li><a th:href="@{/blog}">Blog</a></li>
+                            <li><a th:href="@{/2048}">Game</a></li>
+                            <li><a href="#">Quản trị</a></li>
+                        </ul>
+
+                        <!-- Search Form -->
+                        <div class="south-search-form">
+                            <form action="#" method="post">
+                                <input type="search" name="search" id="search" placeholder="Search Anything ...">
+                                <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                            </form>
+                        </div>
+
+                        <!-- Search Button -->
+                        <a href="#" class="searchbtn"><i class="fa" aria-hidden="true"></i></a>
+                    </div>
+                    <!-- Nav End -->
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+<!-- ##### Header Area End ##### -->
+
+<!-- ##### Breadcumb Area Start ##### -->
+<section th:fragment="Breadcumb" class="breadcumb-area bg-img" style="background-image: url(/images/bg-img/hero1.jpg);">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-12">
+                <div class="breadcumb-content">
+                    <h3 class="breadcumb-title"></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ##### Breadcumb Area End ##### -->
+
+<!-- ##### Hero Area Start ##### -->
+<section th:fragment="hero_area" class="hero-area">
+    <div class="hero-slides owl-carousel">
+        <!-- Single Hero Slide -->
+        <div class="single-hero-slide bg-img" style="background-image: url(/images/bg-img/hero1.jpg);">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12">
+                        <!--<div class="hero-slides-content">
+                            <h2 data-animation="fadeInUp" data-delay="100ms">Find your home</h2>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Single Hero Slide -->
+        <div class="single-hero-slide bg-img" style="background-image: url(/images/bg-img/hero5.jpg);">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12">
+                        <!--<div class="hero-slides-content">
+                            <h2 data-animation="fadeInUp" data-delay="100ms">Find your dream house</h2>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Single Hero Slide -->
+        <div class="single-hero-slide bg-img" style="background-image: url(/images/bg-img/hero3.jpg);">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12">
+                        <!--<div class="hero-slides-content">
+                            <h2 data-animation="fadeInUp" data-delay="100ms">Find your perfect house</h2>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ##### Hero Area End ##### -->
+
+<!--<#### blog side bar Start ####>-->
+<div class="blog-sidebar-area" th:fragment="blog_sidebar">
+    <!-- Search Widget -->
+    <div class="search-widget-area mb-70">
+        <form action="#" method="get">
+            <input type="search" name="search" id="searchInput" placeholder="Search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+
+    <!-- Catagories Widget -->
+    <div class="south-catagories-card mb-70">
+        <h5>Chủ đề</h5>
+        <ul class="catagories-menu" th:each="topic : ${topics}">
+            <li><a href="#" th:text="${topic.name}"></a></li>
+        </ul>
+    </div>
+
+    <!-- Catagories Widget -->
+
+    <!-- Catagories Widget -->
+    <div class="featured-properties-slides owl-carousel">
+        <!-- Single Slide -->
+        <div class="single-featured-property" th:each="room : ${rooms}">
+            <!-- Property Thumbnail -->
+            <div class="property-thumb">
+                <img th:src="${room.image}" alt="">
+
+                <div class="tag">
+                    <span th:if="${room.isSaled} == '1'">For Sale</span>
+                </div>
+                <div class="list-price">
+                    <p th:utext="${room.price} + VNĐ"></p>
+                </div>
+            </div>
+            <!-- Property Content -->
+            <div class="property-content">
+                <h5 th:utext="${room.name}"></h5>
+                <p class="location"><img src="/images/icons/floor.png" alt=""> Tầng <span
+                        th:utext="${room.floor}"></span></p>
+                <p th:utext="${room.description}"></p>
+                <div class="property-meta-data d-flex align-items-end justify-content-between">
+                    <div class="new-tag">
+                        <img src="/images/icons/people.png" alt="">
+                        <span th:utext="${room.recommend}"></span>
+                    </div>
+                    <div class="bathroom">
+                        <img src="/images/icons/bathtub.png" alt="">
+                        <span th:utext="${room.bathroom}"></span>
+                    </div>
+                    <div class="garage">
+                        <img src="/images/icons/window.png" alt="">
+                        <span th:utext="${room.window}"></span>
+                    </div>
+                    <div class="space">
+                        <img src="/images/icons/square.png" alt="">
+                        <span th:utext="${room.square} + m2"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--<#### blog side bar end ####>-->
+
+<!-- ##### Footer Area Start ##### -->
+<footer th:fragment="footer" class="footer-area section-padding-100-0 bg-img gradient-background-overlay"
+        style="background-image: url(/images/bg-img/cta.jpg);">
+    <!-- Main Footer Area -->
+    <div class="main-footer-area">
+        <div class="container">
+            <div class="row">
+                <!-- Single Footer Widget -->
+                <div class="col-12 col-sm-6 col-xl-4">
+                    <div class="footer-widget-area mb-100">
+                        <!-- Widget Title -->
+                        <div class="widget-title">
+                            <h6>Thông tin liên hệ</h6>
+                        </div>
+
+                        <!-- Address -->
+                        <div class="address">
+                            <h6><img src="/images/icons/phone-call.png" alt="" th:utext="${home.phoneNumber}"></h6>
+                            <h6><img src="/images/icons/envelope.png" alt="" th:utext="${home.email}"></h6>
+                            <h6><img src="/images/icons/location.png" alt="" th:utext="${home.address}"></h6>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Footer Widget -->
+                <div class="col-12 col-sm-6 col-xl-4">
+                    <div class="footer-widget-area mb-100">
+                        <!-- Widget Title -->
+                        <div class="widget-title">
+                            <h6>Hữu ích</h6>
+                        </div>
+                        <!-- Nav -->
+                        <ul class="useful-links-nav d-flex align-items-center">
+                            <li><a th:href="@{/home}">Trang chủ</a></li>
+                            <li><a href="#">Giới thiệu</a></li>
+                            <li><a th:href="@{/listings}">Phòng</a></li>
+                            <li><a th:href="@{/contact}">Liên hệ</a></li>
+                            <li><a th:href="@{/blog}">Blog</a></li>
+                            <li><a href="#">Quản trị</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Single Footer Widget -->
+                <div class="col-12 col-sm-6 col-xl-4">
+                    <div class="footer-widget-area mb-100">
+                        <!-- Widget Title -->
+                        <div class="widget-title">
+                            <h6>Team</h6>
+                        </div>
+                        <!-- Featured Properties Slides -->
+                        <div class="featured-properties-slides owl-carousel">
+                            <!-- Single Slide -->
+                            <div class="single-featured-properties-slide">
+                                <a href="#"><img src="/images/bg-img/team1.jpg" alt=""></a>
+                            </div>
+                            <!-- Single Slide -->
+                            <div class="single-featured-properties-slide">
+                                <a href="#"><img src="/images/bg-img/team3.jpg" alt=""></a>
+                            </div>
+                            <!-- Single Slide -->
+                            <div class="single-featured-properties-slide">
+                                <a href="#"><img src="/images/bg-img/team4.jpg" alt=""></a>
+                            </div>
+                            <div class="single-featured-properties-slide">
+                                <a href="#"><img src="/images/bg-img/team2.jpg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Copywrite Text -->
+    <div class="copywrite-text d-flex align-items-center justify-content-center">
+        <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;
+            <script>document.write(new Date().getFullYear());</script>
+            All rights reserved | This template is made with <i class="fa fa-heart-o"
+                                                                aria-hidden="true"></i> by <a
+                href="https://colorlib.com" target="_blank">Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+    </div>
+</footer>
+<!-- ##### Footer Area End ##### -->
+
+<!-- ##### Live chat start ##### -->
+<div th:fragment="live-chat">
+    <div id="live-chat" style="position:fixed; z-index: 2147483647;">
+        <div class="clearfix" id="chat-header">
+            <h4>Boarding house live chat</h4>
+            <span class="chat-message-counter">*</span>
+        </div>
+    </div>
+
+    <div class="chat" style="position:fixed; z-index: 2147483647;">
+        <div class="chat-title">
+            <h1 style="color: lightskyblue;">Boarding house AI :)) </h1>
+            <figure class="avatar">
+                <!--<img src="https://i.pinimg.com/originals/da/b2/d4/dab2d405730473923d33a32e814950cd.jpg"/></figure>-->
+                <img src="/images/core-img/avatar.jpg"/></figure>
+        </div>
+        <div class="messages">
+            <div class="messages-content"></div>
+        </div>
+        <div class="message-box">
+            <textarea type="text" class="message-input" placeholder="Type message..."></textarea>
+            <button type="submit" class="message-submit">Send</button>
+        </div>
+    </div>
+
+    <!-- <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script> -->
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.concat.min.js'></script>
+    <script src="/js/chat.js"></script>
+</div>
+<!-- end live-chat -->
+
+<div th:fragment="js">
+
+    <!--firebase-->
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCIGRiuB9yJt0ucvX4fmnRaONHMjChsiPY",
+            authDomain: "boardinghouse-223403.firebaseapp.com",
+            databaseURL: "https://boardinghouse-223403.firebaseio.com",
+            projectId: "boardinghouse-223403",
+            storageBucket: "boardinghouse-223403.appspot.com",
+            messagingSenderId: "680507230835"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+    <!-- jQuery (Necessary for All JavaScript Plugins) -->
+    <script src="/js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="/js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="/js/bootstrap.min.js"></script>
+    <!-- Plugins js -->
+    <script src="/js/plugins.js"></script>
+    <script src="/js/classy-nav.min.js"></script>
+    <script src="/js/jquery-ui.min.js"></script>
+    <!-- Active js -->
+    <script src="/js/active.js"></script>
+
+    <!-- Google Maps -->
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrgMGaL8enyaz_PXsdYurQ8Z4LKGg-id8&callback=initMap"></script>
+    <script src="/js/map-active.js"></script>
+</div>
+
+
+<div class="map-area mb-100" th:fragment="google-maps">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <!--API key-->
+                <!--AIzaSyDrgMGaL8enyaz_PXsdYurQ8Z4LKGg-id8-->
+                <div id="googleMap" class="googleMap"></div>
+                <!--<script> </script>-->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
