@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="layout :: head"></head>
+<head><title> HOME</title></head>
+<body>
+<!-- Preloader -->
+<!--<div id="preloader">-->
+<!--<div class="south-load"></div>-->
+<!--</div>-->
+
+<!-- ##### Header Area Start ##### -->
+<header th:replace="layout :: header"></header>
+<!-- ##### Header Area End ##### -->
+
+<!-- ##### Hero Area Start ##### -->
+<section th:replace="layout :: hero_area"></section>
+
+<!-- ##### Listings Content Area Start ##### -->
+<section class="listings-content-wrapper section-padding-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <!-- Single Listings Slides -->
+                <div class="single-listings-sliders owl-carousel">
+                    <!-- Single Slide -->
+                    <img src="/images/bg-img/hero4.jpg" alt="">
+                    <!-- Single Slide -->
+                    <img src="/images/bg-img/hero5.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+                <div class="listings-content">
+                    <!-- Price -->
+                    <div class="list-price">
+                        <p th:text="${room.price +' VNĐ'}"></p>
+                    </div>
+                    <h5 th:text="${room.name}"></h5>
+                    <p class="location" ><img src="/images/icons/location.png" alt=""><span th:utext="${'Tầng '+room.floor}"></span></p>
+                    <p th:text="${room.description}"></p>
+                    <!-- Meta -->
+                    <div class="property-meta-data d-flex align-items-end">
+                        <div class="new-tag">
+                            <img src="/images/icons/people.png" alt="">
+                            <span th:utext="${room.recommend}"></span>
+                        </div>
+                        <div class="bathroom">
+                            <img src="/images/icons/bathtub.png" alt="">
+                            <span th:utext="${room.bathroom}"></span>
+                        </div>
+                        <div class="garage">
+                            <img src="/images/icons/window.png" alt="">
+                            <span th:utext="${room.window}"></span>
+                        </div>
+                        <div class="space">
+                            <img src="/images/icons/square.png" alt="">
+                            <span th:utext="${room.square} + m2"></span>
+                        </div>
+                    </div>
+                    <!-- Core Features -->
+                    <ul class="listings-core-features d-flex align-items-center">
+                        <li><i class="fa fa-check" aria-hidden="true"></i> Gated Community</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i> Automatic Sprinklers</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i> Fireplace</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i> Window Shutters</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i> Ocean Views</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i> Heated Floors</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i> Heated Floors</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i> Private Patio</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i> Window Shutters</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i> Fireplace</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i> Beach Access</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i> Rooftop Terrace</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="contact-realtor-wrapper">
+                    <div class="realtor-info">
+                        <img th:src=${home.image} alt="" >
+                        <div class="realtor---info">
+                            <h2 th:utext="${home.name}"></h2>
+                            <p>Realtor</p>
+                            <h6><img src="/images/icons/phone-call.png" alt="" th:utext="${home.phoneNumber}"></h6>
+                            <h6><img src="/images/icons/envelope.png" alt="" th:utext="${home.email}"></h6>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ##### Listings Content Area End ##### -->
+
+<div th:replace="layout ::live-chat"></div>
+
+<footer th:replace="layout :: footer"></footer>
+<div th:replace="layout :: js"></div>
+</body>
+</html>
