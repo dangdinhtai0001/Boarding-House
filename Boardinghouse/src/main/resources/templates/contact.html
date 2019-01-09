@@ -19,7 +19,7 @@
 <div th:replace="layout :: live-chat"></div>
 
 <!--<####  ####>-->
-<section class="south-contact-area section-padding-100" >
+<section class="south-contact-area section-padding-100">
     <div class="row">
         <div class="col-12">
             <div class="section-heading wow fadeInUp" data-wow-delay="250ms">
@@ -67,26 +67,29 @@
             <div class="col-12 col-lg-8">
                 <div class="contact-form">
                     <form th:action="@{/contact/submit}" th:object="${submitFeedbackForm}" method="post">
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="contact-name"
-                                   placeholder="Tên của bạn(VD: Nguyễn Văn A,...)..." th:field="*{name}"/>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="contact-number"
-                                   placeholder="Số điện thoại của bạn (VD: 01626xxxxxx,...)..."
-                                   th:field="*{phoneNumber}">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="contact-email"
-                                   placeholder="Địa chỉ mail của bạn (VD: name@example.com,...)" th:field="*{email}">
-                        </div>
-                        <div class="form-group">
+                        <div th:fragment="submitFeedback">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="contact-name"
+                                       placeholder="Tên của bạn(VD: Nguyễn Văn A,...)..." th:field="*{name}"/>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="contact-number"
+                                       placeholder="Số điện thoại của bạn (VD: 01626xxxxxx,...)..."
+                                       th:field="*{phoneNumber}">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="contact-email"
+                                       placeholder="Địa chỉ mail của bạn (VD: name@example.com,...)"
+                                       th:field="*{email}">
+                            </div>
+                            <div class="form-group">
                             <textarea class="form-control" id="message" cols="30" rows="10"
                                       placeholder="Nội dung phản hồi..." th:field="*{content}"></textarea>
+                            </div>
+                            <p th:if="${error}" style="color:red;font-style:italic;" th:utext="${message}"></p>
+                            <p th:unless="${error}" style="color:green;font-style:italic;" th:utext="${message}"></p>
+                            <button type="submit" class="btn south-btn">Send Feedback</button>
                         </div>
-                        <p th:if="${error}" style="color:red;font-style:italic;" th:utext="${message}"></p>
-                        <p th:unless="${error}" style="color:green;font-style:italic;" th:utext="${message}"></p>
-                        <button type="submit" class="btn south-btn">Send Feedback</button>
                     </form>
                 </div>
             </div>

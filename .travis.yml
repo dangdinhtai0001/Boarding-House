@@ -1,0 +1,10 @@
+language: java
+sudo: required
+branches:
+  only:
+    -DangDinhTai
+
+jdk:
+  - oraclejdk8
+
+install: mvn install

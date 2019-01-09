@@ -9,4 +9,6 @@ import java.util.List;
 public interface RoomRepositoriy extends JpaRepository<Room,Integer> {
     @Query(value="SELECT * FROM room ORDER BY RAND() LIMIT ?1", nativeQuery = true)
     List<Room> findRandomRoom(int limit);
+
+    List<Room> findAllByOrderBySquareDesc();
 }
