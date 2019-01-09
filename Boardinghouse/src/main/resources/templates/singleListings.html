@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head th:replace="layout :: head"></head>
-<head><title> HOME</title></head>
+<head><title>PHÒNG | CHI TIẾT</title></head>
 <body>
 <!-- Preloader -->
 <!--<div id="preloader">-->
@@ -24,9 +24,9 @@
                 <!-- Single Listings Slides -->
                 <--!<div class="single-listings-sliders owl-carousel">
                     <!-- Single Slide -->
-                    <img src="/images/bg-img/hero4.jpg" alt="">
+                    <img th:src="${room.image}" alt="" style="width: 1200px; height: 600px">
                     <!-- Single Slide -->
-                    <img src="/images/bg-img/hero5.jpg" alt="">
+                    <img th:src="${room.image}" alt="" style="width: 1200px; height: 600px">
                 </div>
             </div>
         </div>
