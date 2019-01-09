@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Boarding-House.iml" filepath="$PROJECT_DIR$/Boarding-House.iml" />
       <module fileurl="file://$PROJECT_DIR$/Boardinghouse/Boardinghouse.iml" filepath="$PROJECT_DIR$/Boardinghouse/Boardinghouse.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Boardinghouse/demo.iml" filepath="$PROJECT_DIR$/Boardinghouse/demo.iml" />
     </modules>
   </component>
 </project>

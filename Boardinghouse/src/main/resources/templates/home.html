@@ -17,9 +17,9 @@
 <!-- ##### Hero Area End ##### -->
 
 <!--<audio controls autoplay loop>-->
-    <!--<source src="https://www.computerhope.com/jargon/m/example.mp3" type="audio/ogg">-->
-    <!--<source src="https://www.computerhope.com/jargon/m/example.mp3" type="audio/mpeg">-->
-    <!--Your browser does not support the audio tag.-->
+<!--<source src="https://www.computerhope.com/jargon/m/example.mp3" type="audio/ogg">-->
+<!--<source src="https://www.computerhope.com/jargon/m/example.mp3" type="audio/mpeg">-->
+<!--Your browser does not support the audio tag.-->
 <!--</audio>-->
 
 <!--<embed src="https://www.computerhope.com/jargon/m/example.mp3" autostart="true" loop="true" width="2" height="0"></embed>-->
@@ -34,55 +34,14 @@
         <div class="row">
             <div class="col-12">
                 <div class="section-heading wow fadeInUp">
-                    <h2>Featured Properties</h2>
+                    <h2>THƯ VIỆN</h2>
                     <p>Hãy xem chúng tôi có gì cho bạn !</p>
                 </div>
             </div>
         </div>
 
-        <div class="row">
-            <!-- Single Featured Property -->
-            <div th:each="room : ${rooms}" class="col-12 col-md-6 col-xl-4">
-                <div class="single-featured-property mb-50 wow fadeInUp" data-wow-delay="100ms">
-                    <!-- Property Thumbnail -->
-                    <div class="property-thumb">
-                        <img th:src="${room.image}" alt="">
-
-                        <div class="tag">
-                            <span th:if="${room.isSaled} == '1'">For Sale</span>
-                        </div>
-                        <div class="list-price">
-                            <p th:utext="${room.price} + VNĐ"></p>
-                        </div>
-                    </div>
-                    <!-- Property Content -->
-                    <div class="property-content">
-                        <h5 th:utext="${room.name}"></h5>
-                        <p class="location"><img src="/images/icons/floor.png" alt=""> Tầng <span
-                                th:utext="${room.floor}"></span></p>
-                        <p th:utext="${room.description}"></p>
-                        <div class="property-meta-data d-flex align-items-end justify-content-between">
-                            <div class="new-tag">
-                                <img src="/images/icons/people.png" alt="">
-                                <span th:utext="${room.recommend}"></span>
-                            </div>
-                            <div class="bathroom">
-                                <img src="/images/icons/bathtub.png" alt="">
-                                <span th:utext="${room.bathroom}"></span>
-                            </div>
-                            <div class="garage">
-                                <img src="/images/icons/window.png" alt="">
-                                <span th:utext="${room.window}"></span>
-                            </div>
-                            <div class="space">
-                                <img src="/images/icons/square.png" alt="">
-                                <span th:utext="${room.square} + m2"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div th:replace="listings :: listRoom"></div>
+        <!--<p>AAAAAAAAAAAAAAAAAAAAAAAA</p>-->
     </div>
 </section>
 <!-- ##### Featured Properties Area End ##### -->
@@ -112,7 +71,7 @@
                 <div class="section-heading wow fadeInUp" data-wow-delay="250ms">
                     <h2>Nhận xét của khách hàng
                         <h2>
-                            <p>Hãy xem nhưng khách hàng của chúng tôi nói gì</p>
+                            <p>Hãy xem những khách hàng của chúng tôi nói gì</p>
                         </h2>
                     </h2>
                 </div>

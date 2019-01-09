@@ -59,7 +59,7 @@
                                 <div class="comment-content">
                                     <div class="comment-meta">
                                         <a href="#" class="comment-author-name" th:text="${comment.name}"></a> |
-                                        <a href="#" class="comment-date" th:text="${comment.dateCreated}"></a> |
+                                        <a href="#" class="comment-date" th:text="${#dates.format(comment.dateCreated, 'hh:mm:ss _ dd-MM-yyyy')}"></a> |
                                         <a href="#" class="comment-reply">Reply</a>
                                     </div>
                                     <p th:utext="${comment.content}"></p>
@@ -77,7 +77,7 @@
                                         <div class="comment-content">
                                             <div class="comment-meta">
                                                 <a href="#" class="comment-author-name" th:text="${replyComment.name}"></a> |
-                                                <a href="#" class="comment-date" th:text="${replyComment.dateCreated}"></a> |
+                                                <a href="#" class="comment-date" th:text="${#dates.format(comment.dateCreated, 'hh:mm:ss _ dd-MM-yyyy')}"></a> |
                                             </div>
                                             <p th:utext="${replyComment.content}"></p>
                                         </div>
@@ -92,7 +92,7 @@
                 <!-- Leave A Comment -->
                 <div class="leave-comment-area mt-70 clearfix">
                     <div class="comment-form">
-                        <h5>Leave a reply</h5>
+                        <h5>Trả lời</h5>
 
                         <!-- Comment Form -->
                         <form th:action="@{/blog/post/{id}/submit(id=${post.post.id})}" th:object="${submitCommentForm}" method="post" >
@@ -107,7 +107,7 @@
                                           placeholder="Message"></textarea>
                             </div>
                             <p th:if="${error}" th:utext="${errorMessage}" style="color:red;font-style:italic;"> </p>
-                            <button type="submit" class="btn south-btn">Submit Reply</button>
+                            <button type="submit" class="btn south-btn">Gửi</button>
                         </form>
                     </div>
                 </div>
