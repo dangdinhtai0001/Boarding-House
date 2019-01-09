@@ -1,7 +1,11 @@
 language: java
-
-jdk:
-  - oraclejdk8
-  - oraclejdk11
-  - openjdk10
-  - openjdk11
+jdk: oraclejdk10
+branches:
+  only:
+    - master
+cache:
+  directories:
+    - "$HOME/.m2"
+after_success:
+  - chmod +x publish.sh
+  - "./publish.sh"
