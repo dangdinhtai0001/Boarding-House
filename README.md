@@ -5,11 +5,11 @@
 ### Screenshot		
 (Ảnh)
 ### Built With
--
--
--
--
--
+- Spring boot
+- Spring security
+- Spring Data Jpa
+- Thymeleaf
+- Firebase
 ### Chức năng
 - **Chức năng khách** : giúp kháh hàng có cái nhìn tổng quât về khu nhà trọ
 - **Chức năng viết blog** : giúp chủ nhà trọ chia sẻ cũng như quảng bá khu trọ của mình. Cũng như tăng tính tương tác với khách hàng bằng tính năng bình luận cũng như liên hệ.
@@ -34,7 +34,7 @@
 - Nguyễn Thị Kiều Trang
 =======
 
-https://docs.google.com/document/d/1JSTSy3ggz3_L26qpexz9_7-9wqrcr5jRj3kUYohWKVY/edit?usp=sharing
+
 
 
 
