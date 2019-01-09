@@ -59,7 +59,7 @@
                                 <div class="comment-content">
                                     <div class="comment-meta">
                                         <a href="#" class="comment-author-name" th:text="${comment.name}"></a> |
-                                        <a href="#" class="comment-date" th:text="${comment.dateCreated}"></a> |
+                                        <a href="#" class="comment-date" th:text="${#dates.format(comment.dateCreated, 'hh:mm:ss _ dd-MM-yyyy')}"></a> |
                                         <a href="#" class="comment-reply">Reply</a>
                                     </div>
                                     <p th:utext="${comment.content}"></p>
@@ -77,7 +77,7 @@
                                         <div class="comment-content">
                                             <div class="comment-meta">
                                                 <a href="#" class="comment-author-name" th:text="${replyComment.name}"></a> |
-                                                <a href="#" class="comment-date" th:text="${replyComment.dateCreated}"></a> |
+                                                <a href="#" class="comment-date" th:text="${#dates.format(comment.dateCreated, 'hh:mm:ss _ dd-MM-yyyy')}"></a> |
                                             </div>
                                             <p th:utext="${replyComment.content}"></p>
                                         </div>

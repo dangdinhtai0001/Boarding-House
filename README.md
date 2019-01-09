@@ -1,5 +1,5 @@
 # Boarding-House
-
+[![Build Status](https://travis-ci.org/dangdinhtai0001/Boarding-House.svg?branch=master)](https://travis-ci.org/dangdinhtai0001/Boarding-House)
 ## Giới thiệu
 >Boarding-House là phần mềm quản lý khu trọ giúp cho người chủ nhà trọ dễ dàng nắm bắt mọi thông tin, điều phối hoạt động dễ dàng, đồng thời tăng hiệu suất làm việc, các dịch vụ, chỉ số điện, nước, gas, tiền phòng được thực hiện chính xác, tránh những sai sót không đáng có. Bên cạnh đó, nó còn hỗ trợ cho khách thuê trọ có thể theo dõi thông tin phòng, các chí phí phải trả hàng tháng,...Từ đó nâng cao chất lượng, dịch vụ nhà trọ, đem lại sự tiện ích cho cả người quản lý khu trọ và khách thuê trọ.
 ### Screenshot		
