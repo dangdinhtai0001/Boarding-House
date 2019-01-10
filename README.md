@@ -2,8 +2,6 @@
 [![Build Status](https://travis-ci.org/dangdinhtai0001/Boarding-House.svg?branch=master)](https://travis-ci.org/dangdinhtai0001/Boarding-House)
 ## Giới thiệu
 >Boarding-House là phần mềm quản lý khu trọ giúp cho người chủ nhà trọ dễ dàng nắm bắt mọi thông tin, điều phối hoạt động dễ dàng, đồng thời tăng hiệu suất làm việc, các dịch vụ, chỉ số điện, nước, gas, tiền phòng được thực hiện chính xác, tránh những sai sót không đáng có. Bên cạnh đó, nó còn hỗ trợ cho khách thuê trọ có thể theo dõi thông tin phòng, các chí phí phải trả hàng tháng,....Đi kèm với nó là các chức năng giúp quảng bá nhà trọ như blog,chế độ khách .....Từ đó nâng cao chất lượng, dịch vụ nhà trọ, đem lại sự tiện ích cho cả người quản lý khu trọ và khách thuê trọ.
-### Screenshot		
-(Ảnh)
 ### Built With
 - Spring boot
 - Spring security
@@ -27,12 +25,16 @@
      thực hiện chế độ khách
  #### phase 3
      thực hiện chế độ quản trị
+     
+### Chức năng đã thực hiện
+- **Chức năng khách** : giúp kháh hàng có cái nhìn tổng quât về khu nhà trọ
+- **Chức năng viết blog** : giúp chủ nhà trọ chia sẻ cũng như quảng bá khu trọ của mình. Cũng như tăng tính tương tác với khách hàng bằng tính năng bình luận cũng như liên hệ.     
 ### Authors
 - Đặng Đình Tài (Leader)
 - Vũ Hữu Sơn
 - Nguyễn Thị Hà
 - Nguyễn Thị Kiều Trang
-=======
+
 
 
 
